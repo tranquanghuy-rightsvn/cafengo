@@ -229,6 +229,7 @@
       }
       var parts = null;
       var hold = null;
+      var hoisted = false;
 
       /* built on first use so an untouched page costs nothing */
       function build() {
@@ -289,6 +290,35 @@
         parts = { back: back, backInner: backInner, svg: svg, grad: grad,
                   stops: stops, voidTri: voidTri, paper: paper, crease: crease };
         return parts;
+      }
+
+      /* Move the overlay (the folded flap and the reverse showing through it) out
+         of the page and onto the leaf. Required, because the page is then clipped
+         down to the part still lying flat — left inside, the flap would be cut
+         away by that same clip. Leaf and face share a box, so nothing shifts. */
+      function hoist() {
+        var leafEl = leaves[index];
+        if (hoisted || !leafEl) return;
+        var p = build();
+        hoisted = true;
+        leafEl.appendChild(p.back);
+        leafEl.appendChild(p.svg);
+        /* A verso carries its own rotateY(180deg); hoisting the overlay out of it
+           drops that half of the transform and leaves the fold mirrored against
+           the leaf. Re-apply it so the overlay keeps the frame it had inside. */
+        if (side < 0) {
+          p.back.style.transform = 'rotateY(180deg)';
+          p.svg.style.transform = 'rotateY(180deg)';
+        }
+      }
+
+      function unhoist() {
+        if (!hoisted || !parts) return;
+        hoisted = false;
+        parts.back.style.transform = '';
+        parts.svg.style.transform = '';
+        face.appendChild(parts.back);
+        face.appendChild(parts.svg);
       }
 
       /* sx, sy: which corner is held, as a direction from the page's middle
@@ -372,7 +402,16 @@
 
         p.svg.classList.add('is-lifted');
         p.back.classList.add('is-lifted');
-        return { hx: hx, hy: hy, vx: vx, vy: vy };
+
+        /* Erase the page wherever the paper has lifted off it, so the corner it
+           vacated shows the sheet underneath — the page about to open. Without
+           this the vacated corner keeps drawing the current page, so the sheet
+           appears to curl up off a copy of itself. Applies to a held corner just
+           as much as to a page mid-turn. */
+        var crease = { hx: hx, hy: hy, vx: vx, vy: vy };
+        hoist();
+        face.style.clipPath = flatSidePolygon(W, H, crease, sx, sy);
+        return crease;
       }
 
       function drop() {
@@ -383,6 +422,8 @@
         parts.backInner.style.removeProperty('--peel-lift');
         parts.svg.classList.remove('is-lifted');
         parts.back.classList.remove('is-lifted');
+        face.style.clipPath = '';
+        unhoist();
       }
 
       /* true while the pointer is holding one of this page's outer corners */
@@ -417,24 +458,13 @@
         var from = start || hold;
         if (!from) return false;
         var leafEl = leaves[index];
-        var p0 = build();
-        /* Let the sheet escape its page box and ride over the other half. The
-           overlay moves up to the leaf — same box, so the geometry is unchanged
-           — so that the face underneath can be clipped to the part still lying
-           flat without clipping the travelling sheet with it. */
+        build();
+        /* paint() already hoists the overlay onto the leaf and clips the page to
+           the part still lying flat; all that is left here is raising the leaf so
+           the travelling sheet rides over every other one. */
         if (leafEl) {
           leafEl.classList.add('is-turning');
           leafEl.style.zIndex = String(TURN_Z);
-          leafEl.appendChild(p0.back);
-          leafEl.appendChild(p0.svg);
-          /* A verso carries its own rotateY(180deg); hoisting the overlay out of
-             it would drop that half of the transform and leave the fold mirrored
-             against the leaf. Re-apply it so the overlay keeps the exact frame it
-             had inside the page. */
-          if (side < 0) {
-            p0.back.style.transform = 'rotateY(180deg)';
-            p0.svg.style.transform = 'rotateY(180deg)';
-          }
         }
         var a0 = from.a;
         var b0 = from.b;
@@ -451,31 +481,22 @@
              the far edge, so the last frame coincides with the turned page */
           var a = a0 + (2 * r.width - a0) * e;
           var b = b0 * (1 - e);
-          var crease = paint(r, (sx > 0 ? r.width : 0) - sx * a, (sy > 0 ? r.height : 0) - sy * b, sx, sy, true);
+          /* paint() also clips the page back to the part still lying flat, so the
+             sheet underneath shows through as the fold sweeps across */
+          paint(r, (sx > 0 ? r.width : 0) - sx * a, (sy > 0 ? r.height : 0) - sy * b, sx, sy, true);
           /* Ease the raised-sheet lighting back to normal as the turn lands: the
              specular banding fades out and the brightness lift returns to 1, so
              the final frame is lit exactly like the flat page it becomes. */
           var p = build();
           p.svg.style.opacity = String(1 - e);
           p.backInner.style.setProperty('--peel-lift', String(LIFT + (1 - LIFT) * e));
-          /* Hide the part of the sheet that has already lifted, so the page
-             underneath shows through instead of the old one sitting there until
-             the very last instant. */
-          face.style.clipPath = flatSidePolygon(r.width, r.height, crease, sx, sy);
 
           if (t < 1) { requestAnimationFrame(step); return; }
           /* Let this last frame paint before swapping in the real page: the two
              are identical now, so the exchange is invisible. */
           requestAnimationFrame(function () {
-            drop();
-            face.style.clipPath = '';
-            if (leafEl) {
-              leafEl.classList.remove('is-turning');
-              p0.back.style.transform = '';
-              p0.svg.style.transform = '';
-              face.appendChild(p0.back);
-              face.appendChild(p0.svg);
-            }
+            drop();   /* also unclips the page and drops the overlay back into it */
+            if (leafEl) leafEl.classList.remove('is-turning');
             done();   /* the caller re-renders, which restores the leaf's z-index */
           });
         }
