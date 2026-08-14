@@ -1,0 +1,816 @@
+{
+ "t": "section",
+ "c": "section section--bronze reserve",
+ "box": {
+  "w": 768,
+  "h": 2502.8,
+  "x": 0,
+  "y": 7859
+ },
+ "st": {
+  "display": "block",
+  "flexDirection": "row",
+  "position": "relative",
+  "width": "768px",
+  "height": "2502.84px",
+  "padding": "112px 0px",
+  "color": "rgb(226, 226, 226)",
+  "backgroundColor": "rgb(18, 20, 20)",
+  "backgroundImage": "radial-gradient(circle at 50% 0%, rgba(255, 183, 123, 0.04) 0%, rgba(0, 0, 0, 0) 70%), none",
+  "opacity": "1",
+  "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+  "fontSize": "16px",
+  "fontWeight": "400",
+  "lineHeight": "24px",
+  "borderColor": "rgb(226, 226, 226)",
+  "objectFit": "fill",
+  "overflow": "hidden"
+ },
+ "kids": [
+  {
+   "t": "div",
+   "c": "grid-overlay",
+   "box": {
+    "w": 768,
+    "h": 2502.8,
+    "x": 0,
+    "y": 7859
+   },
+   "st": {
+    "display": "block",
+    "flexDirection": "row",
+    "position": "absolute",
+    "width": "768px",
+    "height": "2502.84px",
+    "color": "rgb(226, 226, 226)",
+    "backgroundImage": "linear-gradient(to right, rgb(255, 255, 255) 1px, rgba(0, 0, 0, 0) 1px), linear-gradient(rgb(255, 255, 255) 1px, rgba(0, 0, 0, 0) 1px)",
+    "opacity": "0.015",
+    "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "lineHeight": "24px",
+    "borderColor": "rgb(226, 226, 226)",
+    "objectFit": "fill"
+   },
+   "kids": []
+  },
+  {
+   "t": "div",
+   "c": "glow-blob",
+   "box": {
+    "w": 536.2,
+    "h": 536.2,
+    "x": -155,
+    "y": 7663
+   },
+   "st": {
+    "display": "block",
+    "flexDirection": "row",
+    "position": "absolute",
+    "zIndex": "0",
+    "transform": "matrix(1.07241, 0, 0, 1.07241, 22.6293, -18.1035)",
+    "width": "500px",
+    "height": "500px",
+    "color": "rgb(226, 226, 226)",
+    "backgroundColor": "rgba(255, 183, 123, 0.05)",
+    "opacity": "0.531035",
+    "filter": "blur(100px)",
+    "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "lineHeight": "24px",
+    "borderRadius": "50%",
+    "borderColor": "rgb(226, 226, 226)",
+    "objectFit": "fill"
+   },
+   "kids": []
+  },
+  {
+   "t": "div",
+   "c": "glow-blob",
+   "box": {
+    "w": 421.4,
+    "h": 421.4,
+    "x": 454,
+    "y": 9898
+   },
+   "st": {
+    "display": "block",
+    "flexDirection": "row",
+    "position": "absolute",
+    "zIndex": "0",
+    "transform": "matrix(1.05348, 0, 0, 1.05348, 16.7122, -13.3698)",
+    "width": "400px",
+    "height": "400px",
+    "color": "rgb(226, 226, 226)",
+    "backgroundColor": "rgba(245, 158, 11, 0.03)",
+    "opacity": "0.483698",
+    "filter": "blur(100px)",
+    "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "lineHeight": "24px",
+    "borderRadius": "50%",
+    "borderColor": "rgb(226, 226, 226)",
+    "objectFit": "fill"
+   },
+   "kids": []
+  },
+  {
+   "t": "div",
+   "c": "container",
+   "box": {
+    "w": 768,
+    "h": 2278.8,
+    "x": 0,
+    "y": 7971
+   },
+   "st": {
+    "display": "block",
+    "flexDirection": "row",
+    "position": "relative",
+    "zIndex": "10",
+    "width": "768px",
+    "height": "2278.84px",
+    "maxWidth": "1280px",
+    "padding": "0px 64px",
+    "color": "rgb(226, 226, 226)",
+    "opacity": "1",
+    "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "lineHeight": "24px",
+    "borderColor": "rgb(226, 226, 226)",
+    "objectFit": "fill"
+   },
+   "kids": [
+    {
+     "t": "div",
+     "c": "reserve__head",
+     "box": {
+      "w": 640,
+      "h": 160.1,
+      "x": 64,
+      "y": 7971
+     },
+     "st": {
+      "display": "block",
+      "flexDirection": "row",
+      "width": "640px",
+      "height": "160.094px",
+      "margin": "0px 0px 80px",
+      "color": "rgb(226, 226, 226)",
+      "opacity": "1",
+      "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "textAlign": "center",
+      "borderColor": "rgb(226, 226, 226)",
+      "objectFit": "fill"
+     },
+     "kids": [
+      {
+       "t": "span",
+       "c": "reserve__eyebrow",
+       "box": {
+        "w": 640,
+        "h": 16,
+        "x": 64,
+        "y": 7971
+       },
+       "txt": "Trạm điều hành đặt chỗ // Executive Reservations",
+       "st": {
+        "display": "block",
+        "flexDirection": "row",
+        "width": "640px",
+        "height": "16px",
+        "margin": "0px 0px 16px",
+        "color": "rgb(255, 183, 123)",
+        "opacity": "1",
+        "fontFamily": "\"JetBrains Mono\", ui-monospace, monospace",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "lineHeight": "16px",
+        "letterSpacing": "4.2px",
+        "textTransform": "uppercase",
+        "textAlign": "center",
+        "borderColor": "rgb(255, 183, 123)",
+        "objectFit": "fill"
+       },
+       "kids": []
+      },
+      {
+       "t": "h2",
+       "c": "reserve__title",
+       "box": {
+        "w": 640,
+        "h": 41.6,
+        "x": 64,
+        "y": 8003
+       },
+       "txt": "Đặt bàn trực tuyến",
+       "st": {
+        "display": "block",
+        "flexDirection": "row",
+        "width": "640px",
+        "height": "41.5938px",
+        "color": "rgb(226, 226, 226)",
+        "opacity": "1",
+        "fontFamily": "\"Space Grotesk\", \"Helvetica Neue\", sans-serif",
+        "fontSize": "32px",
+        "fontWeight": "800",
+        "lineHeight": "41.6px",
+        "letterSpacing": "3.2px",
+        "textTransform": "uppercase",
+        "textAlign": "center",
+        "borderColor": "rgb(226, 226, 226)",
+        "objectFit": "fill"
+       },
+       "kids": []
+      },
+      {
+       "t": "p",
+       "c": "reserve__lede",
+       "box": {
+        "w": 640,
+        "h": 45.5,
+        "x": 64,
+        "y": 8061
+       },
+       "txt": "Giữ chỗ trực tuyến cho trạm máy tính cấu hình cao, vị trí bàn cafe ngắm cảnh hoặc hầm cách âm bảo mật VIP cho các buổi đàm phán tài chính.",
+       "st": {
+        "display": "block",
+        "flexDirection": "row",
+        "width": "640px",
+        "height": "45.5px",
+        "maxWidth": "672px",
+        "margin": "16px 0px 0px",
+        "color": "rgb(196, 199, 199)",
+        "opacity": "1",
+        "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "22.75px",
+        "textAlign": "center",
+        "borderColor": "rgb(196, 199, 199)",
+        "objectFit": "fill"
+       },
+       "kids": []
+      },
+      {
+       "t": "div",
+       "c": "reserve__rule",
+       "box": {
+        "w": 112,
+        "h": 1,
+        "x": 328,
+        "y": 8131
+       },
+       "st": {
+        "display": "block",
+        "flexDirection": "row",
+        "width": "112px",
+        "height": "1px",
+        "margin": "24px 264px 0px",
+        "color": "rgb(226, 226, 226)",
+        "backgroundImage": "linear-gradient(to right, rgba(0, 0, 0, 0), rgb(255, 183, 123), rgba(0, 0, 0, 0))",
+        "opacity": "1",
+        "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "textAlign": "center",
+        "borderColor": "rgb(226, 226, 226)",
+        "objectFit": "fill"
+       },
+       "kids": []
+      }
+     ]
+    },
+    {
+     "t": "div",
+     "c": "reserve__wallet-row",
+     "box": {
+      "w": 640,
+      "h": 38,
+      "x": 64,
+      "y": 8212
+     },
+     "st": {
+      "display": "flex",
+      "flexDirection": "row",
+      "justifyContent": "flex-end",
+      "width": "640px",
+      "height": "38px",
+      "maxWidth": "1024px",
+      "margin": "0px 0px 32px",
+      "color": "rgb(226, 226, 226)",
+      "opacity": "1",
+      "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "borderColor": "rgb(226, 226, 226)",
+      "objectFit": "fill"
+     },
+     "kids": [
+      {
+       "t": "button",
+       "c": "reserve__wallet",
+       "box": {
+        "w": 236,
+        "h": 38,
+        "x": 468,
+        "y": 8212
+       },
+       "txt": "Kết nối ví Trader (Web3)",
+       "st": {
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "gap": "10px",
+        "width": "236px",
+        "height": "38px",
+        "padding": "10px 20px",
+        "color": "rgb(255, 183, 123)",
+        "backgroundColor": "rgba(26, 28, 28, 0.4)",
+        "opacity": "1",
+        "fontFamily": "\"JetBrains Mono\", ui-monospace, monospace",
+        "fontSize": "10px",
+        "fontWeight": "400",
+        "lineHeight": "15px",
+        "letterSpacing": "1px",
+        "textTransform": "uppercase",
+        "textAlign": "center",
+        "borderRadius": "2px",
+        "borderTopWidth": "1px",
+        "borderColor": "rgba(255, 183, 123, 0.3)",
+        "boxShadow": "rgba(0, 0, 0, 0.4) 0px 4px 6px -1px",
+        "objectFit": "fill"
+       },
+       "kids": [
+        {
+         "t": "span",
+         "c": "icon",
+         "box": {
+          "w": 16,
+          "h": 16,
+          "x": 489,
+          "y": 8223
+         },
+         "txt": "vpn_key",
+         "st": {
+          "display": "block",
+          "flexDirection": "row",
+          "width": "16px",
+          "height": "16px",
+          "color": "rgb(255, 183, 123)",
+          "opacity": "1",
+          "fontFamily": "\"Material Symbols Outlined\"",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "textAlign": "center",
+          "borderColor": "rgb(255, 183, 123)",
+          "objectFit": "fill"
+         },
+         "kids": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "t": "div",
+     "c": "reserve__grid",
+     "box": {
+      "w": 640,
+      "h": 1968.8,
+      "x": 64,
+      "y": 8282
+     },
+     "st": {
+      "display": "grid",
+      "flexDirection": "row",
+      "gap": "32px",
+      "gridTemplateColumns": "640px",
+      "width": "640px",
+      "height": "1968.75px",
+      "maxWidth": "1024px",
+      "color": "rgb(226, 226, 226)",
+      "opacity": "1",
+      "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "borderColor": "rgb(226, 226, 226)",
+      "objectFit": "fill"
+     },
+     "kids": [
+      {
+       "t": "div",
+       "c": "reserve__aside",
+       "box": {
+        "w": 640,
+        "h": 694.8,
+        "x": 64,
+        "y": 8282
+       },
+       "st": {
+        "display": "block",
+        "flexDirection": "row",
+        "width": "640px",
+        "height": "694.75px",
+        "color": "rgb(226, 226, 226)",
+        "opacity": "1",
+        "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "borderColor": "rgb(226, 226, 226)",
+        "objectFit": "fill"
+       },
+       "kids": [
+        {
+         "t": "div",
+         "c": "panel glass",
+         "box": {
+          "w": 640,
+          "h": 376.3,
+          "x": 64,
+          "y": 8282
+         },
+         "st": {
+          "display": "block",
+          "flexDirection": "row",
+          "position": "relative",
+          "width": "640px",
+          "height": "376.25px",
+          "padding": "24px",
+          "color": "rgb(226, 226, 226)",
+          "backgroundColor": "rgba(26, 26, 26, 0.7)",
+          "opacity": "1",
+          "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "borderRadius": "2px",
+          "borderTopWidth": "1px",
+          "borderColor": "rgba(255, 183, 123, 0.15)",
+          "boxShadow": "rgba(0, 0, 0, 0.8) 0px 25px 50px 0px, rgba(255, 183, 123, 0.15) 0px 0px 50px 0px",
+          "objectFit": "fill",
+          "overflow": "hidden"
+         },
+         "kids": [
+          {
+           "t": "h3",
+           "c": "panel__title",
+           "box": {
+            "w": 590,
+            "h": 27,
+            "x": 89,
+            "y": 8307
+           },
+           "txt": "1. Chọn khu vực & loại bàn",
+           "st": {
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "gap": "8px",
+            "width": "590px",
+            "height": "27px",
+            "padding": "0px 0px 10px",
+            "margin": "0px 0px 16px",
+            "color": "rgb(255, 183, 123)",
+            "opacity": "1",
+            "fontFamily": "\"JetBrains Mono\", ui-monospace, monospace",
+            "fontSize": "12px",
+            "fontWeight": "700",
+            "lineHeight": "16px",
+            "letterSpacing": "1.2px",
+            "textTransform": "uppercase",
+            "borderColor": "rgb(255, 183, 123) rgb(255, 183, 123) rgba(68, 71, 72, 0.1)",
+            "objectFit": "fill"
+           }
+          },
+          {
+           "t": "div",
+           "c": "opt-list",
+           "box": {
+            "w": 590,
+            "h": 283.3,
+            "x": 89,
+            "y": 8350
+           },
+           "st": {
+            "display": "block",
+            "flexDirection": "row",
+            "width": "590px",
+            "height": "283.25px",
+            "color": "rgb(226, 226, 226)",
+            "opacity": "1",
+            "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "24px",
+            "borderColor": "rgb(226, 226, 226)",
+            "objectFit": "fill"
+           }
+          }
+         ]
+        },
+        {
+         "t": "div",
+         "c": "panel glass",
+         "box": {
+          "w": 640,
+          "h": 294.5,
+          "x": 64,
+          "y": 8682
+         },
+         "st": {
+          "display": "block",
+          "flexDirection": "row",
+          "position": "relative",
+          "width": "640px",
+          "height": "294.5px",
+          "padding": "24px",
+          "margin": "24px 0px 0px",
+          "color": "rgb(226, 226, 226)",
+          "backgroundColor": "rgba(26, 26, 26, 0.7)",
+          "opacity": "1",
+          "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "borderRadius": "2px",
+          "borderTopWidth": "1px",
+          "borderColor": "rgba(255, 183, 123, 0.15)",
+          "boxShadow": "rgba(0, 0, 0, 0.8) 0px 25px 50px 0px, rgba(255, 183, 123, 0.15) 0px 0px 50px 0px",
+          "objectFit": "fill",
+          "overflow": "hidden"
+         },
+         "kids": [
+          {
+           "t": "span",
+           "c": "panel__corners",
+           "box": {
+            "w": 0,
+            "h": 0,
+            "x": 89,
+            "y": 8707
+           },
+           "st": {
+            "display": "inline",
+            "flexDirection": "row",
+            "color": "rgb(226, 226, 226)",
+            "opacity": "1",
+            "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "24px",
+            "borderColor": "rgb(226, 226, 226)",
+            "objectFit": "fill"
+           }
+          },
+          {
+           "t": "h3",
+           "c": "panel__title",
+           "box": {
+            "w": 590,
+            "h": 27,
+            "x": 89,
+            "y": 8707
+           },
+           "txt": "Cấu hình & thông số vị trí",
+           "st": {
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "gap": "8px",
+            "width": "590px",
+            "height": "27px",
+            "padding": "0px 0px 10px",
+            "margin": "0px 0px 16px",
+            "color": "rgb(255, 183, 123)",
+            "opacity": "1",
+            "fontFamily": "\"JetBrains Mono\", ui-monospace, monospace",
+            "fontSize": "12px",
+            "fontWeight": "700",
+            "lineHeight": "16px",
+            "letterSpacing": "1.2px",
+            "textTransform": "uppercase",
+            "borderColor": "rgb(255, 183, 123) rgb(255, 183, 123) rgba(68, 71, 72, 0.1)",
+            "objectFit": "fill"
+           }
+          },
+          {
+           "t": "div",
+           "c": "spec",
+           "box": {
+            "w": 590,
+            "h": 201.5,
+            "x": 89,
+            "y": 8750
+           },
+           "st": {
+            "display": "block",
+            "flexDirection": "row",
+            "width": "590px",
+            "height": "201.5px",
+            "color": "rgb(226, 226, 226)",
+            "opacity": "1",
+            "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "24px",
+            "borderColor": "rgb(226, 226, 226)",
+            "objectFit": "fill"
+           }
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "t": "div",
+       "c": "reserve__main",
+       "box": {
+        "w": 640,
+        "h": 1242,
+        "x": 64,
+        "y": 9008
+       },
+       "st": {
+        "display": "block",
+        "flexDirection": "row",
+        "width": "640px",
+        "height": "1242px",
+        "color": "rgb(226, 226, 226)",
+        "opacity": "1",
+        "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "borderColor": "rgb(226, 226, 226)",
+        "objectFit": "fill"
+       },
+       "kids": [
+        {
+         "t": "div",
+         "c": "panel panel--form glass",
+         "box": {
+          "w": 640,
+          "h": 1140,
+          "x": 64,
+          "y": 9008
+         },
+         "st": {
+          "display": "block",
+          "flexDirection": "row",
+          "position": "relative",
+          "width": "640px",
+          "height": "1140px",
+          "padding": "40px",
+          "color": "rgb(226, 226, 226)",
+          "backgroundColor": "rgba(26, 26, 26, 0.7)",
+          "opacity": "1",
+          "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "borderRadius": "2px",
+          "borderTopWidth": "1px",
+          "borderColor": "rgba(255, 183, 123, 0.15)",
+          "boxShadow": "rgba(0, 0, 0, 0.8) 0px 25px 50px 0px, rgba(255, 183, 123, 0.15) 0px 0px 50px 0px",
+          "objectFit": "fill",
+          "overflow": "hidden"
+         },
+         "kids": [
+          {
+           "t": "form",
+           "c": "rform",
+           "box": {
+            "w": 558,
+            "h": 1058,
+            "x": 105,
+            "y": 9049
+           },
+           "st": {
+            "display": "block",
+            "flexDirection": "row",
+            "width": "558px",
+            "height": "1058px",
+            "color": "rgb(226, 226, 226)",
+            "opacity": "1",
+            "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "24px",
+            "borderColor": "rgb(226, 226, 226)",
+            "objectFit": "fill"
+           }
+          }
+         ]
+        },
+        {
+         "t": "div",
+         "c": "reserve__hotline reveal",
+         "box": {
+          "w": 640,
+          "h": 70,
+          "x": 64,
+          "y": 10205
+         },
+         "st": {
+          "display": "block",
+          "flexDirection": "row",
+          "transform": "matrix(1, 0, 0, 1, 0, 25)",
+          "width": "640px",
+          "height": "70px",
+          "margin": "32px 0px 0px",
+          "color": "rgb(226, 226, 226)",
+          "opacity": "0",
+          "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "textAlign": "center",
+          "borderColor": "rgb(226, 226, 226)",
+          "objectFit": "fill"
+         },
+         "kids": [
+          {
+           "t": "p",
+           "c": "",
+           "box": {
+            "w": 640,
+            "h": 15,
+            "x": 64,
+            "y": 10205
+           },
+           "txt": "Đặt chỗ khẩn cấp qua Hotline & Zalo encrypted",
+           "st": {
+            "display": "block",
+            "flexDirection": "row",
+            "width": "640px",
+            "height": "15px",
+            "color": "rgb(196, 199, 199)",
+            "opacity": "1",
+            "fontFamily": "\"JetBrains Mono\", ui-monospace, monospace",
+            "fontSize": "10px",
+            "fontWeight": "400",
+            "lineHeight": "15px",
+            "letterSpacing": "0.5px",
+            "textTransform": "uppercase",
+            "textAlign": "center",
+            "borderColor": "rgb(196, 199, 199)",
+            "objectFit": "fill"
+           }
+          },
+          {
+           "t": "a",
+           "c": "",
+           "box": {
+            "w": 318,
+            "h": 41,
+            "x": 225,
+            "y": 10234
+           },
+           "txt": "Hotline / Zalo Secure: 090 234 5678",
+           "st": {
+            "display": "inline-flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "gap": "8px",
+            "width": "318px",
+            "height": "41px",
+            "padding": "12px 24px",
+            "margin": "14px 0px 0px",
+            "color": "rgb(255, 183, 123)",
+            "opacity": "1",
+            "fontFamily": "\"JetBrains Mono\", ui-monospace, monospace",
+            "fontSize": "10px",
+            "fontWeight": "400",
+            "lineHeight": "15px",
+            "letterSpacing": "1px",
+            "textTransform": "uppercase",
+            "textAlign": "center",
+            "borderRadius": "2px",
+            "borderTopWidth": "1px",
+            "borderColor": "rgba(255, 183, 123, 0.25)",
+            "boxShadow": "rgba(0, 0, 0, 0.4) 0px 4px 6px -1px",
+            "objectFit": "fill"
+           }
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

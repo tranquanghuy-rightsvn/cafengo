@@ -1,0 +1,14 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+Error [TypeError]: Cannot read properties of null (reading 'click')
+    at evaluate (evaluate at file:///Users/nals_macbook_116/Desktop/clone-web/cafenet/albi-coffe-netlify-app-clone/.work/audit.mjs:104:25, <anonymous>:3:9)
+    at #evaluate (file:///Users/nals_macbook_116/Desktop/clone-web/node_modules/puppeteer-core/lib/puppeteer/cdp/ExecutionContext.js:402:19)
+    at async ExecutionContext.evaluate (file:///Users/nals_macbook_116/Desktop/clone-web/node_modules/puppeteer-core/lib/puppeteer/cdp/ExecutionContext.js:288:16)
+    at async IsolatedWorld.evaluate (file:///Users/nals_macbook_116/Desktop/clone-web/node_modules/puppeteer-core/lib/puppeteer/cdp/IsolatedWorld.js:104:16)
+    at async CdpFrame.evaluate (file:///Users/nals_macbook_116/Desktop/clone-web/node_modules/puppeteer-core/lib/puppeteer/api/Frame.js:364:20)
+    at async CdpPage.evaluate (file:///Users/nals_macbook_116/Desktop/clone-web/node_modules/puppeteer-core/lib/puppeteer/api/Page.js:832:20)
+    at async file:///Users/nals_macbook_116/Desktop/clone-web/cafenet/albi-coffe-netlify-app-clone/.work/audit.mjs:104:14
+
+Node.js v24.18.0

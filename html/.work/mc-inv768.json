@@ -1,0 +1,402 @@
+{
+ "t": "section",
+ "c": "section section--surface invest",
+ "box": {
+  "w": 768,
+  "h": 849.5,
+  "x": 0,
+  "y": 2542
+ },
+ "st": {
+  "display": "block",
+  "flexDirection": "row",
+  "position": "relative",
+  "width": "768px",
+  "height": "849.5px",
+  "padding": "96px 0px",
+  "color": "rgb(226, 226, 226)",
+  "backgroundColor": "rgb(18, 20, 20)",
+  "opacity": "1",
+  "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+  "fontSize": "16px",
+  "fontWeight": "400",
+  "lineHeight": "24px",
+  "borderColor": "rgb(226, 226, 226)",
+  "objectFit": "fill",
+  "overflow": "hidden"
+ },
+ "kids": [
+  {
+   "t": "div",
+   "c": "container",
+   "box": {
+    "w": 768,
+    "h": 657.5,
+    "x": 0,
+    "y": 2638
+   },
+   "st": {
+    "display": "block",
+    "flexDirection": "row",
+    "width": "768px",
+    "height": "657.5px",
+    "maxWidth": "1280px",
+    "padding": "0px 64px",
+    "color": "rgb(226, 226, 226)",
+    "opacity": "1",
+    "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "lineHeight": "24px",
+    "borderColor": "rgb(226, 226, 226)",
+    "objectFit": "fill"
+   },
+   "kids": [
+    {
+     "t": "div",
+     "c": "invest__head",
+     "box": {
+      "w": 640,
+      "h": 69.6,
+      "x": 64,
+      "y": 2638
+     },
+     "st": {
+      "display": "flex",
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "alignItems": "flex-end",
+      "gap": "32px",
+      "width": "640px",
+      "height": "69.5938px",
+      "margin": "0px 0px 64px",
+      "color": "rgb(226, 226, 226)",
+      "opacity": "1",
+      "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "borderColor": "rgb(226, 226, 226)",
+      "objectFit": "fill"
+     },
+     "kids": [
+      {
+       "t": "div",
+       "c": "invest__headline",
+       "box": {
+        "w": 257.8,
+        "h": 69.6,
+        "x": 64,
+        "y": 2638
+       },
+       "st": {
+        "display": "block",
+        "flexDirection": "row",
+        "width": "257.812px",
+        "height": "69.5938px",
+        "maxWidth": "576px",
+        "color": "rgb(226, 226, 226)",
+        "opacity": "1",
+        "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "borderColor": "rgb(226, 226, 226)",
+        "objectFit": "fill"
+       },
+       "kids": [
+        {
+         "t": "span",
+         "c": "invest__eyebrow",
+         "box": {
+          "w": 257.8,
+          "h": 12,
+          "x": 64,
+          "y": 2638
+         },
+         "txt": "Trading Lounge",
+         "st": {
+          "display": "block",
+          "flexDirection": "row",
+          "width": "257.812px",
+          "height": "12px",
+          "margin": "0px 0px 16px",
+          "color": "rgb(255, 183, 123)",
+          "opacity": "1",
+          "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+          "fontSize": "12px",
+          "fontWeight": "600",
+          "lineHeight": "12px",
+          "letterSpacing": "1.8px",
+          "textTransform": "uppercase",
+          "borderColor": "rgb(255, 183, 123)",
+          "objectFit": "fill"
+         }
+        },
+        {
+         "t": "h2",
+         "c": "invest__title",
+         "box": {
+          "w": 257.8,
+          "h": 41.6,
+          "x": 64,
+          "y": 2666
+         },
+         "txt": "Góc Đầu Tư",
+         "st": {
+          "display": "block",
+          "flexDirection": "row",
+          "width": "257.812px",
+          "height": "41.5938px",
+          "color": "rgb(226, 226, 226)",
+          "opacity": "1",
+          "fontFamily": "\"Space Grotesk\", \"Helvetica Neue\", sans-serif",
+          "fontSize": "32px",
+          "fontWeight": "700",
+          "lineHeight": "41.6px",
+          "borderColor": "rgb(226, 226, 226)",
+          "objectFit": "fill"
+         }
+        }
+       ]
+      },
+      {
+       "t": "p",
+       "c": "invest__note",
+       "box": {
+        "w": 350.2,
+        "h": 67.2,
+        "x": 354,
+        "y": 2641
+       },
+       "txt": "Không gian riêng tư được thiết kế cho các nhà đầu tư chuyên nghiệp, tích hợp bảng giá thời gian thực và không gian thảo luận bảo mật.",
+       "st": {
+        "display": "block",
+        "flexDirection": "row",
+        "width": "350.188px",
+        "height": "67.1719px",
+        "maxWidth": "448px",
+        "color": "rgb(196, 199, 199)",
+        "opacity": "1",
+        "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "22.4px",
+        "borderColor": "rgb(196, 199, 199)",
+        "objectFit": "fill"
+       },
+       "kids": []
+      }
+     ]
+    },
+    {
+     "t": "div",
+     "c": "invest__grid",
+     "box": {
+      "w": 640,
+      "h": 523.9,
+      "x": 64,
+      "y": 2772
+     },
+     "st": {
+      "display": "grid",
+      "flexDirection": "row",
+      "gap": "24px",
+      "gridTemplateColumns": "31.3281px 31.3281px 31.3281px 31.3281px 31.3281px 31.3281px 31.3281px 31.3281px 31.3281px 31.3281px 31.3281px 31.3281px",
+      "width": "640px",
+      "height": "523.906px",
+      "color": "rgb(226, 226, 226)",
+      "opacity": "1",
+      "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "borderColor": "rgb(226, 226, 226)",
+      "objectFit": "fill"
+     },
+     "kids": [
+      {
+       "t": "div",
+       "c": "invest__feature",
+       "box": {
+        "w": 418.7,
+        "h": 500,
+        "x": 64,
+        "y": 2772
+       },
+       "st": {
+        "display": "flex",
+        "flexDirection": "column",
+        "justifyContent": "flex-end",
+        "gridColumn": "span 8",
+        "position": "relative",
+        "width": "418.656px",
+        "height": "500px",
+        "padding": "40px",
+        "color": "rgb(226, 226, 226)",
+        "backgroundColor": "rgba(40, 42, 43, 0.5)",
+        "opacity": "1",
+        "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "borderRadius": "8px",
+        "borderTopWidth": "1px",
+        "borderColor": "rgba(68, 71, 72, 0.1)",
+        "boxShadow": "rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px",
+        "objectFit": "fill",
+        "overflow": "hidden"
+       },
+       "kids": [
+        {
+         "t": "div",
+         "c": "invest__feature-bg",
+         "box": {
+          "w": 416.7,
+          "h": 498,
+          "x": 65,
+          "y": 2773
+         },
+         "st": {
+          "display": "block",
+          "flexDirection": "row",
+          "position": "absolute",
+          "zIndex": "0",
+          "width": "416.656px",
+          "height": "498px",
+          "color": "rgb(226, 226, 226)",
+          "opacity": "0.4",
+          "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "borderColor": "rgb(226, 226, 226)",
+          "objectFit": "fill"
+         }
+        },
+        {
+         "t": "div",
+         "c": "invest__feature-body",
+         "box": {
+          "w": 336.7,
+          "h": 237,
+          "x": 105,
+          "y": 2994
+         },
+         "st": {
+          "display": "block",
+          "flexDirection": "row",
+          "position": "relative",
+          "zIndex": "10",
+          "width": "336.656px",
+          "height": "236.984px",
+          "color": "rgb(226, 226, 226)",
+          "opacity": "1",
+          "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "borderColor": "rgb(226, 226, 226)",
+          "objectFit": "fill"
+         }
+        }
+       ]
+      },
+      {
+       "t": "div",
+       "c": "invest__side",
+       "box": {
+        "w": 197.3,
+        "h": 523.9,
+        "x": 507,
+        "y": 2772
+       },
+       "st": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gap": "24px",
+        "gridColumn": "span 4",
+        "width": "197.344px",
+        "height": "523.906px",
+        "color": "rgb(226, 226, 226)",
+        "opacity": "1",
+        "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "borderColor": "rgb(226, 226, 226)",
+        "objectFit": "fill"
+       },
+       "kids": [
+        {
+         "t": "div",
+         "c": "invest__card glass",
+         "box": {
+          "w": 197.3,
+          "h": 250,
+          "x": 507,
+          "y": 2772
+         },
+         "st": {
+          "display": "flex",
+          "flexDirection": "column",
+          "justifyContent": "center",
+          "position": "relative",
+          "width": "197.344px",
+          "height": "249.953px",
+          "padding": "32px",
+          "color": "rgb(226, 226, 226)",
+          "backgroundColor": "rgba(26, 26, 26, 0.7)",
+          "opacity": "1",
+          "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "borderRadius": "8px",
+          "borderTopWidth": "1px",
+          "borderColor": "rgba(68, 71, 72, 0.1)",
+          "boxShadow": "rgba(0, 0, 0, 0.8) 0px 25px 50px 0px, rgba(255, 183, 123, 0.15) 0px 0px 50px 0px",
+          "objectFit": "fill",
+          "overflow": "hidden"
+         }
+        },
+        {
+         "t": "div",
+         "c": "invest__card glass",
+         "box": {
+          "w": 197.3,
+          "h": 250,
+          "x": 507,
+          "y": 3046
+         },
+         "st": {
+          "display": "flex",
+          "flexDirection": "column",
+          "justifyContent": "center",
+          "position": "relative",
+          "width": "197.344px",
+          "height": "249.953px",
+          "padding": "32px",
+          "color": "rgb(226, 226, 226)",
+          "backgroundColor": "rgba(26, 26, 26, 0.7)",
+          "opacity": "1",
+          "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "borderRadius": "8px",
+          "borderTopWidth": "1px",
+          "borderColor": "rgba(68, 71, 72, 0.1)",
+          "boxShadow": "rgba(0, 0, 0, 0.8) 0px 25px 50px 0px, rgba(255, 183, 123, 0.15) 0px 0px 50px 0px",
+          "objectFit": "fill",
+          "overflow": "hidden"
+         }
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

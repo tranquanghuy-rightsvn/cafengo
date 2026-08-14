@@ -1,0 +1,3095 @@
+{
+ "t": "section",
+ "c": "section section--bronze menu",
+ "box": {
+  "w": 640,
+  "h": 1466.2,
+  "x": 0,
+  "y": 1100
+ },
+ "st": {
+  "display": "block",
+  "flexDirection": "row",
+  "position": "relative",
+  "width": "640px",
+  "height": "1466.2px",
+  "padding": "96px 0px",
+  "color": "rgb(226, 226, 226)",
+  "backgroundColor": "rgb(18, 20, 20)",
+  "backgroundImage": "radial-gradient(circle at 50% 0%, rgba(255, 183, 123, 0.04) 0%, rgba(0, 0, 0, 0) 70%), none",
+  "opacity": "1",
+  "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+  "fontSize": "16px",
+  "fontWeight": "400",
+  "lineHeight": "24px",
+  "borderColor": "rgb(226, 226, 226)",
+  "objectFit": "fill",
+  "overflow": "hidden"
+ },
+ "kids": [
+  {
+   "t": "div",
+   "c": "container menu__head",
+   "box": {
+    "w": 640,
+    "h": 280,
+    "x": 0,
+    "y": 1196
+   },
+   "st": {
+    "display": "block",
+    "flexDirection": "row",
+    "width": "640px",
+    "height": "280px",
+    "maxWidth": "1280px",
+    "padding": "0px 24px",
+    "margin": "0px 0px 32px",
+    "color": "rgb(226, 226, 226)",
+    "opacity": "1",
+    "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "lineHeight": "24px",
+    "textAlign": "center",
+    "borderColor": "rgb(226, 226, 226)",
+    "objectFit": "fill"
+   },
+   "kids": [
+    {
+     "t": "span",
+     "c": "menu__eyebrow",
+     "box": {
+      "w": 592,
+      "h": 12,
+      "x": 24,
+      "y": 1196
+     },
+     "txt": "Phòng thí nghiệm đổi mới giới thiệu",
+     "st": {
+      "display": "block",
+      "flexDirection": "row",
+      "width": "592px",
+      "height": "12px",
+      "margin": "0px 0px 16px",
+      "color": "rgb(255, 183, 123)",
+      "opacity": "1",
+      "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "600",
+      "lineHeight": "12px",
+      "letterSpacing": "3px",
+      "textTransform": "uppercase",
+      "textAlign": "center",
+      "borderColor": "rgb(255, 183, 123)",
+      "objectFit": "fill"
+     },
+     "kids": []
+    },
+    {
+     "t": "h2",
+     "c": "menu__title",
+     "box": {
+      "w": 592,
+      "h": 48,
+      "x": 24,
+      "y": 1224
+     },
+     "txt": "Sách thực đơn",
+     "st": {
+      "display": "block",
+      "flexDirection": "row",
+      "width": "592px",
+      "height": "48px",
+      "color": "rgb(226, 226, 226)",
+      "opacity": "1",
+      "fontFamily": "\"Space Grotesk\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "40px",
+      "fontWeight": "800",
+      "lineHeight": "48px",
+      "letterSpacing": "1px",
+      "textTransform": "uppercase",
+      "textAlign": "center",
+      "borderColor": "rgb(226, 226, 226)",
+      "objectFit": "fill"
+     },
+     "kids": []
+    },
+    {
+     "t": "div",
+     "c": "menu__rule",
+     "box": {
+      "w": 64,
+      "h": 2,
+      "x": 288,
+      "y": 1296
+     },
+     "st": {
+      "display": "block",
+      "flexDirection": "row",
+      "width": "64px",
+      "height": "2px",
+      "margin": "24px 264px 32px",
+      "color": "rgb(226, 226, 226)",
+      "backgroundColor": "rgb(255, 183, 123)",
+      "opacity": "1",
+      "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "textAlign": "center",
+      "borderColor": "rgb(226, 226, 226)",
+      "objectFit": "fill"
+     },
+     "kids": []
+    },
+    {
+     "t": "p",
+     "c": "menu__lede",
+     "box": {
+      "w": 592,
+      "h": 72,
+      "x": 24,
+      "y": 1330
+     },
+     "txt": "Khám phá thực đơn độc quyền được tuyển chọn kỹ lưỡng. Lật từng trang để cảm nhận sự kết hợp giữa nghệ thuật pha chế thủ công và nhịp đập tài chính.",
+     "st": {
+      "display": "block",
+      "flexDirection": "row",
+      "width": "592px",
+      "height": "72px",
+      "maxWidth": "672px",
+      "padding": "0px 16px",
+      "color": "rgb(196, 199, 199)",
+      "opacity": "1",
+      "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "textAlign": "center",
+      "borderColor": "rgb(196, 199, 199)",
+      "objectFit": "fill"
+     },
+     "kids": []
+    },
+    {
+     "t": "div",
+     "c": "menu__tools",
+     "box": {
+      "w": 592,
+      "h": 42,
+      "x": 24,
+      "y": 1434
+     },
+     "st": {
+      "display": "flex",
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "gap": "16px",
+      "width": "592px",
+      "height": "42px",
+      "margin": "32px 0px 0px",
+      "color": "rgb(226, 226, 226)",
+      "opacity": "1",
+      "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "textAlign": "center",
+      "borderColor": "rgb(226, 226, 226)",
+      "objectFit": "fill"
+     },
+     "kids": [
+      {
+       "t": "button",
+       "c": "menu__tool",
+       "box": {
+        "w": 164.8,
+        "h": 42,
+        "x": 166,
+        "y": 1434
+       },
+       "txt": "Chia sẻ thực đơn",
+       "st": {
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "gap": "8px",
+        "width": "164.781px",
+        "height": "42px",
+        "padding": "10px 20px",
+        "color": "rgb(196, 199, 199)",
+        "backgroundColor": "rgba(18, 20, 20, 0.3)",
+        "opacity": "1",
+        "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+        "fontSize": "10px",
+        "fontWeight": "400",
+        "lineHeight": "15px",
+        "letterSpacing": "0.5px",
+        "textTransform": "uppercase",
+        "textAlign": "center",
+        "borderRadius": "2px",
+        "borderTopWidth": "1px",
+        "borderColor": "rgba(68, 71, 72, 0.3)",
+        "objectFit": "fill"
+       },
+       "kids": [
+        {
+         "t": "span",
+         "c": "icon",
+         "box": {
+          "w": 14,
+          "h": 20,
+          "x": 187,
+          "y": 1445
+         },
+         "txt": "share",
+         "st": {
+          "display": "block",
+          "flexDirection": "row",
+          "width": "14px",
+          "height": "20px",
+          "color": "rgb(196, 199, 199)",
+          "opacity": "1",
+          "fontFamily": "\"Material Symbols Outlined\"",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "lineHeight": "20px",
+          "textAlign": "center",
+          "borderColor": "rgb(196, 199, 199)",
+          "objectFit": "fill"
+         },
+         "kids": []
+        }
+       ]
+      },
+      {
+       "t": "a",
+       "c": "menu__tool",
+       "box": {
+        "w": 127.6,
+        "h": 42,
+        "x": 347,
+        "y": 1434
+       },
+       "txt": "Tải bản PDF",
+       "st": {
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "gap": "8px",
+        "width": "127.578px",
+        "height": "42px",
+        "padding": "10px 20px",
+        "color": "rgb(196, 199, 199)",
+        "backgroundColor": "rgba(18, 20, 20, 0.3)",
+        "opacity": "1",
+        "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+        "fontSize": "10px",
+        "fontWeight": "400",
+        "lineHeight": "15px",
+        "letterSpacing": "0.5px",
+        "textTransform": "uppercase",
+        "textAlign": "center",
+        "borderRadius": "2px",
+        "borderTopWidth": "1px",
+        "borderColor": "rgba(68, 71, 72, 0.3)",
+        "objectFit": "fill"
+       },
+       "kids": [
+        {
+         "t": "span",
+         "c": "icon",
+         "box": {
+          "w": 14,
+          "h": 20,
+          "x": 368,
+          "y": 1445
+         },
+         "txt": "download",
+         "st": {
+          "display": "block",
+          "flexDirection": "row",
+          "width": "14px",
+          "height": "20px",
+          "color": "rgb(196, 199, 199)",
+          "opacity": "1",
+          "fontFamily": "\"Material Symbols Outlined\"",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "lineHeight": "20px",
+          "textAlign": "center",
+          "borderColor": "rgb(196, 199, 199)",
+          "objectFit": "fill"
+         },
+         "kids": []
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "t": "div",
+   "c": "menu__desktop",
+   "box": {
+    "w": 0,
+    "h": 0,
+    "x": 0,
+    "y": 0
+   },
+   "st": {
+    "flexDirection": "row",
+    "color": "rgb(226, 226, 226)",
+    "opacity": "1",
+    "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "lineHeight": "24px",
+    "borderColor": "rgb(226, 226, 226)",
+    "objectFit": "fill"
+   },
+   "kids": [
+    {
+     "t": "p",
+     "c": "menu__tip",
+     "box": {
+      "w": 0,
+      "h": 0,
+      "x": 0,
+      "y": 0
+     },
+     "st": {
+      "display": "flex",
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "alignItems": "center",
+      "gap": "8px",
+      "margin": "0px 0px 24px",
+      "color": "rgb(196, 199, 199)",
+      "opacity": "0.65",
+      "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "11px",
+      "fontWeight": "400",
+      "lineHeight": "16.5px",
+      "letterSpacing": "0.55px",
+      "textTransform": "uppercase",
+      "borderColor": "rgb(196, 199, 199)",
+      "objectFit": "fill"
+     },
+     "kids": [
+      {
+       "t": "span",
+       "c": "icon",
+       "box": {
+        "w": 0,
+        "h": 0,
+        "x": 0,
+        "y": 0
+       },
+       "txt": "keyboard",
+       "st": {
+        "display": "block",
+        "flexDirection": "row",
+        "color": "rgb(196, 199, 199)",
+        "opacity": "1",
+        "fontFamily": "\"Material Symbols Outlined\"",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "14px",
+        "borderColor": "rgb(196, 199, 199)",
+        "objectFit": "fill"
+       },
+       "kids": []
+      },
+      {
+       "t": "span",
+       "c": "",
+       "box": {
+        "w": 0,
+        "h": 0,
+        "x": 0,
+        "y": 0
+       },
+       "txt": "Mẹo: Sử dụng phím mũi tên và để lật trang",
+       "st": {
+        "display": "block",
+        "flexDirection": "row",
+        "color": "rgb(196, 199, 199)",
+        "opacity": "1",
+        "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+        "fontSize": "11px",
+        "fontWeight": "400",
+        "lineHeight": "16.5px",
+        "letterSpacing": "0.55px",
+        "textTransform": "uppercase",
+        "borderColor": "rgb(196, 199, 199)",
+        "objectFit": "fill"
+       },
+       "kids": [
+        {
+         "t": "b",
+         "c": "",
+         "box": {
+          "w": 0,
+          "h": 0,
+          "x": 0,
+          "y": 0
+         },
+         "txt": "←",
+         "st": {
+          "display": "inline",
+          "flexDirection": "row",
+          "color": "rgb(255, 183, 123)",
+          "opacity": "1",
+          "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+          "fontSize": "11px",
+          "fontWeight": "700",
+          "lineHeight": "16.5px",
+          "letterSpacing": "0.55px",
+          "textTransform": "uppercase",
+          "borderColor": "rgb(255, 183, 123)",
+          "objectFit": "fill"
+         },
+         "kids": []
+        },
+        {
+         "t": "b",
+         "c": "",
+         "box": {
+          "w": 0,
+          "h": 0,
+          "x": 0,
+          "y": 0
+         },
+         "txt": "→",
+         "st": {
+          "display": "inline",
+          "flexDirection": "row",
+          "color": "rgb(255, 183, 123)",
+          "opacity": "1",
+          "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+          "fontSize": "11px",
+          "fontWeight": "700",
+          "lineHeight": "16.5px",
+          "letterSpacing": "0.55px",
+          "textTransform": "uppercase",
+          "borderColor": "rgb(255, 183, 123)",
+          "objectFit": "fill"
+         },
+         "kids": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "t": "div",
+     "c": "flip-outer",
+     "box": {
+      "w": 0,
+      "h": 0,
+      "x": 0,
+      "y": 0
+     },
+     "st": {
+      "display": "flex",
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "alignItems": "center",
+      "maxWidth": "1280px",
+      "padding": "32px 64px",
+      "margin": "0px auto",
+      "color": "rgb(226, 226, 226)",
+      "opacity": "1",
+      "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "borderColor": "rgb(226, 226, 226)",
+      "objectFit": "fill"
+     },
+     "kids": [
+      {
+       "t": "div",
+       "c": "flip-stage",
+       "box": {
+        "w": 0,
+        "h": 0,
+        "x": 0,
+        "y": 0
+       },
+       "st": {
+        "display": "flex",
+        "flexDirection": "column",
+        "justifyContent": "center",
+        "alignItems": "center",
+        "position": "relative",
+        "width": "100%",
+        "minHeight": "864px",
+        "padding": "32px 0px",
+        "color": "rgb(226, 226, 226)",
+        "opacity": "1",
+        "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "borderColor": "rgb(226, 226, 226)",
+        "objectFit": "fill"
+       },
+       "kids": [
+        {
+         "t": "div",
+         "c": "flip-frame",
+         "box": {
+          "w": 0,
+          "h": 0,
+          "x": 0,
+          "y": 0
+         },
+         "st": {
+          "display": "block",
+          "flexDirection": "row",
+          "position": "relative",
+          "width": "608px",
+          "maxWidth": "1400px",
+          "padding": "0px 64px",
+          "color": "rgb(226, 226, 226)",
+          "opacity": "1",
+          "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "borderColor": "rgb(226, 226, 226)",
+          "objectFit": "fill"
+         },
+         "kids": [
+          {
+           "t": "div",
+           "c": "flip-book",
+           "box": {
+            "w": 0,
+            "h": 0,
+            "x": 0,
+            "y": 0
+           },
+           "st": {
+            "display": "block",
+            "flexDirection": "row",
+            "position": "relative",
+            "width": "100%",
+            "color": "rgb(226, 226, 226)",
+            "opacity": "1",
+            "filter": "drop-shadow(rgba(0, 0, 0, 0.75) 0px 35px 55px)",
+            "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "24px",
+            "borderColor": "rgb(226, 226, 226)",
+            "objectFit": "fill"
+           },
+           "kids": [
+            {
+             "t": "div",
+             "c": "flip-book__inner",
+             "box": {
+              "w": 0,
+              "h": 0,
+              "x": 0,
+              "y": 0
+             },
+             "st": {
+              "display": "block",
+              "flexDirection": "row",
+              "position": "absolute",
+              "width": "100%",
+              "height": "800px",
+              "color": "rgb(226, 226, 226)",
+              "opacity": "1",
+              "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "borderColor": "rgb(226, 226, 226)",
+              "boxShadow": "rgba(0, 0, 0, 0.7) 0px 40px 80px 0px",
+              "objectFit": "fill"
+             }
+            }
+           ]
+          },
+          {
+           "t": "button",
+           "c": "flip-arrow flip-arrow--prev",
+           "box": {
+            "w": 0,
+            "h": 0,
+            "x": 0,
+            "y": 0
+           },
+           "st": {
+            "display": "flex",
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "position": "absolute",
+            "zIndex": "50",
+            "width": "48px",
+            "height": "48px",
+            "color": "rgb(191, 149, 63)",
+            "backgroundColor": "rgba(191, 149, 63, 0.1)",
+            "opacity": "0.2",
+            "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "24px",
+            "textAlign": "center",
+            "borderRadius": "12px",
+            "borderTopWidth": "1px",
+            "borderColor": "rgba(191, 149, 63, 0.3)",
+            "boxShadow": "rgba(0, 0, 0, 0.4) 0px 10px 15px -3px",
+            "objectFit": "fill"
+           },
+           "kids": [
+            {
+             "t": "span",
+             "c": "icon",
+             "box": {
+              "w": 0,
+              "h": 0,
+              "x": 0,
+              "y": 0
+             },
+             "txt": "chevron_left",
+             "st": {
+              "display": "block",
+              "flexDirection": "row",
+              "color": "rgb(191, 149, 63)",
+              "opacity": "1",
+              "fontFamily": "\"Material Symbols Outlined\"",
+              "fontSize": "24px",
+              "fontWeight": "400",
+              "lineHeight": "32px",
+              "textAlign": "center",
+              "borderColor": "rgb(191, 149, 63)",
+              "objectFit": "fill"
+             }
+            }
+           ]
+          },
+          {
+           "t": "button",
+           "c": "flip-arrow flip-arrow--next",
+           "box": {
+            "w": 0,
+            "h": 0,
+            "x": 0,
+            "y": 0
+           },
+           "st": {
+            "display": "flex",
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "position": "absolute",
+            "zIndex": "50",
+            "width": "48px",
+            "height": "48px",
+            "color": "rgb(191, 149, 63)",
+            "backgroundColor": "rgba(191, 149, 63, 0.1)",
+            "opacity": "1",
+            "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "24px",
+            "textAlign": "center",
+            "borderRadius": "12px",
+            "borderTopWidth": "1px",
+            "borderColor": "rgba(191, 149, 63, 0.3)",
+            "boxShadow": "rgba(0, 0, 0, 0.4) 0px 10px 15px -3px",
+            "objectFit": "fill"
+           },
+           "kids": [
+            {
+             "t": "span",
+             "c": "icon",
+             "box": {
+              "w": 0,
+              "h": 0,
+              "x": 0,
+              "y": 0
+             },
+             "txt": "chevron_right",
+             "st": {
+              "display": "block",
+              "flexDirection": "row",
+              "color": "rgb(191, 149, 63)",
+              "opacity": "1",
+              "fontFamily": "\"Material Symbols Outlined\"",
+              "fontSize": "24px",
+              "fontWeight": "400",
+              "lineHeight": "32px",
+              "textAlign": "center",
+              "borderColor": "rgb(191, 149, 63)",
+              "objectFit": "fill"
+             }
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "t": "div",
+         "c": "flip-bar",
+         "box": {
+          "w": 0,
+          "h": 0,
+          "x": 0,
+          "y": 0
+         },
+         "st": {
+          "display": "flex",
+          "flexDirection": "row",
+          "alignItems": "center",
+          "gap": "12px",
+          "margin": "24px 0px 0px",
+          "color": "rgb(226, 226, 226)",
+          "opacity": "1",
+          "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "borderColor": "rgb(226, 226, 226)",
+          "objectFit": "fill"
+         },
+         "kids": [
+          {
+           "t": "button",
+           "c": "flip-step",
+           "box": {
+            "w": 0,
+            "h": 0,
+            "x": 0,
+            "y": 0
+           },
+           "txt": "Trước",
+           "st": {
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "gap": "6px",
+            "padding": "6px 12px",
+            "color": "rgba(191, 149, 63, 0.6)",
+            "opacity": "0.2",
+            "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+            "fontSize": "11px",
+            "fontWeight": "600",
+            "lineHeight": "16.5px",
+            "letterSpacing": "1.1px",
+            "textTransform": "uppercase",
+            "textAlign": "center",
+            "borderColor": "rgba(191, 149, 63, 0.6)",
+            "objectFit": "fill"
+           },
+           "kids": [
+            {
+             "t": "span",
+             "c": "icon",
+             "box": {
+              "w": 0,
+              "h": 0,
+              "x": 0,
+              "y": 0
+             },
+             "txt": "arrow_back",
+             "st": {
+              "display": "block",
+              "flexDirection": "row",
+              "color": "rgba(191, 149, 63, 0.6)",
+              "opacity": "1",
+              "fontFamily": "\"Material Symbols Outlined\"",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "20px",
+              "textAlign": "center",
+              "borderColor": "rgba(191, 149, 63, 0.6)",
+              "objectFit": "fill"
+             }
+            }
+           ]
+          },
+          {
+           "t": "div",
+           "c": "flip-dots",
+           "box": {
+            "w": 0,
+            "h": 0,
+            "x": 0,
+            "y": 0
+           },
+           "st": {
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "gap": "6px",
+            "padding": "4px 12px",
+            "color": "rgb(226, 226, 226)",
+            "opacity": "1",
+            "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "24px",
+            "borderRadius": "2px",
+            "borderTopWidth": "1px",
+            "borderColor": "rgba(191, 149, 63, 0.2)",
+            "objectFit": "fill"
+           },
+           "kids": [
+            {
+             "t": "button",
+             "c": "is-current",
+             "box": {
+              "w": 0,
+              "h": 0,
+              "x": 0,
+              "y": 0
+             },
+             "st": {
+              "display": "block",
+              "flexDirection": "row",
+              "width": "6px",
+              "height": "6px",
+              "color": "rgb(226, 226, 226)",
+              "backgroundColor": "rgb(191, 149, 63)",
+              "opacity": "1",
+              "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "textAlign": "center",
+              "borderRadius": "12px",
+              "borderColor": "rgb(226, 226, 226)",
+              "objectFit": "fill"
+             }
+            },
+            {
+             "t": "button",
+             "c": "",
+             "box": {
+              "w": 0,
+              "h": 0,
+              "x": 0,
+              "y": 0
+             },
+             "st": {
+              "display": "block",
+              "flexDirection": "row",
+              "width": "6px",
+              "height": "6px",
+              "color": "rgb(226, 226, 226)",
+              "backgroundColor": "rgba(191, 149, 63, 0.2)",
+              "opacity": "1",
+              "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "textAlign": "center",
+              "borderRadius": "12px",
+              "borderColor": "rgb(226, 226, 226)",
+              "objectFit": "fill"
+             }
+            },
+            {
+             "t": "button",
+             "c": "",
+             "box": {
+              "w": 0,
+              "h": 0,
+              "x": 0,
+              "y": 0
+             },
+             "st": {
+              "display": "block",
+              "flexDirection": "row",
+              "width": "6px",
+              "height": "6px",
+              "color": "rgb(226, 226, 226)",
+              "backgroundColor": "rgba(191, 149, 63, 0.2)",
+              "opacity": "1",
+              "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "textAlign": "center",
+              "borderRadius": "12px",
+              "borderColor": "rgb(226, 226, 226)",
+              "objectFit": "fill"
+             }
+            },
+            {
+             "t": "button",
+             "c": "",
+             "box": {
+              "w": 0,
+              "h": 0,
+              "x": 0,
+              "y": 0
+             },
+             "st": {
+              "display": "block",
+              "flexDirection": "row",
+              "width": "6px",
+              "height": "6px",
+              "color": "rgb(226, 226, 226)",
+              "backgroundColor": "rgba(191, 149, 63, 0.2)",
+              "opacity": "1",
+              "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "textAlign": "center",
+              "borderRadius": "12px",
+              "borderColor": "rgb(226, 226, 226)",
+              "objectFit": "fill"
+             }
+            },
+            {
+             "t": "button",
+             "c": "",
+             "box": {
+              "w": 0,
+              "h": 0,
+              "x": 0,
+              "y": 0
+             },
+             "st": {
+              "display": "block",
+              "flexDirection": "row",
+              "width": "6px",
+              "height": "6px",
+              "color": "rgb(226, 226, 226)",
+              "backgroundColor": "rgba(191, 149, 63, 0.2)",
+              "opacity": "1",
+              "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "textAlign": "center",
+              "borderRadius": "12px",
+              "borderColor": "rgb(226, 226, 226)",
+              "objectFit": "fill"
+             }
+            },
+            {
+             "t": "button",
+             "c": "",
+             "box": {
+              "w": 0,
+              "h": 0,
+              "x": 0,
+              "y": 0
+             },
+             "st": {
+              "display": "block",
+              "flexDirection": "row",
+              "width": "6px",
+              "height": "6px",
+              "color": "rgb(226, 226, 226)",
+              "backgroundColor": "rgba(191, 149, 63, 0.2)",
+              "opacity": "1",
+              "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "textAlign": "center",
+              "borderRadius": "12px",
+              "borderColor": "rgb(226, 226, 226)",
+              "objectFit": "fill"
+             }
+            },
+            {
+             "t": "button",
+             "c": "",
+             "box": {
+              "w": 0,
+              "h": 0,
+              "x": 0,
+              "y": 0
+             },
+             "st": {
+              "display": "block",
+              "flexDirection": "row",
+              "width": "6px",
+              "height": "6px",
+              "color": "rgb(226, 226, 226)",
+              "backgroundColor": "rgba(191, 149, 63, 0.2)",
+              "opacity": "1",
+              "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "textAlign": "center",
+              "borderRadius": "12px",
+              "borderColor": "rgb(226, 226, 226)",
+              "objectFit": "fill"
+             }
+            },
+            {
+             "t": "button",
+             "c": "",
+             "box": {
+              "w": 0,
+              "h": 0,
+              "x": 0,
+              "y": 0
+             },
+             "st": {
+              "display": "block",
+              "flexDirection": "row",
+              "width": "6px",
+              "height": "6px",
+              "color": "rgb(226, 226, 226)",
+              "backgroundColor": "rgba(191, 149, 63, 0.2)",
+              "opacity": "1",
+              "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "textAlign": "center",
+              "borderRadius": "12px",
+              "borderColor": "rgb(226, 226, 226)",
+              "objectFit": "fill"
+             }
+            },
+            {
+             "t": "button",
+             "c": "",
+             "box": {
+              "w": 0,
+              "h": 0,
+              "x": 0,
+              "y": 0
+             },
+             "st": {
+              "display": "block",
+              "flexDirection": "row",
+              "width": "6px",
+              "height": "6px",
+              "color": "rgb(226, 226, 226)",
+              "backgroundColor": "rgba(191, 149, 63, 0.2)",
+              "opacity": "1",
+              "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "textAlign": "center",
+              "borderRadius": "12px",
+              "borderColor": "rgb(226, 226, 226)",
+              "objectFit": "fill"
+             }
+            },
+            {
+             "t": "button",
+             "c": "",
+             "box": {
+              "w": 0,
+              "h": 0,
+              "x": 0,
+              "y": 0
+             },
+             "st": {
+              "display": "block",
+              "flexDirection": "row",
+              "width": "6px",
+              "height": "6px",
+              "color": "rgb(226, 226, 226)",
+              "backgroundColor": "rgba(191, 149, 63, 0.2)",
+              "opacity": "1",
+              "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "textAlign": "center",
+              "borderRadius": "12px",
+              "borderColor": "rgb(226, 226, 226)",
+              "objectFit": "fill"
+             }
+            },
+            {
+             "t": "button",
+             "c": "",
+             "box": {
+              "w": 0,
+              "h": 0,
+              "x": 0,
+              "y": 0
+             },
+             "st": {
+              "display": "block",
+              "flexDirection": "row",
+              "width": "6px",
+              "height": "6px",
+              "color": "rgb(226, 226, 226)",
+              "backgroundColor": "rgba(191, 149, 63, 0.2)",
+              "opacity": "1",
+              "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "textAlign": "center",
+              "borderRadius": "12px",
+              "borderColor": "rgb(226, 226, 226)",
+              "objectFit": "fill"
+             }
+            },
+            {
+             "t": "button",
+             "c": "",
+             "box": {
+              "w": 0,
+              "h": 0,
+              "x": 0,
+              "y": 0
+             },
+             "st": {
+              "display": "block",
+              "flexDirection": "row",
+              "width": "6px",
+              "height": "6px",
+              "color": "rgb(226, 226, 226)",
+              "backgroundColor": "rgba(191, 149, 63, 0.2)",
+              "opacity": "1",
+              "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "textAlign": "center",
+              "borderRadius": "12px",
+              "borderColor": "rgb(226, 226, 226)",
+              "objectFit": "fill"
+             }
+            },
+            {
+             "t": "button",
+             "c": "",
+             "box": {
+              "w": 0,
+              "h": 0,
+              "x": 0,
+              "y": 0
+             },
+             "st": {
+              "display": "block",
+              "flexDirection": "row",
+              "width": "6px",
+              "height": "6px",
+              "color": "rgb(226, 226, 226)",
+              "backgroundColor": "rgba(191, 149, 63, 0.2)",
+              "opacity": "1",
+              "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "textAlign": "center",
+              "borderRadius": "12px",
+              "borderColor": "rgb(226, 226, 226)",
+              "objectFit": "fill"
+             }
+            },
+            {
+             "t": "button",
+             "c": "",
+             "box": {
+              "w": 0,
+              "h": 0,
+              "x": 0,
+              "y": 0
+             },
+             "st": {
+              "display": "block",
+              "flexDirection": "row",
+              "width": "6px",
+              "height": "6px",
+              "color": "rgb(226, 226, 226)",
+              "backgroundColor": "rgba(191, 149, 63, 0.2)",
+              "opacity": "1",
+              "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "textAlign": "center",
+              "borderRadius": "12px",
+              "borderColor": "rgb(226, 226, 226)",
+              "objectFit": "fill"
+             }
+            }
+           ]
+          },
+          {
+           "t": "span",
+           "c": "flip-label",
+           "box": {
+            "w": 0,
+            "h": 0,
+            "x": 0,
+            "y": 0
+           },
+           "txt": "Bìa trước",
+           "st": {
+            "display": "block",
+            "flexDirection": "row",
+            "padding": "4px 12px",
+            "color": "rgba(191, 149, 63, 0.5)",
+            "opacity": "1",
+            "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+            "fontSize": "11px",
+            "fontWeight": "600",
+            "lineHeight": "16.5px",
+            "letterSpacing": "1.1px",
+            "textAlign": "center",
+            "borderRadius": "2px",
+            "borderTopWidth": "1px",
+            "borderColor": "rgba(191, 149, 63, 0.2)",
+            "objectFit": "fill"
+           },
+           "kids": []
+          },
+          {
+           "t": "button",
+           "c": "flip-step",
+           "box": {
+            "w": 0,
+            "h": 0,
+            "x": 0,
+            "y": 0
+           },
+           "txt": "Sau",
+           "st": {
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "gap": "6px",
+            "padding": "6px 12px",
+            "color": "rgba(191, 149, 63, 0.6)",
+            "opacity": "1",
+            "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+            "fontSize": "11px",
+            "fontWeight": "600",
+            "lineHeight": "16.5px",
+            "letterSpacing": "1.1px",
+            "textTransform": "uppercase",
+            "textAlign": "center",
+            "borderColor": "rgba(191, 149, 63, 0.6)",
+            "objectFit": "fill"
+           },
+           "kids": [
+            {
+             "t": "span",
+             "c": "icon",
+             "box": {
+              "w": 0,
+              "h": 0,
+              "x": 0,
+              "y": 0
+             },
+             "txt": "arrow_forward",
+             "st": {
+              "display": "block",
+              "flexDirection": "row",
+              "color": "rgba(191, 149, 63, 0.6)",
+              "opacity": "1",
+              "fontFamily": "\"Material Symbols Outlined\"",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "20px",
+              "textAlign": "center",
+              "borderColor": "rgba(191, 149, 63, 0.6)",
+              "objectFit": "fill"
+             }
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "t": "div",
+   "c": "menu__mobile",
+   "box": {
+    "w": 640,
+    "h": 962.2,
+    "x": 0,
+    "y": 1508
+   },
+   "st": {
+    "display": "block",
+    "flexDirection": "row",
+    "width": "640px",
+    "height": "962.203px",
+    "color": "rgb(226, 226, 226)",
+    "opacity": "1",
+    "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "lineHeight": "24px",
+    "borderColor": "rgb(226, 226, 226)",
+    "objectFit": "fill"
+   },
+   "kids": [
+    {
+     "t": "div",
+     "c": "menu-chips",
+     "box": {
+      "w": 640,
+      "h": 47.5,
+      "x": 0,
+      "y": 1508
+     },
+     "st": {
+      "display": "flex",
+      "flexDirection": "row",
+      "justifyContent": "flex-start",
+      "gap": "12px",
+      "width": "640px",
+      "height": "47.5px",
+      "padding": "0px 24px 12px",
+      "margin": "0px 0px 32px",
+      "color": "rgb(226, 226, 226)",
+      "opacity": "1",
+      "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "borderColor": "rgb(226, 226, 226) rgb(226, 226, 226) rgba(68, 71, 72, 0.1)",
+      "objectFit": "fill"
+     },
+     "kids": [
+      {
+       "t": "button",
+       "c": "menu-chip is-active",
+       "box": {
+        "w": 107.5,
+        "h": 34.5,
+        "x": 24,
+        "y": 1508
+       },
+       "txt": "Cà Phê Phin",
+       "st": {
+        "display": "block",
+        "flexDirection": "row",
+        "width": "107.547px",
+        "height": "34.5px",
+        "padding": "8px 16px",
+        "color": "rgb(255, 183, 123)",
+        "opacity": "1",
+        "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+        "fontSize": "11px",
+        "fontWeight": "400",
+        "lineHeight": "16.5px",
+        "letterSpacing": "0.55px",
+        "textTransform": "uppercase",
+        "textAlign": "center",
+        "borderRadius": "2px",
+        "borderTopWidth": "1px",
+        "borderColor": "rgb(255, 183, 123)",
+        "objectFit": "fill"
+       },
+       "kids": []
+      },
+      {
+       "t": "button",
+       "c": "menu-chip",
+       "box": {
+        "w": 123.7,
+        "h": 34.5,
+        "x": 144,
+        "y": 1508
+       },
+       "txt": "Trà Signature",
+       "st": {
+        "display": "block",
+        "flexDirection": "row",
+        "width": "123.672px",
+        "height": "34.5px",
+        "padding": "8px 16px",
+        "color": "rgb(196, 199, 199)",
+        "opacity": "1",
+        "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+        "fontSize": "11px",
+        "fontWeight": "400",
+        "lineHeight": "16.5px",
+        "letterSpacing": "0.55px",
+        "textTransform": "uppercase",
+        "textAlign": "center",
+        "borderRadius": "2px",
+        "borderTopWidth": "1px",
+        "borderColor": "rgba(68, 71, 72, 0.3)",
+        "objectFit": "fill"
+       },
+       "kids": []
+      },
+      {
+       "t": "button",
+       "c": "menu-chip",
+       "box": {
+        "w": 131.2,
+        "h": 34.5,
+        "x": 279,
+        "y": 1508
+       },
+       "txt": "Freeze & Đá Xay",
+       "st": {
+        "display": "block",
+        "flexDirection": "row",
+        "width": "131.156px",
+        "height": "34.5px",
+        "padding": "8px 16px",
+        "color": "rgb(196, 199, 199)",
+        "opacity": "1",
+        "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+        "fontSize": "11px",
+        "fontWeight": "400",
+        "lineHeight": "16.5px",
+        "letterSpacing": "0.55px",
+        "textTransform": "uppercase",
+        "textAlign": "center",
+        "borderRadius": "2px",
+        "borderTopWidth": "1px",
+        "borderColor": "rgba(68, 71, 72, 0.3)",
+        "objectFit": "fill"
+       },
+       "kids": []
+      },
+      {
+       "t": "button",
+       "c": "menu-chip",
+       "box": {
+        "w": 141.4,
+        "h": 34.5,
+        "x": 422,
+        "y": 1508
+       },
+       "txt": "Specialty Cà Phê",
+       "st": {
+        "display": "block",
+        "flexDirection": "row",
+        "width": "141.375px",
+        "height": "34.5px",
+        "padding": "8px 16px",
+        "color": "rgb(196, 199, 199)",
+        "opacity": "1",
+        "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+        "fontSize": "11px",
+        "fontWeight": "400",
+        "lineHeight": "16.5px",
+        "letterSpacing": "0.55px",
+        "textTransform": "uppercase",
+        "textAlign": "center",
+        "borderRadius": "2px",
+        "borderTopWidth": "1px",
+        "borderColor": "rgba(68, 71, 72, 0.3)",
+        "objectFit": "fill"
+       },
+       "kids": []
+      },
+      {
+       "t": "button",
+       "c": "menu-chip",
+       "box": {
+        "w": 161.4,
+        "h": 34.5,
+        "x": 576,
+        "y": 1508
+       },
+       "txt": "Bánh & Tráng Miệng",
+       "st": {
+        "display": "block",
+        "flexDirection": "row",
+        "width": "161.438px",
+        "height": "34.5px",
+        "padding": "8px 16px",
+        "color": "rgb(196, 199, 199)",
+        "opacity": "1",
+        "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+        "fontSize": "11px",
+        "fontWeight": "400",
+        "lineHeight": "16.5px",
+        "letterSpacing": "0.55px",
+        "textTransform": "uppercase",
+        "textAlign": "center",
+        "borderRadius": "2px",
+        "borderTopWidth": "1px",
+        "borderColor": "rgba(68, 71, 72, 0.3)",
+        "objectFit": "fill"
+       },
+       "kids": []
+      },
+      {
+       "t": "button",
+       "c": "menu-chip",
+       "box": {
+        "w": 156.2,
+        "h": 34.5,
+        "x": 749,
+        "y": 1508
+       },
+       "txt": "Combo Độc Quyền",
+       "st": {
+        "display": "block",
+        "flexDirection": "row",
+        "width": "156.172px",
+        "height": "34.5px",
+        "padding": "8px 16px",
+        "color": "rgb(196, 199, 199)",
+        "opacity": "1",
+        "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+        "fontSize": "11px",
+        "fontWeight": "400",
+        "lineHeight": "16.5px",
+        "letterSpacing": "0.55px",
+        "textTransform": "uppercase",
+        "textAlign": "center",
+        "borderRadius": "2px",
+        "borderTopWidth": "1px",
+        "borderColor": "rgba(68, 71, 72, 0.3)",
+        "objectFit": "fill"
+       },
+       "kids": []
+      }
+     ]
+    },
+    {
+     "t": "div",
+     "c": "menu-panels",
+     "box": {
+      "w": 640,
+      "h": 882.7,
+      "x": 0,
+      "y": 1588
+     },
+     "st": {
+      "display": "block",
+      "flexDirection": "row",
+      "width": "640px",
+      "height": "882.703px",
+      "padding": "0px 24px",
+      "color": "rgb(226, 226, 226)",
+      "opacity": "1",
+      "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "borderColor": "rgb(226, 226, 226)",
+      "objectFit": "fill"
+     },
+     "kids": [
+      {
+       "t": "div",
+       "c": "menu-panel is-active",
+       "box": {
+        "w": 592,
+        "h": 882.7,
+        "x": 24,
+        "y": 1588
+       },
+       "st": {
+        "display": "block",
+        "flexDirection": "row",
+        "width": "592px",
+        "height": "882.703px",
+        "color": "rgb(226, 226, 226)",
+        "opacity": "1",
+        "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "borderColor": "rgb(226, 226, 226)",
+        "objectFit": "fill"
+       },
+       "kids": [
+        {
+         "t": "div",
+         "c": "menu-panel__card",
+         "box": {
+          "w": 592,
+          "h": 882.7,
+          "x": 24,
+          "y": 1588
+         },
+         "st": {
+          "display": "block",
+          "flexDirection": "row",
+          "width": "592px",
+          "height": "882.703px",
+          "padding": "24px",
+          "color": "rgb(226, 226, 226)",
+          "backgroundColor": "rgba(26, 26, 26, 0.7)",
+          "opacity": "1",
+          "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "borderRadius": "8px",
+          "borderTopWidth": "1px",
+          "borderColor": "rgba(255, 183, 123, 0.15)",
+          "objectFit": "fill"
+         },
+         "kids": [
+          {
+           "t": "p",
+           "c": "menu-panel__text",
+           "box": {
+            "w": 542,
+            "h": 42,
+            "x": 49,
+            "y": 1613
+           },
+           "txt": "Nền tảng của văn hóa cà phê Việt Nam, được tinh chế phù hợp với khẩu vị hiện đại. Trải nghiệm những giọt cà phê đậm đà chậm rãi rơi bên bảng giá giao dịch sôi động.",
+           "st": {
+            "display": "block",
+            "flexDirection": "row",
+            "width": "542px",
+            "height": "42px",
+            "color": "rgb(196, 199, 199)",
+            "opacity": "1",
+            "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "21px",
+            "borderColor": "rgb(196, 199, 199)",
+            "objectFit": "fill"
+           },
+           "kids": []
+          },
+          {
+           "t": "div",
+           "c": "menu-panel__figure",
+           "box": {
+            "w": 542,
+            "h": 338.8,
+            "x": 49,
+            "y": 1679
+           },
+           "st": {
+            "display": "block",
+            "flexDirection": "row",
+            "width": "542px",
+            "height": "338.75px",
+            "margin": "24px 0px 0px",
+            "color": "rgb(226, 226, 226)",
+            "opacity": "1",
+            "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "24px",
+            "borderRadius": "6px",
+            "borderTopWidth": "1px",
+            "borderColor": "rgba(68, 71, 72, 0.2)",
+            "objectFit": "fill",
+            "overflow": "hidden"
+           },
+           "kids": [
+            {
+             "t": "img",
+             "c": "",
+             "box": {
+              "w": 540,
+              "h": 336.8,
+              "x": 50,
+              "y": 1680
+             },
+             "st": {
+              "display": "block",
+              "flexDirection": "row",
+              "width": "540px",
+              "height": "336.75px",
+              "maxWidth": "100%",
+              "color": "rgb(226, 226, 226)",
+              "opacity": "1",
+              "filter": "grayscale(0.2) brightness(0.9)",
+              "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "borderColor": "rgb(226, 226, 226)",
+              "objectFit": "cover",
+              "overflow": "clip"
+             }
+            }
+           ]
+          },
+          {
+           "t": "div",
+           "c": "menu-panel__list",
+           "box": {
+            "w": 542,
+            "h": 404,
+            "x": 49,
+            "y": 2041
+           },
+           "st": {
+            "display": "block",
+            "flexDirection": "row",
+            "width": "542px",
+            "height": "403.953px",
+            "padding": "16px 0px 0px",
+            "margin": "24px 0px 0px",
+            "color": "rgb(226, 226, 226)",
+            "opacity": "1",
+            "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "24px",
+            "borderColor": "rgb(226, 226, 226)",
+            "objectFit": "fill"
+           },
+           "kids": [
+            {
+             "t": "div",
+             "c": "dish",
+             "box": {
+              "w": 542,
+              "h": 95.8,
+              "x": 49,
+              "y": 2057
+             },
+             "st": {
+              "display": "flex",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "alignItems": "center",
+              "width": "542px",
+              "height": "95.7812px",
+              "padding": "0px 0px 16px",
+              "color": "rgb(226, 226, 226)",
+              "opacity": "1",
+              "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "borderColor": "rgb(226, 226, 226) rgb(226, 226, 226) rgba(68, 71, 72, 0.1)",
+              "objectFit": "fill"
+             }
+            },
+            {
+             "t": "div",
+             "c": "dish",
+             "box": {
+              "w": 542,
+              "h": 73.4,
+              "x": 49,
+              "y": 2177
+             },
+             "st": {
+              "display": "flex",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "alignItems": "center",
+              "width": "542px",
+              "height": "73.3906px",
+              "padding": "0px 0px 16px",
+              "margin": "24px 0px 0px",
+              "color": "rgb(226, 226, 226)",
+              "opacity": "1",
+              "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "borderColor": "rgb(226, 226, 226) rgb(226, 226, 226) rgba(68, 71, 72, 0.1)",
+              "objectFit": "fill"
+             }
+            },
+            {
+             "t": "div",
+             "c": "dish",
+             "box": {
+              "w": 542,
+              "h": 73.4,
+              "x": 49,
+              "y": 2274
+             },
+             "st": {
+              "display": "flex",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "alignItems": "center",
+              "width": "542px",
+              "height": "73.3906px",
+              "padding": "0px 0px 16px",
+              "margin": "24px 0px 0px",
+              "color": "rgb(226, 226, 226)",
+              "opacity": "1",
+              "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "borderColor": "rgb(226, 226, 226) rgb(226, 226, 226) rgba(68, 71, 72, 0.1)",
+              "objectFit": "fill"
+             }
+            },
+            {
+             "t": "div",
+             "c": "dish",
+             "box": {
+              "w": 542,
+              "h": 73.4,
+              "x": 49,
+              "y": 2372
+             },
+             "st": {
+              "display": "flex",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "alignItems": "center",
+              "width": "542px",
+              "height": "73.3906px",
+              "padding": "0px 0px 16px",
+              "margin": "24px 0px 0px",
+              "color": "rgb(226, 226, 226)",
+              "opacity": "1",
+              "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "borderColor": "rgb(226, 226, 226) rgb(226, 226, 226) rgba(68, 71, 72, 0.1)",
+              "objectFit": "fill"
+             }
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "t": "div",
+       "c": "menu-panel",
+       "box": {
+        "w": 0,
+        "h": 0,
+        "x": 0,
+        "y": 0
+       },
+       "st": {
+        "flexDirection": "row",
+        "color": "rgb(226, 226, 226)",
+        "opacity": "1",
+        "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "borderColor": "rgb(226, 226, 226)",
+        "objectFit": "fill"
+       },
+       "kids": [
+        {
+         "t": "div",
+         "c": "menu-panel__card",
+         "box": {
+          "w": 0,
+          "h": 0,
+          "x": 0,
+          "y": 0
+         },
+         "st": {
+          "display": "block",
+          "flexDirection": "row",
+          "padding": "24px",
+          "color": "rgb(226, 226, 226)",
+          "backgroundColor": "rgba(26, 26, 26, 0.7)",
+          "opacity": "1",
+          "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "borderRadius": "8px",
+          "borderTopWidth": "1px",
+          "borderColor": "rgba(255, 183, 123, 0.15)",
+          "objectFit": "fill"
+         },
+         "kids": [
+          {
+           "t": "p",
+           "c": "menu-panel__text",
+           "box": {
+            "w": 0,
+            "h": 0,
+            "x": 0,
+            "y": 0
+           },
+           "txt": "Sự kết hợp đầy chất thơ giữa những lá trà cổ thụ Tây Bắc và các loại thảo mộc quý hiếm. Mang lại cảm giác thanh mát, cân bằng tâm trí trước mọi biến động.",
+           "st": {
+            "display": "block",
+            "flexDirection": "row",
+            "color": "rgb(196, 199, 199)",
+            "opacity": "1",
+            "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "21px",
+            "borderColor": "rgb(196, 199, 199)",
+            "objectFit": "fill"
+           },
+           "kids": []
+          },
+          {
+           "t": "div",
+           "c": "menu-panel__figure",
+           "box": {
+            "w": 0,
+            "h": 0,
+            "x": 0,
+            "y": 0
+           },
+           "st": {
+            "display": "block",
+            "flexDirection": "row",
+            "width": "100%",
+            "margin": "24px 0px 0px",
+            "color": "rgb(226, 226, 226)",
+            "opacity": "1",
+            "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "24px",
+            "borderRadius": "6px",
+            "borderTopWidth": "1px",
+            "borderColor": "rgba(68, 71, 72, 0.2)",
+            "objectFit": "fill",
+            "overflow": "hidden"
+           },
+           "kids": [
+            {
+             "t": "img",
+             "c": "",
+             "box": {
+              "w": 0,
+              "h": 0,
+              "x": 0,
+              "y": 0
+             },
+             "st": {
+              "display": "block",
+              "flexDirection": "row",
+              "width": "100%",
+              "height": "100%",
+              "maxWidth": "100%",
+              "color": "rgb(226, 226, 226)",
+              "opacity": "1",
+              "filter": "grayscale(0.2) brightness(0.9)",
+              "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "borderColor": "rgb(226, 226, 226)",
+              "objectFit": "cover",
+              "overflow": "clip"
+             }
+            }
+           ]
+          },
+          {
+           "t": "div",
+           "c": "menu-panel__list",
+           "box": {
+            "w": 0,
+            "h": 0,
+            "x": 0,
+            "y": 0
+           },
+           "st": {
+            "display": "block",
+            "flexDirection": "row",
+            "padding": "16px 0px 0px",
+            "margin": "24px 0px 0px",
+            "color": "rgb(226, 226, 226)",
+            "opacity": "1",
+            "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "24px",
+            "borderColor": "rgb(226, 226, 226)",
+            "objectFit": "fill"
+           },
+           "kids": [
+            {
+             "t": "div",
+             "c": "dish",
+             "box": {
+              "w": 0,
+              "h": 0,
+              "x": 0,
+              "y": 0
+             },
+             "st": {
+              "display": "flex",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "alignItems": "center",
+              "padding": "0px 0px 16px",
+              "color": "rgb(226, 226, 226)",
+              "opacity": "1",
+              "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "borderColor": "rgb(226, 226, 226) rgb(226, 226, 226) rgba(68, 71, 72, 0.1)",
+              "objectFit": "fill"
+             }
+            },
+            {
+             "t": "div",
+             "c": "dish",
+             "box": {
+              "w": 0,
+              "h": 0,
+              "x": 0,
+              "y": 0
+             },
+             "st": {
+              "display": "flex",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "alignItems": "center",
+              "padding": "0px 0px 16px",
+              "margin": "24px 0px 0px",
+              "color": "rgb(226, 226, 226)",
+              "opacity": "1",
+              "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "borderColor": "rgb(226, 226, 226) rgb(226, 226, 226) rgba(68, 71, 72, 0.1)",
+              "objectFit": "fill"
+             }
+            },
+            {
+             "t": "div",
+             "c": "dish",
+             "box": {
+              "w": 0,
+              "h": 0,
+              "x": 0,
+              "y": 0
+             },
+             "st": {
+              "display": "flex",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "alignItems": "center",
+              "padding": "0px 0px 16px",
+              "margin": "24px 0px 0px",
+              "color": "rgb(226, 226, 226)",
+              "opacity": "1",
+              "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "borderColor": "rgb(226, 226, 226) rgb(226, 226, 226) rgba(68, 71, 72, 0.1)",
+              "objectFit": "fill"
+             }
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "t": "div",
+       "c": "menu-panel",
+       "box": {
+        "w": 0,
+        "h": 0,
+        "x": 0,
+        "y": 0
+       },
+       "st": {
+        "flexDirection": "row",
+        "color": "rgb(226, 226, 226)",
+        "opacity": "1",
+        "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "borderColor": "rgb(226, 226, 226)",
+        "objectFit": "fill"
+       },
+       "kids": [
+        {
+         "t": "div",
+         "c": "menu-panel__card",
+         "box": {
+          "w": 0,
+          "h": 0,
+          "x": 0,
+          "y": 0
+         },
+         "st": {
+          "display": "block",
+          "flexDirection": "row",
+          "padding": "24px",
+          "color": "rgb(226, 226, 226)",
+          "backgroundColor": "rgba(26, 26, 26, 0.7)",
+          "opacity": "1",
+          "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "borderRadius": "8px",
+          "borderTopWidth": "1px",
+          "borderColor": "rgba(255, 183, 123, 0.15)",
+          "objectFit": "fill"
+         },
+         "kids": [
+          {
+           "t": "p",
+           "c": "menu-panel__text",
+           "box": {
+            "w": 0,
+            "h": 0,
+            "x": 0,
+            "y": 0
+           },
+           "txt": "Món tuyết đá xay bùng nổ hương vị mát lạnh, đập tan áp lực công việc. Lựa chọn tuyệt vời để lấy lại tinh thần và tái khởi động tư duy.",
+           "st": {
+            "display": "block",
+            "flexDirection": "row",
+            "color": "rgb(196, 199, 199)",
+            "opacity": "1",
+            "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "21px",
+            "borderColor": "rgb(196, 199, 199)",
+            "objectFit": "fill"
+           },
+           "kids": []
+          },
+          {
+           "t": "div",
+           "c": "menu-panel__figure",
+           "box": {
+            "w": 0,
+            "h": 0,
+            "x": 0,
+            "y": 0
+           },
+           "st": {
+            "display": "block",
+            "flexDirection": "row",
+            "width": "100%",
+            "margin": "24px 0px 0px",
+            "color": "rgb(226, 226, 226)",
+            "opacity": "1",
+            "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "24px",
+            "borderRadius": "6px",
+            "borderTopWidth": "1px",
+            "borderColor": "rgba(68, 71, 72, 0.2)",
+            "objectFit": "fill",
+            "overflow": "hidden"
+           },
+           "kids": [
+            {
+             "t": "img",
+             "c": "",
+             "box": {
+              "w": 0,
+              "h": 0,
+              "x": 0,
+              "y": 0
+             },
+             "st": {
+              "display": "block",
+              "flexDirection": "row",
+              "width": "100%",
+              "height": "100%",
+              "maxWidth": "100%",
+              "color": "rgb(226, 226, 226)",
+              "opacity": "1",
+              "filter": "grayscale(0.2) brightness(0.9)",
+              "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "borderColor": "rgb(226, 226, 226)",
+              "objectFit": "cover",
+              "overflow": "clip"
+             }
+            }
+           ]
+          },
+          {
+           "t": "div",
+           "c": "menu-panel__list",
+           "box": {
+            "w": 0,
+            "h": 0,
+            "x": 0,
+            "y": 0
+           },
+           "st": {
+            "display": "block",
+            "flexDirection": "row",
+            "padding": "16px 0px 0px",
+            "margin": "24px 0px 0px",
+            "color": "rgb(226, 226, 226)",
+            "opacity": "1",
+            "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "24px",
+            "borderColor": "rgb(226, 226, 226)",
+            "objectFit": "fill"
+           },
+           "kids": [
+            {
+             "t": "div",
+             "c": "dish",
+             "box": {
+              "w": 0,
+              "h": 0,
+              "x": 0,
+              "y": 0
+             },
+             "st": {
+              "display": "flex",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "alignItems": "center",
+              "padding": "0px 0px 16px",
+              "color": "rgb(226, 226, 226)",
+              "opacity": "1",
+              "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "borderColor": "rgb(226, 226, 226) rgb(226, 226, 226) rgba(68, 71, 72, 0.1)",
+              "objectFit": "fill"
+             }
+            },
+            {
+             "t": "div",
+             "c": "dish",
+             "box": {
+              "w": 0,
+              "h": 0,
+              "x": 0,
+              "y": 0
+             },
+             "st": {
+              "display": "flex",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "alignItems": "center",
+              "padding": "0px 0px 16px",
+              "margin": "24px 0px 0px",
+              "color": "rgb(226, 226, 226)",
+              "opacity": "1",
+              "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "borderColor": "rgb(226, 226, 226) rgb(226, 226, 226) rgba(68, 71, 72, 0.1)",
+              "objectFit": "fill"
+             }
+            },
+            {
+             "t": "div",
+             "c": "dish",
+             "box": {
+              "w": 0,
+              "h": 0,
+              "x": 0,
+              "y": 0
+             },
+             "st": {
+              "display": "flex",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "alignItems": "center",
+              "padding": "0px 0px 16px",
+              "margin": "24px 0px 0px",
+              "color": "rgb(226, 226, 226)",
+              "opacity": "1",
+              "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "borderColor": "rgb(226, 226, 226) rgb(226, 226, 226) rgba(68, 71, 72, 0.1)",
+              "objectFit": "fill"
+             }
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "t": "div",
+       "c": "menu-panel",
+       "box": {
+        "w": 0,
+        "h": 0,
+        "x": 0,
+        "y": 0
+       },
+       "st": {
+        "flexDirection": "row",
+        "color": "rgb(226, 226, 226)",
+        "opacity": "1",
+        "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "borderColor": "rgb(226, 226, 226)",
+        "objectFit": "fill"
+       },
+       "kids": [
+        {
+         "t": "div",
+         "c": "menu-panel__card",
+         "box": {
+          "w": 0,
+          "h": 0,
+          "x": 0,
+          "y": 0
+         },
+         "st": {
+          "display": "block",
+          "flexDirection": "row",
+          "padding": "24px",
+          "color": "rgb(226, 226, 226)",
+          "backgroundColor": "rgba(26, 26, 26, 0.7)",
+          "opacity": "1",
+          "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "borderRadius": "8px",
+          "borderTopWidth": "1px",
+          "borderColor": "rgba(255, 183, 123, 0.15)",
+          "objectFit": "fill"
+         },
+         "kids": [
+          {
+           "t": "p",
+           "c": "menu-panel__text",
+           "box": {
+            "w": 0,
+            "h": 0,
+            "x": 0,
+            "y": 0
+           },
+           "txt": "Những hạt cà phê Single-origin đạt điểm đánh giá cao trên thế giới, được pha chế bằng các phương pháp thủ công tỉ mỉ để giữ trọn vẹn hương hoa cỏ thanh tao.",
+           "st": {
+            "display": "block",
+            "flexDirection": "row",
+            "color": "rgb(196, 199, 199)",
+            "opacity": "1",
+            "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "21px",
+            "borderColor": "rgb(196, 199, 199)",
+            "objectFit": "fill"
+           },
+           "kids": []
+          },
+          {
+           "t": "div",
+           "c": "menu-panel__figure",
+           "box": {
+            "w": 0,
+            "h": 0,
+            "x": 0,
+            "y": 0
+           },
+           "st": {
+            "display": "block",
+            "flexDirection": "row",
+            "width": "100%",
+            "margin": "24px 0px 0px",
+            "color": "rgb(226, 226, 226)",
+            "opacity": "1",
+            "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "24px",
+            "borderRadius": "6px",
+            "borderTopWidth": "1px",
+            "borderColor": "rgba(68, 71, 72, 0.2)",
+            "objectFit": "fill",
+            "overflow": "hidden"
+           },
+           "kids": [
+            {
+             "t": "img",
+             "c": "",
+             "box": {
+              "w": 0,
+              "h": 0,
+              "x": 0,
+              "y": 0
+             },
+             "st": {
+              "display": "block",
+              "flexDirection": "row",
+              "width": "100%",
+              "height": "100%",
+              "maxWidth": "100%",
+              "color": "rgb(226, 226, 226)",
+              "opacity": "1",
+              "filter": "grayscale(0.2) brightness(0.9)",
+              "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "borderColor": "rgb(226, 226, 226)",
+              "objectFit": "cover",
+              "overflow": "clip"
+             }
+            }
+           ]
+          },
+          {
+           "t": "div",
+           "c": "menu-panel__list",
+           "box": {
+            "w": 0,
+            "h": 0,
+            "x": 0,
+            "y": 0
+           },
+           "st": {
+            "display": "block",
+            "flexDirection": "row",
+            "padding": "16px 0px 0px",
+            "margin": "24px 0px 0px",
+            "color": "rgb(226, 226, 226)",
+            "opacity": "1",
+            "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "24px",
+            "borderColor": "rgb(226, 226, 226)",
+            "objectFit": "fill"
+           },
+           "kids": [
+            {
+             "t": "div",
+             "c": "dish",
+             "box": {
+              "w": 0,
+              "h": 0,
+              "x": 0,
+              "y": 0
+             },
+             "st": {
+              "display": "flex",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "alignItems": "center",
+              "padding": "0px 0px 16px",
+              "color": "rgb(226, 226, 226)",
+              "opacity": "1",
+              "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "borderColor": "rgb(226, 226, 226) rgb(226, 226, 226) rgba(68, 71, 72, 0.1)",
+              "objectFit": "fill"
+             }
+            },
+            {
+             "t": "div",
+             "c": "dish",
+             "box": {
+              "w": 0,
+              "h": 0,
+              "x": 0,
+              "y": 0
+             },
+             "st": {
+              "display": "flex",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "alignItems": "center",
+              "padding": "0px 0px 16px",
+              "margin": "24px 0px 0px",
+              "color": "rgb(226, 226, 226)",
+              "opacity": "1",
+              "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "borderColor": "rgb(226, 226, 226) rgb(226, 226, 226) rgba(68, 71, 72, 0.1)",
+              "objectFit": "fill"
+             }
+            },
+            {
+             "t": "div",
+             "c": "dish",
+             "box": {
+              "w": 0,
+              "h": 0,
+              "x": 0,
+              "y": 0
+             },
+             "st": {
+              "display": "flex",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "alignItems": "center",
+              "padding": "0px 0px 16px",
+              "margin": "24px 0px 0px",
+              "color": "rgb(226, 226, 226)",
+              "opacity": "1",
+              "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "borderColor": "rgb(226, 226, 226) rgb(226, 226, 226) rgba(68, 71, 72, 0.1)",
+              "objectFit": "fill"
+             }
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "t": "div",
+       "c": "menu-panel",
+       "box": {
+        "w": 0,
+        "h": 0,
+        "x": 0,
+        "y": 0
+       },
+       "st": {
+        "flexDirection": "row",
+        "color": "rgb(226, 226, 226)",
+        "opacity": "1",
+        "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "borderColor": "rgb(226, 226, 226)",
+        "objectFit": "fill"
+       },
+       "kids": [
+        {
+         "t": "div",
+         "c": "menu-panel__card",
+         "box": {
+          "w": 0,
+          "h": 0,
+          "x": 0,
+          "y": 0
+         },
+         "st": {
+          "display": "block",
+          "flexDirection": "row",
+          "padding": "24px",
+          "color": "rgb(226, 226, 226)",
+          "backgroundColor": "rgba(26, 26, 26, 0.7)",
+          "opacity": "1",
+          "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "borderRadius": "8px",
+          "borderTopWidth": "1px",
+          "borderColor": "rgba(255, 183, 123, 0.15)",
+          "objectFit": "fill"
+         },
+         "kids": [
+          {
+           "t": "p",
+           "c": "menu-panel__text",
+           "box": {
+            "w": 0,
+            "h": 0,
+            "x": 0,
+            "y": 0
+           },
+           "txt": "Những chiếc bánh nướng giòn rụm ngập tràn mùi bơ thơm lừng, được chuẩn bị tươi mới mỗi ngày để hoàn thiện bữa tiệc vị giác của bạn.",
+           "st": {
+            "display": "block",
+            "flexDirection": "row",
+            "color": "rgb(196, 199, 199)",
+            "opacity": "1",
+            "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "21px",
+            "borderColor": "rgb(196, 199, 199)",
+            "objectFit": "fill"
+           },
+           "kids": []
+          },
+          {
+           "t": "div",
+           "c": "menu-panel__figure",
+           "box": {
+            "w": 0,
+            "h": 0,
+            "x": 0,
+            "y": 0
+           },
+           "st": {
+            "display": "block",
+            "flexDirection": "row",
+            "width": "100%",
+            "margin": "24px 0px 0px",
+            "color": "rgb(226, 226, 226)",
+            "opacity": "1",
+            "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "24px",
+            "borderRadius": "6px",
+            "borderTopWidth": "1px",
+            "borderColor": "rgba(68, 71, 72, 0.2)",
+            "objectFit": "fill",
+            "overflow": "hidden"
+           },
+           "kids": [
+            {
+             "t": "img",
+             "c": "",
+             "box": {
+              "w": 0,
+              "h": 0,
+              "x": 0,
+              "y": 0
+             },
+             "st": {
+              "display": "block",
+              "flexDirection": "row",
+              "width": "100%",
+              "height": "100%",
+              "maxWidth": "100%",
+              "color": "rgb(226, 226, 226)",
+              "opacity": "1",
+              "filter": "grayscale(0.2) brightness(0.9)",
+              "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "borderColor": "rgb(226, 226, 226)",
+              "objectFit": "cover",
+              "overflow": "clip"
+             }
+            }
+           ]
+          },
+          {
+           "t": "div",
+           "c": "menu-panel__list",
+           "box": {
+            "w": 0,
+            "h": 0,
+            "x": 0,
+            "y": 0
+           },
+           "st": {
+            "display": "block",
+            "flexDirection": "row",
+            "padding": "16px 0px 0px",
+            "margin": "24px 0px 0px",
+            "color": "rgb(226, 226, 226)",
+            "opacity": "1",
+            "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "24px",
+            "borderColor": "rgb(226, 226, 226)",
+            "objectFit": "fill"
+           },
+           "kids": [
+            {
+             "t": "div",
+             "c": "dish",
+             "box": {
+              "w": 0,
+              "h": 0,
+              "x": 0,
+              "y": 0
+             },
+             "st": {
+              "display": "flex",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "alignItems": "center",
+              "padding": "0px 0px 16px",
+              "color": "rgb(226, 226, 226)",
+              "opacity": "1",
+              "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "borderColor": "rgb(226, 226, 226) rgb(226, 226, 226) rgba(68, 71, 72, 0.1)",
+              "objectFit": "fill"
+             }
+            },
+            {
+             "t": "div",
+             "c": "dish",
+             "box": {
+              "w": 0,
+              "h": 0,
+              "x": 0,
+              "y": 0
+             },
+             "st": {
+              "display": "flex",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "alignItems": "center",
+              "padding": "0px 0px 16px",
+              "margin": "24px 0px 0px",
+              "color": "rgb(226, 226, 226)",
+              "opacity": "1",
+              "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "borderColor": "rgb(226, 226, 226) rgb(226, 226, 226) rgba(68, 71, 72, 0.1)",
+              "objectFit": "fill"
+             }
+            },
+            {
+             "t": "div",
+             "c": "dish",
+             "box": {
+              "w": 0,
+              "h": 0,
+              "x": 0,
+              "y": 0
+             },
+             "st": {
+              "display": "flex",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "alignItems": "center",
+              "padding": "0px 0px 16px",
+              "margin": "24px 0px 0px",
+              "color": "rgb(226, 226, 226)",
+              "opacity": "1",
+              "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "borderColor": "rgb(226, 226, 226) rgb(226, 226, 226) rgba(68, 71, 72, 0.1)",
+              "objectFit": "fill"
+             }
+            },
+            {
+             "t": "div",
+             "c": "dish",
+             "box": {
+              "w": 0,
+              "h": 0,
+              "x": 0,
+              "y": 0
+             },
+             "st": {
+              "display": "flex",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "alignItems": "center",
+              "padding": "0px 0px 16px",
+              "margin": "24px 0px 0px",
+              "color": "rgb(226, 226, 226)",
+              "opacity": "1",
+              "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "borderColor": "rgb(226, 226, 226) rgb(226, 226, 226) rgba(68, 71, 72, 0.1)",
+              "objectFit": "fill"
+             }
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "t": "div",
+       "c": "menu-panel",
+       "box": {
+        "w": 0,
+        "h": 0,
+        "x": 0,
+        "y": 0
+       },
+       "st": {
+        "flexDirection": "row",
+        "color": "rgb(226, 226, 226)",
+        "opacity": "1",
+        "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "borderColor": "rgb(226, 226, 226)",
+        "objectFit": "fill"
+       },
+       "kids": [
+        {
+         "t": "div",
+         "c": "menu-panel__card",
+         "box": {
+          "w": 0,
+          "h": 0,
+          "x": 0,
+          "y": 0
+         },
+         "st": {
+          "display": "block",
+          "flexDirection": "row",
+          "padding": "24px",
+          "color": "rgb(226, 226, 226)",
+          "backgroundColor": "rgba(26, 26, 26, 0.7)",
+          "opacity": "1",
+          "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "borderRadius": "8px",
+          "borderTopWidth": "1px",
+          "borderColor": "rgba(255, 183, 123, 0.15)",
+          "objectFit": "fill"
+         },
+         "kids": [
+          {
+           "t": "p",
+           "c": "menu-panel__text",
+           "box": {
+            "w": 0,
+            "h": 0,
+            "x": 0,
+            "y": 0
+           },
+           "txt": "Nguồn năng lượng đặc biệt và thức uống sáng tạo lấy chủ đề tài chính độc bản, khơi gợi trí lực sắc bén cho mỗi quyết định giao dịch quan trọng.",
+           "st": {
+            "display": "block",
+            "flexDirection": "row",
+            "color": "rgb(196, 199, 199)",
+            "opacity": "1",
+            "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "21px",
+            "borderColor": "rgb(196, 199, 199)",
+            "objectFit": "fill"
+           },
+           "kids": []
+          },
+          {
+           "t": "div",
+           "c": "menu-panel__figure",
+           "box": {
+            "w": 0,
+            "h": 0,
+            "x": 0,
+            "y": 0
+           },
+           "st": {
+            "display": "block",
+            "flexDirection": "row",
+            "width": "100%",
+            "margin": "24px 0px 0px",
+            "color": "rgb(226, 226, 226)",
+            "opacity": "1",
+            "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "24px",
+            "borderRadius": "6px",
+            "borderTopWidth": "1px",
+            "borderColor": "rgba(68, 71, 72, 0.2)",
+            "objectFit": "fill",
+            "overflow": "hidden"
+           },
+           "kids": [
+            {
+             "t": "img",
+             "c": "",
+             "box": {
+              "w": 0,
+              "h": 0,
+              "x": 0,
+              "y": 0
+             },
+             "st": {
+              "display": "block",
+              "flexDirection": "row",
+              "width": "100%",
+              "height": "100%",
+              "maxWidth": "100%",
+              "color": "rgb(226, 226, 226)",
+              "opacity": "1",
+              "filter": "grayscale(0.2) brightness(0.9)",
+              "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "borderColor": "rgb(226, 226, 226)",
+              "objectFit": "cover",
+              "overflow": "clip"
+             }
+            }
+           ]
+          },
+          {
+           "t": "div",
+           "c": "menu-panel__list",
+           "box": {
+            "w": 0,
+            "h": 0,
+            "x": 0,
+            "y": 0
+           },
+           "st": {
+            "display": "block",
+            "flexDirection": "row",
+            "padding": "16px 0px 0px",
+            "margin": "24px 0px 0px",
+            "color": "rgb(226, 226, 226)",
+            "opacity": "1",
+            "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "24px",
+            "borderColor": "rgb(226, 226, 226)",
+            "objectFit": "fill"
+           },
+           "kids": [
+            {
+             "t": "div",
+             "c": "dish",
+             "box": {
+              "w": 0,
+              "h": 0,
+              "x": 0,
+              "y": 0
+             },
+             "st": {
+              "display": "flex",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "alignItems": "center",
+              "padding": "0px 0px 16px",
+              "color": "rgb(226, 226, 226)",
+              "opacity": "1",
+              "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "borderColor": "rgb(226, 226, 226) rgb(226, 226, 226) rgba(68, 71, 72, 0.1)",
+              "objectFit": "fill"
+             }
+            },
+            {
+             "t": "div",
+             "c": "dish",
+             "box": {
+              "w": 0,
+              "h": 0,
+              "x": 0,
+              "y": 0
+             },
+             "st": {
+              "display": "flex",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "alignItems": "center",
+              "padding": "0px 0px 16px",
+              "margin": "24px 0px 0px",
+              "color": "rgb(226, 226, 226)",
+              "opacity": "1",
+              "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "borderColor": "rgb(226, 226, 226) rgb(226, 226, 226) rgba(68, 71, 72, 0.1)",
+              "objectFit": "fill"
+             }
+            },
+            {
+             "t": "div",
+             "c": "dish",
+             "box": {
+              "w": 0,
+              "h": 0,
+              "x": 0,
+              "y": 0
+             },
+             "st": {
+              "display": "flex",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "alignItems": "center",
+              "padding": "0px 0px 16px",
+              "margin": "24px 0px 0px",
+              "color": "rgb(226, 226, 226)",
+              "opacity": "1",
+              "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "borderColor": "rgb(226, 226, 226) rgb(226, 226, 226) rgba(68, 71, 72, 0.1)",
+              "objectFit": "fill"
+             }
+            },
+            {
+             "t": "div",
+             "c": "dish",
+             "box": {
+              "w": 0,
+              "h": 0,
+              "x": 0,
+              "y": 0
+             },
+             "st": {
+              "display": "flex",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "alignItems": "center",
+              "padding": "0px 0px 16px",
+              "margin": "24px 0px 0px",
+              "color": "rgb(226, 226, 226)",
+              "opacity": "1",
+              "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "borderColor": "rgb(226, 226, 226) rgb(226, 226, 226) rgba(68, 71, 72, 0.1)",
+              "objectFit": "fill"
+             }
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

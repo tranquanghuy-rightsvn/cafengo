@@ -1,0 +1,16 @@
+import puppeteer from 'puppeteer-core';
+import fs from 'node:fs';
+const W=Number(process.env.W||1920), SEL=process.env.SEL||'#gallery', OUT=process.env.OUT||'shots/gallery.png';
+fs.mkdirSync('shots',{recursive:true});
+const b=await puppeteer.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true,args:['--no-sandbox','--hide-scrollbars','--force-device-scale-factor=1'],defaultViewport:{width:W,height:1000,deviceScaleFactor:1}});
+const p=await b.newPage();
+await p.goto('http://127.0.0.1:8899/',{waitUntil:'networkidle2'});
+await p.evaluate(async()=>{const m=document.documentElement.scrollHeight;for(let y=0;y<m;y+=400){window.scrollTo(0,y);await new Promise(r=>setTimeout(r,120));}window.scrollTo(0,0);await new Promise(r=>setTimeout(r,600));});
+await p.evaluate(s=>document.querySelector(s).scrollIntoView({block:'center'}),SEL);
+await new Promise(r=>setTimeout(r,1800));
+await p.addStyleTag({content:'*,*::before,*::after{animation-play-state:paused!important}.cursor-glow,#cursor-glow{display:none!important}'});
+await p.evaluate(()=>{document.querySelectorAll('body *').forEach(e=>{if(getComputedStyle(e).position==='fixed')e.style.visibility='hidden'})});
+const h=await p.$(SEL);
+await h.screenshot({path:OUT,captureBeyondViewport:true});
+console.log(OUT, JSON.stringify(await h.boundingBox()));
+await b.close();

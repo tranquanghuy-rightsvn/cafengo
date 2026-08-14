@@ -1,0 +1,11 @@
+[
+ {"url":"https://albi-coffe.netlify.app/hero-bg.jpg","dest":"images/hero-bg.jpg"},
+ {"url":"https://albi-coffe.netlify.app/images/menu/phin.webp","dest":"images/menu/phin.webp"},
+ {"url":"https://albi-coffe.netlify.app/images/menu/tra.webp","dest":"images/menu/tra.webp"},
+ {"url":"https://albi-coffe.netlify.app/images/menu/freeze.webp","dest":"images/menu/freeze.webp"},
+ {"url":"https://albi-coffe.netlify.app/images/menu/specialty_coffee.webp","dest":"images/menu/specialty_coffee.webp"},
+ {"url":"https://albi-coffe.netlify.app/images/menu/french_pastry.webp","dest":"images/menu/french_pastry.webp"},
+ {"url":"https://albi-coffe.netlify.app/images/menu/signature_latte.webp","dest":"images/menu/signature_latte.webp"},
+ {"url":"https://albi-coffe.netlify.app/images/philosophy_trading.png","dest":"images/philosophy_trading.png"},
+ {"url":"https://albi-coffe.netlify.app/images/philosophy_coffee.png","dest":"images/philosophy_coffee.png"}
+]

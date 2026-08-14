@@ -1,0 +1,634 @@
+{
+ "t": "form",
+ "c": "",
+ "box": {
+  "w": 576.7,
+  "h": 521,
+  "x": 425,
+  "y": 8725
+ },
+ "st": {
+  "display": "block",
+  "flexDirection": "row",
+  "width": "576.656px",
+  "height": "521px",
+  "color": "rgb(226, 226, 226)",
+  "opacity": "1",
+  "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+  "fontSize": "16px",
+  "fontWeight": "400",
+  "lineHeight": "24px",
+  "borderColor": "rgb(226, 226, 226)",
+  "objectFit": "fill"
+ },
+ "kids": [
+  {
+   "t": "div",
+   "c": "rgrid",
+   "box": {
+    "w": 576.7,
+    "h": 73,
+    "x": 425,
+    "y": 8725
+   },
+   "st": {
+    "display": "grid",
+    "flexDirection": "row",
+    "gap": "24px",
+    "gridTemplateColumns": "276.328px 276.328px",
+    "width": "576.656px",
+    "height": "73px",
+    "color": "rgb(226, 226, 226)",
+    "opacity": "1",
+    "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "lineHeight": "24px",
+    "borderColor": "rgb(226, 226, 226)",
+    "objectFit": "fill"
+   },
+   "kids": [
+    {
+     "t": "div",
+     "c": "rfield rfield--tight",
+     "box": {
+      "w": 276.3,
+      "h": 73,
+      "x": 425,
+      "y": 8725
+     },
+     "st": {
+      "display": "block",
+      "flexDirection": "row",
+      "width": "276.328px",
+      "height": "73px",
+      "color": "rgb(226, 226, 226)",
+      "opacity": "1",
+      "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "borderColor": "rgb(226, 226, 226)",
+      "objectFit": "fill"
+     },
+     "kids": [
+      {
+       "t": "label",
+       "c": "rlabel",
+       "box": {
+        "w": 276.3,
+        "h": 15,
+        "x": 425,
+        "y": 8725
+       },
+       "txt": "Họ và tên *",
+       "st": {
+        "display": "block",
+        "flexDirection": "row",
+        "width": "276.328px",
+        "height": "15px",
+        "color": "rgb(196, 199, 199)",
+        "opacity": "1",
+        "fontFamily": "\"JetBrains Mono\", ui-monospace, monospace",
+        "fontSize": "10px",
+        "fontWeight": "400",
+        "lineHeight": "15px",
+        "letterSpacing": "0.5px",
+        "textTransform": "uppercase",
+        "borderColor": "rgb(196, 199, 199)",
+        "objectFit": "fill"
+       }
+      },
+      {
+       "t": "input",
+       "c": "rinput",
+       "box": {
+        "w": 276.3,
+        "h": 50,
+        "x": 425,
+        "y": 8748
+       },
+       "st": {
+        "display": "inline-block",
+        "flexDirection": "row",
+        "width": "276.328px",
+        "height": "50px",
+        "padding": "12px 16px",
+        "margin": "8px 0px 0px",
+        "color": "rgb(226, 226, 226)",
+        "backgroundColor": "rgb(13, 15, 15)",
+        "opacity": "1",
+        "fontFamily": "\"JetBrains Mono\", ui-monospace, monospace",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "borderRadius": "2px",
+        "borderTopWidth": "1px",
+        "borderColor": "rgba(68, 71, 72, 0.2)",
+        "objectFit": "fill",
+        "overflow": "clip"
+       }
+      }
+     ]
+    },
+    {
+     "t": "div",
+     "c": "rfield rfield--tight",
+     "box": {
+      "w": 276.3,
+      "h": 73,
+      "x": 725,
+      "y": 8725
+     },
+     "st": {
+      "display": "block",
+      "flexDirection": "row",
+      "width": "276.328px",
+      "height": "73px",
+      "color": "rgb(226, 226, 226)",
+      "opacity": "1",
+      "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "borderColor": "rgb(226, 226, 226)",
+      "objectFit": "fill"
+     },
+     "kids": [
+      {
+       "t": "label",
+       "c": "rlabel",
+       "box": {
+        "w": 276.3,
+        "h": 15,
+        "x": 725,
+        "y": 8725
+       },
+       "txt": "Số điện thoại *",
+       "st": {
+        "display": "block",
+        "flexDirection": "row",
+        "width": "276.328px",
+        "height": "15px",
+        "color": "rgb(196, 199, 199)",
+        "opacity": "1",
+        "fontFamily": "\"JetBrains Mono\", ui-monospace, monospace",
+        "fontSize": "10px",
+        "fontWeight": "400",
+        "lineHeight": "15px",
+        "letterSpacing": "0.5px",
+        "textTransform": "uppercase",
+        "borderColor": "rgb(196, 199, 199)",
+        "objectFit": "fill"
+       }
+      },
+      {
+       "t": "input",
+       "c": "rinput",
+       "box": {
+        "w": 276.3,
+        "h": 50,
+        "x": 725,
+        "y": 8748
+       },
+       "st": {
+        "display": "inline-block",
+        "flexDirection": "row",
+        "width": "276.328px",
+        "height": "50px",
+        "padding": "12px 16px",
+        "margin": "8px 0px 0px",
+        "color": "rgb(226, 226, 226)",
+        "backgroundColor": "rgb(13, 15, 15)",
+        "opacity": "1",
+        "fontFamily": "\"JetBrains Mono\", ui-monospace, monospace",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "borderRadius": "2px",
+        "borderTopWidth": "1px",
+        "borderColor": "rgba(68, 71, 72, 0.2)",
+        "objectFit": "fill",
+        "overflow": "clip"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "t": "div",
+   "c": "rfield rfield--tight",
+   "box": {
+    "w": 576.7,
+    "h": 73,
+    "x": 425,
+    "y": 8830
+   },
+   "st": {
+    "display": "block",
+    "flexDirection": "row",
+    "width": "576.656px",
+    "height": "73px",
+    "margin": "32px 0px 0px",
+    "color": "rgb(226, 226, 226)",
+    "opacity": "1",
+    "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "lineHeight": "24px",
+    "borderColor": "rgb(226, 226, 226)",
+    "objectFit": "fill"
+   },
+   "kids": [
+    {
+     "t": "label",
+     "c": "rlabel",
+     "box": {
+      "w": 576.7,
+      "h": 15,
+      "x": 425,
+      "y": 8830
+     },
+     "txt": "Địa chỉ Email *",
+     "st": {
+      "display": "block",
+      "flexDirection": "row",
+      "width": "576.656px",
+      "height": "15px",
+      "color": "rgb(196, 199, 199)",
+      "opacity": "1",
+      "fontFamily": "\"JetBrains Mono\", ui-monospace, monospace",
+      "fontSize": "10px",
+      "fontWeight": "400",
+      "lineHeight": "15px",
+      "letterSpacing": "0.5px",
+      "textTransform": "uppercase",
+      "borderColor": "rgb(196, 199, 199)",
+      "objectFit": "fill"
+     },
+     "kids": []
+    },
+    {
+     "t": "input",
+     "c": "rinput",
+     "box": {
+      "w": 576.7,
+      "h": 50,
+      "x": 425,
+      "y": 8853
+     },
+     "st": {
+      "display": "inline-block",
+      "flexDirection": "row",
+      "width": "576.656px",
+      "height": "50px",
+      "padding": "12px 16px",
+      "margin": "8px 0px 0px",
+      "color": "rgb(226, 226, 226)",
+      "backgroundColor": "rgb(13, 15, 15)",
+      "opacity": "1",
+      "fontFamily": "\"JetBrains Mono\", ui-monospace, monospace",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "borderRadius": "2px",
+      "borderTopWidth": "1px",
+      "borderColor": "rgba(68, 71, 72, 0.2)",
+      "objectFit": "fill",
+      "overflow": "clip"
+     },
+     "kids": []
+    }
+   ]
+  },
+  {
+   "t": "div",
+   "c": "rfield",
+   "box": {
+    "w": 576.7,
+    "h": 101,
+    "x": 425,
+    "y": 8935
+   },
+   "st": {
+    "display": "block",
+    "flexDirection": "row",
+    "width": "576.656px",
+    "height": "101px",
+    "margin": "32px 0px 0px",
+    "color": "rgb(226, 226, 226)",
+    "opacity": "1",
+    "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "lineHeight": "24px",
+    "borderColor": "rgb(226, 226, 226)",
+    "objectFit": "fill"
+   },
+   "kids": [
+    {
+     "t": "label",
+     "c": "rlabel",
+     "box": {
+      "w": 576.7,
+      "h": 15,
+      "x": 425,
+      "y": 8935
+     },
+     "txt": "Tiêu đề hợp tác",
+     "st": {
+      "display": "block",
+      "flexDirection": "row",
+      "width": "576.656px",
+      "height": "15px",
+      "color": "rgb(196, 199, 199)",
+      "opacity": "1",
+      "fontFamily": "\"JetBrains Mono\", ui-monospace, monospace",
+      "fontSize": "10px",
+      "fontWeight": "400",
+      "lineHeight": "15px",
+      "letterSpacing": "0.5px",
+      "textTransform": "uppercase",
+      "borderColor": "rgb(196, 199, 199)",
+      "objectFit": "fill"
+     },
+     "kids": []
+    },
+    {
+     "t": "div",
+     "c": "chips",
+     "box": {
+      "w": 576.7,
+      "h": 76,
+      "x": 425,
+      "y": 8960
+     },
+     "st": {
+      "display": "flex",
+      "flexDirection": "row",
+      "gap": "10px",
+      "width": "576.656px",
+      "height": "76px",
+      "margin": "10px 0px 0px",
+      "color": "rgb(226, 226, 226)",
+      "opacity": "1",
+      "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "borderColor": "rgb(226, 226, 226)",
+      "objectFit": "fill"
+     },
+     "kids": [
+      {
+       "t": "button",
+       "c": "chip is-active",
+       "box": {
+        "w": 118.5,
+        "h": 33,
+        "x": 425,
+        "y": 8960
+       },
+       "txt": "Liên hệ chung",
+       "st": {
+        "display": "block",
+        "flexDirection": "row",
+        "width": "118.5px",
+        "height": "33px",
+        "padding": "8px 16px",
+        "color": "rgb(255, 183, 123)",
+        "backgroundColor": "rgba(255, 183, 123, 0.15)",
+        "opacity": "1",
+        "fontFamily": "\"JetBrains Mono\", ui-monospace, monospace",
+        "fontSize": "10px",
+        "fontWeight": "400",
+        "lineHeight": "15px",
+        "letterSpacing": "0.5px",
+        "textAlign": "center",
+        "borderRadius": "2px",
+        "borderTopWidth": "1px",
+        "borderColor": "rgb(255, 183, 123)",
+        "boxShadow": "rgba(0, 0, 0, 0.4) 0px 4px 6px -1px",
+        "objectFit": "fill"
+       }
+      },
+      {
+       "t": "button",
+       "c": "chip",
+       "box": {
+        "w": 177,
+        "h": 33,
+        "x": 554,
+        "y": 8960
+       },
+       "txt": "Đăng ký Trading Lounge",
+       "st": {
+        "display": "block",
+        "flexDirection": "row",
+        "width": "177px",
+        "height": "33px",
+        "padding": "8px 16px",
+        "color": "rgb(196, 199, 199)",
+        "backgroundColor": "rgba(26, 28, 28, 0.3)",
+        "opacity": "1",
+        "fontFamily": "\"JetBrains Mono\", ui-monospace, monospace",
+        "fontSize": "10px",
+        "fontWeight": "400",
+        "lineHeight": "15px",
+        "letterSpacing": "0.5px",
+        "textAlign": "center",
+        "borderRadius": "2px",
+        "borderTopWidth": "1px",
+        "borderColor": "rgba(68, 71, 72, 0.2)",
+        "objectFit": "fill"
+       }
+      },
+      {
+       "t": "button",
+       "c": "chip",
+       "box": {
+        "w": 209.5,
+        "h": 33,
+        "x": 741,
+        "y": 8960
+       },
+       "txt": "Đặt sự kiện / Phòng họp VIP",
+       "st": {
+        "display": "block",
+        "flexDirection": "row",
+        "width": "209.5px",
+        "height": "33px",
+        "padding": "8px 16px",
+        "color": "rgb(196, 199, 199)",
+        "backgroundColor": "rgba(26, 28, 28, 0.3)",
+        "opacity": "1",
+        "fontFamily": "\"JetBrains Mono\", ui-monospace, monospace",
+        "fontSize": "10px",
+        "fontWeight": "400",
+        "lineHeight": "15px",
+        "letterSpacing": "0.5px",
+        "textAlign": "center",
+        "borderRadius": "2px",
+        "borderTopWidth": "1px",
+        "borderColor": "rgba(68, 71, 72, 0.2)",
+        "objectFit": "fill"
+       }
+      },
+      {
+       "t": "button",
+       "c": "chip",
+       "box": {
+        "w": 235.5,
+        "h": 33,
+        "x": 425,
+        "y": 9003
+       },
+       "txt": "Hợp tác bán buôn / nhượng quyền",
+       "st": {
+        "display": "block",
+        "flexDirection": "row",
+        "width": "235.5px",
+        "height": "33px",
+        "padding": "8px 16px",
+        "color": "rgb(196, 199, 199)",
+        "backgroundColor": "rgba(26, 28, 28, 0.3)",
+        "opacity": "1",
+        "fontFamily": "\"JetBrains Mono\", ui-monospace, monospace",
+        "fontSize": "10px",
+        "fontWeight": "400",
+        "lineHeight": "15px",
+        "letterSpacing": "0.5px",
+        "textAlign": "center",
+        "borderRadius": "2px",
+        "borderTopWidth": "1px",
+        "borderColor": "rgba(68, 71, 72, 0.2)",
+        "objectFit": "fill"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "t": "div",
+   "c": "rfield rfield--tight",
+   "box": {
+    "w": 576.7,
+    "h": 127,
+    "x": 425,
+    "y": 9068
+   },
+   "st": {
+    "display": "block",
+    "flexDirection": "row",
+    "width": "576.656px",
+    "height": "127px",
+    "margin": "32px 0px 0px",
+    "color": "rgb(226, 226, 226)",
+    "opacity": "1",
+    "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "lineHeight": "24px",
+    "borderColor": "rgb(226, 226, 226)",
+    "objectFit": "fill"
+   },
+   "kids": [
+    {
+     "t": "label",
+     "c": "rlabel",
+     "box": {
+      "w": 576.7,
+      "h": 15,
+      "x": 425,
+      "y": 9068
+     },
+     "txt": "Tin nhắn / Yêu cầu chi tiết",
+     "st": {
+      "display": "block",
+      "flexDirection": "row",
+      "width": "576.656px",
+      "height": "15px",
+      "color": "rgb(196, 199, 199)",
+      "opacity": "1",
+      "fontFamily": "\"JetBrains Mono\", ui-monospace, monospace",
+      "fontSize": "10px",
+      "fontWeight": "400",
+      "lineHeight": "15px",
+      "letterSpacing": "0.5px",
+      "textTransform": "uppercase",
+      "borderColor": "rgb(196, 199, 199)",
+      "objectFit": "fill"
+     },
+     "kids": []
+    },
+    {
+     "t": "textarea",
+     "c": "rinput",
+     "box": {
+      "w": 576.7,
+      "h": 98,
+      "x": 425,
+      "y": 9091
+     },
+     "st": {
+      "display": "inline-block",
+      "flexDirection": "row",
+      "width": "576.656px",
+      "height": "98px",
+      "padding": "12px 16px",
+      "margin": "8px 0px 0px",
+      "color": "rgb(226, 226, 226)",
+      "backgroundColor": "rgb(13, 15, 15)",
+      "opacity": "1",
+      "fontFamily": "\"JetBrains Mono\", ui-monospace, monospace",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "borderRadius": "2px",
+      "borderTopWidth": "1px",
+      "borderColor": "rgba(68, 71, 72, 0.2)",
+      "objectFit": "fill"
+     },
+     "kids": []
+    }
+   ]
+  },
+  {
+   "t": "button",
+   "c": "rsubmit",
+   "box": {
+    "w": 576.7,
+    "h": 18,
+    "x": 425,
+    "y": 9227
+   },
+   "txt": "Gửi tin nhắn liên hệ",
+   "st": {
+    "display": "inline-block",
+    "flexDirection": "row",
+    "position": "relative",
+    "width": "576.656px",
+    "height": "18px",
+    "margin": "32px 0px 0px",
+    "color": "rgb(77, 39, 0)",
+    "backgroundColor": "rgb(255, 183, 123)",
+    "opacity": "1",
+    "fontFamily": "\"JetBrains Mono\", ui-monospace, monospace",
+    "fontSize": "12px",
+    "fontWeight": "700",
+    "lineHeight": "18px",
+    "letterSpacing": "1.2px",
+    "textTransform": "uppercase",
+    "textAlign": "center",
+    "borderRadius": "2px",
+    "borderColor": "rgb(77, 39, 0)",
+    "boxShadow": "rgba(255, 183, 123, 0.15) 0px 10px 15px -3px",
+    "objectFit": "fill",
+    "overflow": "hidden"
+   },
+   "kids": []
+  }
+ ]
+}

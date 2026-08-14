@@ -1,0 +1,74 @@
+[
+ {
+  "key": "header",
+  "sim": "100.00%",
+  "size": "1536x80",
+  "dW": 0,
+  "dH": 0,
+  "badPx": 0
+ },
+ {
+  "key": "hero",
+  "sim": "99.99%",
+  "size": "1536x972",
+  "dW": 0,
+  "dH": 0,
+  "badPx": 130
+ },
+ {
+  "key": "menu",
+  "sim": "100.00%",
+  "size": "1536x1442",
+  "dW": 0,
+  "dH": 0,
+  "badPx": 11
+ },
+ {
+  "key": "invest",
+  "sim": "100.00%",
+  "size": "1536x826",
+  "dW": 0,
+  "dH": 0,
+  "badPx": 0
+ },
+ {
+  "key": "philosophy",
+  "sim": "100.00%",
+  "size": "1536x1031",
+  "dW": 0,
+  "dH": 0,
+  "badPx": 0
+ },
+ {
+  "key": "testimonials",
+  "sim": "99.82%",
+  "size": "1536x1920",
+  "dW": 0,
+  "dH": 0,
+  "badPx": 5431
+ },
+ {
+  "key": "reservations",
+  "sim": "99.98%",
+  "size": "1536x1776",
+  "dW": 0,
+  "dH": 0,
+  "badPx": 552
+ },
+ {
+  "key": "contact",
+  "sim": "99.46%",
+  "size": "1536x1326",
+  "dW": 0,
+  "dH": 0,
+  "badPx": 10981
+ },
+ {
+  "key": "footer",
+  "sim": "100.00%",
+  "size": "1536x496",
+  "dW": 0,
+  "dH": -1,
+  "badPx": 0
+ }
+]

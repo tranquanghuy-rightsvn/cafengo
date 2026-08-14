@@ -1,0 +1,23 @@
+import puppeteer from 'puppeteer-core';
+const b=await puppeteer.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true,args:['--no-sandbox','--hide-scrollbars'],defaultViewport:{width:1440,height:900}});
+const p=await b.newPage();
+await p.goto('http://127.0.0.1:8899/',{waitUntil:'networkidle2'});
+const wait=ms=>new Promise(r=>setTimeout(r,ms));
+const st=()=>p.evaluate(()=>JSON.stringify({name:document.getElementById('spec-name').textContent,icon:document.getElementById('spec-icon').textContent,hw:[...document.getElementById('spec-hw').children].map(l=>l.textContent.slice(0,22)),unit:document.getElementById('inv-unit').textContent,hours:document.getElementById('inv-hours').textContent,total:document.getElementById('inv-total').textContent,dur:document.getElementById('res-duration').disabled}));
+console.log('init      ->',await st());
+await p.evaluate(()=>document.querySelector('.opt[data-opt="2"]').click()); await wait(150);
+console.log('gác xép   ->',await st());
+await p.select('#res-duration','4'); await wait(150);
+console.log('4 giờ     ->',await st());
+await p.select('#res-duration','8'); await wait(150);
+console.log('8 giờ     ->',await st());
+await p.evaluate(()=>document.querySelector('.opt[data-opt="1"]').click()); await wait(150);
+console.log('ngoài hiên->',await st());
+await p.evaluate(()=>document.querySelector('.opt[data-opt="0"]').click()); await wait(150);
+console.log('trong nhà ->',await st());
+// real mouse click after scrolling with header offset
+await p.evaluate(()=>{const r=document.querySelector('.opt[data-opt="2"]').getBoundingClientRect();window.scrollBy(0,r.top-300)}); await wait(400);
+const box=await (await p.$('.opt[data-opt="2"]')).boundingBox();
+await p.mouse.click(box.x+box.width/2, box.y+box.height/2); await wait(200);
+console.log('mouse click gác xép ->',await st());
+await b.close();

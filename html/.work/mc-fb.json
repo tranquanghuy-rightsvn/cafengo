@@ -1,0 +1,431 @@
+{
+ "t": "div",
+ "c": "feedback",
+ "box": {
+  "w": 576,
+  "h": 378,
+  "x": 672,
+  "y": 5821
+ },
+ "st": {
+  "display": "block",
+  "flexDirection": "row",
+  "position": "relative",
+  "width": "576px",
+  "height": "378px",
+  "maxWidth": "576px",
+  "padding": "32px",
+  "margin": "80px 288px 0px",
+  "color": "rgb(226, 226, 226)",
+  "backgroundColor": "rgba(18, 22, 22, 0.5)",
+  "opacity": "1",
+  "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+  "fontSize": "16px",
+  "fontWeight": "400",
+  "lineHeight": "24px",
+  "borderRadius": "2px",
+  "borderTopWidth": "1px",
+  "borderColor": "rgba(255, 183, 123, 0.1)",
+  "boxShadow": "rgba(0, 0, 0, 0.5) 0px 20px 25px -5px, rgba(0, 0, 0, 0.4) 0px 8px 10px -6px",
+  "objectFit": "fill"
+ },
+ "kids": [
+  {
+   "t": "h3",
+   "c": "feedback__title",
+   "box": {
+    "w": 510,
+    "h": 27,
+    "x": 705,
+    "y": 5854
+   },
+   "txt": "Gửi đánh giá của bạn // Submit feedback",
+   "st": {
+    "display": "flex",
+    "flexDirection": "row",
+    "alignItems": "center",
+    "gap": "8px",
+    "width": "510px",
+    "height": "27px",
+    "padding": "0px 0px 10px",
+    "margin": "0px 0px 24px",
+    "color": "rgb(255, 183, 123)",
+    "opacity": "1",
+    "fontFamily": "\"JetBrains Mono\", ui-monospace, monospace",
+    "fontSize": "12px",
+    "fontWeight": "700",
+    "lineHeight": "16px",
+    "letterSpacing": "1.2px",
+    "textTransform": "uppercase",
+    "borderColor": "rgb(255, 183, 123) rgb(255, 183, 123) rgba(255, 183, 123, 0.1)",
+    "objectFit": "fill"
+   },
+   "kids": [
+    {
+     "t": "span",
+     "c": "icon",
+     "box": {
+      "w": 16,
+      "h": 16,
+      "x": 705,
+      "y": 5854
+     },
+     "txt": "chat",
+     "st": {
+      "display": "block",
+      "flexDirection": "row",
+      "width": "16px",
+      "height": "16px",
+      "color": "rgb(255, 183, 123)",
+      "opacity": "1",
+      "fontFamily": "\"Material Symbols Outlined\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "16px",
+      "borderColor": "rgb(255, 183, 123)",
+      "objectFit": "fill"
+     },
+     "kids": []
+    }
+   ]
+  },
+  {
+   "t": "form",
+   "c": "",
+   "box": {
+    "w": 510,
+    "h": 261,
+    "x": 705,
+    "y": 5905
+   },
+   "st": {
+    "display": "block",
+    "flexDirection": "row",
+    "width": "510px",
+    "height": "261px",
+    "color": "rgb(226, 226, 226)",
+    "opacity": "1",
+    "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "lineHeight": "24px",
+    "borderColor": "rgb(226, 226, 226)",
+    "objectFit": "fill"
+   },
+   "kids": [
+    {
+     "t": "div",
+     "c": "feedback__row",
+     "box": {
+      "w": 510,
+      "h": 63,
+      "x": 705,
+      "y": 5905
+     },
+     "st": {
+      "display": "grid",
+      "flexDirection": "row",
+      "gap": "16px",
+      "gridTemplateColumns": "247px 247px",
+      "width": "510px",
+      "height": "63px",
+      "color": "rgb(226, 226, 226)",
+      "opacity": "1",
+      "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "borderColor": "rgb(226, 226, 226)",
+      "objectFit": "fill"
+     },
+     "kids": [
+      {
+       "t": "div",
+       "c": "",
+       "box": {
+        "w": 247,
+        "h": 63,
+        "x": 705,
+        "y": 5905
+       },
+       "st": {
+        "display": "block",
+        "flexDirection": "row",
+        "width": "247px",
+        "height": "63px",
+        "color": "rgb(226, 226, 226)",
+        "opacity": "1",
+        "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "borderColor": "rgb(226, 226, 226)",
+        "objectFit": "fill"
+       },
+       "kids": [
+        {
+         "t": "label",
+         "c": "field-label",
+         "box": {
+          "w": 247,
+          "h": 15,
+          "x": 705,
+          "y": 5905
+         },
+         "txt": "Tên của bạn *",
+         "st": {
+          "display": "block",
+          "flexDirection": "row",
+          "width": "247px",
+          "height": "15px",
+          "margin": "0px 0px 8px",
+          "color": "rgb(196, 199, 199)",
+          "opacity": "1",
+          "fontFamily": "\"JetBrains Mono\", ui-monospace, monospace",
+          "fontSize": "10px",
+          "fontWeight": "400",
+          "lineHeight": "15px",
+          "letterSpacing": "1px",
+          "textTransform": "uppercase",
+          "borderColor": "rgb(196, 199, 199)",
+          "objectFit": "fill"
+         }
+        },
+        {
+         "t": "input",
+         "c": "field-input",
+         "box": {
+          "w": 247,
+          "h": 40,
+          "x": 705,
+          "y": 5928
+         },
+         "st": {
+          "display": "inline-block",
+          "flexDirection": "row",
+          "width": "247px",
+          "height": "40px",
+          "padding": "10px 16px",
+          "color": "rgb(255, 255, 255)",
+          "backgroundColor": "rgba(12, 15, 15, 0.8)",
+          "opacity": "1",
+          "fontFamily": "\"JetBrains Mono\", ui-monospace, monospace",
+          "fontSize": "12px",
+          "fontWeight": "400",
+          "lineHeight": "18px",
+          "borderRadius": "2px",
+          "borderTopWidth": "1px",
+          "borderColor": "rgba(255, 183, 123, 0.15)",
+          "objectFit": "fill",
+          "overflow": "clip"
+         }
+        }
+       ]
+      },
+      {
+       "t": "div",
+       "c": "",
+       "box": {
+        "w": 247,
+        "h": 63,
+        "x": 968,
+        "y": 5905
+       },
+       "st": {
+        "display": "block",
+        "flexDirection": "row",
+        "width": "247px",
+        "height": "63px",
+        "color": "rgb(226, 226, 226)",
+        "opacity": "1",
+        "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "borderColor": "rgb(226, 226, 226)",
+        "objectFit": "fill"
+       },
+       "kids": [
+        {
+         "t": "label",
+         "c": "field-label",
+         "box": {
+          "w": 247,
+          "h": 15,
+          "x": 968,
+          "y": 5905
+         },
+         "txt": "Vai trò / Nghề nghiệp",
+         "st": {
+          "display": "block",
+          "flexDirection": "row",
+          "width": "247px",
+          "height": "15px",
+          "margin": "0px 0px 8px",
+          "color": "rgb(196, 199, 199)",
+          "opacity": "1",
+          "fontFamily": "\"JetBrains Mono\", ui-monospace, monospace",
+          "fontSize": "10px",
+          "fontWeight": "400",
+          "lineHeight": "15px",
+          "letterSpacing": "1px",
+          "textTransform": "uppercase",
+          "borderColor": "rgb(196, 199, 199)",
+          "objectFit": "fill"
+         }
+        },
+        {
+         "t": "input",
+         "c": "field-input",
+         "box": {
+          "w": 247,
+          "h": 40,
+          "x": 968,
+          "y": 5928
+         },
+         "st": {
+          "display": "inline-block",
+          "flexDirection": "row",
+          "width": "247px",
+          "height": "40px",
+          "padding": "10px 16px",
+          "color": "rgb(255, 255, 255)",
+          "backgroundColor": "rgba(12, 15, 15, 0.8)",
+          "opacity": "1",
+          "fontFamily": "\"JetBrains Mono\", ui-monospace, monospace",
+          "fontSize": "12px",
+          "fontWeight": "400",
+          "lineHeight": "18px",
+          "borderRadius": "2px",
+          "borderTopWidth": "1px",
+          "borderColor": "rgba(255, 183, 123, 0.15)",
+          "objectFit": "fill",
+          "overflow": "clip"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "t": "div",
+     "c": "",
+     "box": {
+      "w": 510,
+      "h": 105,
+      "x": 705,
+      "y": 5992
+     },
+     "st": {
+      "display": "block",
+      "flexDirection": "row",
+      "width": "510px",
+      "height": "105px",
+      "margin": "24px 0px 0px",
+      "color": "rgb(226, 226, 226)",
+      "opacity": "1",
+      "fontFamily": "\"Plus Jakarta Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "borderColor": "rgb(226, 226, 226)",
+      "objectFit": "fill"
+     },
+     "kids": [
+      {
+       "t": "label",
+       "c": "field-label",
+       "box": {
+        "w": 510,
+        "h": 15,
+        "x": 705,
+        "y": 5992
+       },
+       "txt": "Ý kiến phản hồi *",
+       "st": {
+        "display": "block",
+        "flexDirection": "row",
+        "width": "510px",
+        "height": "15px",
+        "margin": "0px 0px 8px",
+        "color": "rgb(196, 199, 199)",
+        "opacity": "1",
+        "fontFamily": "\"JetBrains Mono\", ui-monospace, monospace",
+        "fontSize": "10px",
+        "fontWeight": "400",
+        "lineHeight": "15px",
+        "letterSpacing": "1px",
+        "textTransform": "uppercase",
+        "borderColor": "rgb(196, 199, 199)",
+        "objectFit": "fill"
+       },
+       "kids": []
+      },
+      {
+       "t": "textarea",
+       "c": "field-input",
+       "box": {
+        "w": 510,
+        "h": 76,
+        "x": 705,
+        "y": 6015
+       },
+       "st": {
+        "display": "inline-block",
+        "flexDirection": "row",
+        "width": "510px",
+        "height": "76px",
+        "padding": "10px 16px",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(12, 15, 15, 0.8)",
+        "opacity": "1",
+        "fontFamily": "\"JetBrains Mono\", ui-monospace, monospace",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "lineHeight": "18px",
+        "borderRadius": "2px",
+        "borderTopWidth": "1px",
+        "borderColor": "rgba(255, 183, 123, 0.15)",
+        "objectFit": "fill"
+       },
+       "kids": []
+      }
+     ]
+    },
+    {
+     "t": "button",
+     "c": "feedback__submit",
+     "box": {
+      "w": 510,
+      "h": 45,
+      "x": 705,
+      "y": 6121
+     },
+     "txt": "Send feedback // Gửi ý kiến",
+     "st": {
+      "display": "inline-block",
+      "flexDirection": "row",
+      "width": "510px",
+      "height": "45px",
+      "padding": "14px 0px",
+      "margin": "24px 0px 0px",
+      "color": "rgb(46, 21, 0)",
+      "backgroundColor": "rgb(255, 183, 123)",
+      "opacity": "1",
+      "fontFamily": "\"JetBrains Mono\", ui-monospace, monospace",
+      "fontSize": "10px",
+      "fontWeight": "600",
+      "lineHeight": "15px",
+      "letterSpacing": "1px",
+      "textTransform": "uppercase",
+      "textAlign": "center",
+      "borderTopWidth": "1px",
+      "borderColor": "rgb(255, 183, 123)",
+      "objectFit": "fill"
+     },
+     "kids": []
+    }
+   ]
+  }
+ ]
+}

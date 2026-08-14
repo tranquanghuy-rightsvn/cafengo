@@ -1,0 +1,16 @@
+import puppeteer from 'puppeteer-core';
+const browser = await puppeteer.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true,args:['--no-sandbox','--hide-scrollbars'],defaultViewport:{width:1920,height:1080,deviceScaleFactor:1}});
+const page = await browser.newPage();
+await page.goto('https://albi-coffe.netlify.app/',{waitUntil:'networkidle2',timeout:90000});
+await new Promise(r=>setTimeout(r,3000));
+await page.evaluate(()=>document.getElementById('menu').scrollIntoView());
+await new Promise(r=>setTimeout(r,2000));
+await page.evaluate(()=>{const b=[...document.querySelectorAll('#menu button')].find(x=>x.getAttribute('aria-label')==='Trang sau'); b&&b.click();});
+await new Promise(r=>setTimeout(r,2500));
+await page.addStyleTag({content:`*,*::before,*::after{animation-play-state:paused!important}`});
+await page.evaluate(()=>{document.querySelectorAll('body *').forEach(el=>{if(getComputedStyle(el).position==='fixed')el.style.visibility='hidden';});});
+await new Promise(r=>setTimeout(r,500));
+const el = await page.$('.main-book');
+await el.screenshot({path:'shots/orig-flip1.png'});
+const b = await el.boundingBox(); console.log('box', JSON.stringify(b));
+await browser.close();

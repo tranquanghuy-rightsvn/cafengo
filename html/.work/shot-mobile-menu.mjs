@@ -1,0 +1,10 @@
+import puppeteer from 'puppeteer-core';
+const browser = await puppeteer.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true,args:['--no-sandbox','--hide-scrollbars'],defaultViewport:{width:375,height:820,deviceScaleFactor:2}});
+const page = await browser.newPage();
+await page.goto('http://127.0.0.1:8899/',{waitUntil:'networkidle2'});
+await new Promise(r=>setTimeout(r,1200));
+await page.evaluate(()=>{const l=document.querySelector('.menu-panel.is-active .menu-panel__list');const r=l.getBoundingClientRect();window.scrollBy(0,r.top-60);});
+await new Promise(r=>setTimeout(r,700));
+await page.screenshot({path:'shots/mobile-menu.png'});
+console.log('ok');
+await browser.close();

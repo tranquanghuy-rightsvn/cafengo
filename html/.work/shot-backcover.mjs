@@ -1,0 +1,15 @@
+import puppeteer from 'puppeteer-core';
+const W = Number(process.env.W||768);
+const browser = await puppeteer.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true,args:['--no-sandbox','--hide-scrollbars'],defaultViewport:{width:W,height:1000,deviceScaleFactor:1}});
+const page = await browser.newPage();
+await page.goto('http://127.0.0.1:8899/',{waitUntil:'networkidle2'});
+await new Promise(r=>setTimeout(r,1000));
+await page.evaluate(()=>document.getElementById('menu').scrollIntoView());
+await new Promise(r=>setTimeout(r,500));
+await page.evaluate(()=>{const b=document.getElementById('flip-next');for(let i=0;i<7;i++)b.click();});
+await new Promise(r=>setTimeout(r,1500));
+const el = await page.$('.flip-book__inner');
+await el.screenshot({path:`shots/backcover-${W}.png`});
+const info = await page.evaluate(()=>{const b=document.querySelector('.cover__restart');const r=b.getBoundingClientRect();return {w:Math.round(r.width),h:Math.round(r.height),sh:b.scrollHeight,ch:b.clientHeight};});
+console.log(JSON.stringify(info));
+await browser.close();

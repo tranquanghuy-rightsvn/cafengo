@@ -1,0 +1,829 @@
+/* ==========================================================================
+   Ngõ Coffee — main.css
+   Tokens, base, layout, header/nav/footer, shared components
+   ========================================================================== */
+
+/* ---------- Fonts (self-hosted) ---------- */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url('../fonts/space-grotesk-vietnamese.woff2') format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url('../fonts/space-grotesk-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url('../fonts/space-grotesk-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url('../fonts/plus-jakarta-sans-vietnamese.woff2') format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url('../fonts/plus-jakarta-sans-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url('../fonts/plus-jakarta-sans-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url('../fonts/jetbrains-mono-vietnamese.woff2') format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url('../fonts/jetbrains-mono-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url('../fonts/jetbrains-mono-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Material Symbols Outlined';
+  font-style: normal;
+  font-weight: 100 700;
+  font-display: block;
+  src: url('../fonts/material-symbols-outlined.woff2') format('woff2');
+}
+
+/* ---------- Tokens ---------- */
+/* ==========================================================================
+   HAI BẢNG MÀU
+   Mặc định là TỐI. Thêm data-theme="light" lên thẻ <html> là đổi sang SÁNG.
+   Mọi màu trong hai file CSS đều trỏ về đây — không có mã màu nào nằm rải rác.
+   Token đuôi -rgb là bộ ba số, dùng kèm alpha:  rgb(var(--gold-rgb) / .3)
+   ========================================================================== */
+:root {
+  color-scheme: dark;
+
+  /* ---- nền ---- */
+  --bg: #121414;
+  --surface: #121414;
+  --surface-container: #1e2020;
+  --surface-high: #282a2b;
+  --surface-lowest: #0c0f0f;
+  --surface-low: rgb(var(--panel-rgb) / 0.2);
+  --page-bg: #1a1c1e;
+  --input-bg: #0d0f0f;
+  --avatar-bg: #0d0f10;
+  --qr-bg: #ffffff;
+
+  /* ---- chữ ---- */
+  --on-bg: #e2e2e2;
+  --on-surface: #e2e2e2;
+  --on-variant: #c4c7c7;
+  --on-muted: #838282;
+  --on-secondary: #4d2700;
+  --on-photo: #ffffff;           /* chữ trên ảnh — giống nhau ở cả hai theme */
+
+  /* ---- nhấn ---- */
+  --gold: #ffb77b;
+  --gold-deep: #bf953f;
+  --gold-soft: #ffdcc2;
+  --outline: #444748;
+
+  /* ---- nhũ vàng trên bìa sách ---- */
+  --foil-hi: #fcf6ba;
+  --foil-mid: #b38728;
+  --foil-lo: #aa771c;
+
+  /* ---- trạng thái ---- */
+  --emerald: #10b981;
+  --emerald-light: #4ade80;
+  --sky: #0ea5e9;
+  --sky-light: #38bdf8;
+  --amber: #f59e0b;
+  --amber-light: #fbbf24;
+  --error: #ffb4ab;
+
+  /* ---- bộ ba RGB dùng kèm alpha ---- */
+  --gold-rgb: 255 183 123;
+  --gold-deep-rgb: 191 149 63;
+  --gold-soft-rgb: 255 220 194;
+  --outline-rgb: 68 71 72;
+  --shadow-rgb: 0 0 0;
+  --sheen-rgb: 255 255 255;
+  --panel-rgb: 26 26 26;
+  --ink-rgb: 18 20 20;
+  --veil-rgb: 6 8 8;             /* lớp phủ TRÊN ẢNH — không đổi theo theme */
+  --on-photo-rgb: 255 255 255;
+  --photo-shade-rgb: 0 0 0;
+  --hero-wash-rgb: 250 247 241;
+  --hero-ink: var(--on-surface);        /* chữ trong hero khi nền là ẢNH */
+  --hero-accent: var(--gold);
+  --hero-accent-soft: var(--gold);
+  --grid-line: #ffffff;
+  --on-surface-rgb: 226 226 226;
+  --on-variant-rgb: 196 199 199;
+  --emerald-rgb: 16 185 129;
+  --sky-rgb: 14 165 233;
+  --amber-rgb: 245 158 11;
+  --error-rgb: 255 180 171;
+
+  /* ---- bố cục / chữ / chuyển động: giữ nguyên ---- */
+  --container: 1280px;
+  --gutter: 24px;
+  --header-h: 80px;
+
+  --font-display: 'Space Grotesk', 'Helvetica Neue', sans-serif;
+  --font-body: 'Plus Jakarta Sans', 'Helvetica Neue', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --font-system: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ---------- BẢNG MÀU SÁNG ----------
+   Chỉ khai lại đúng những token đổi giá trị; bố cục, phông, easing dùng chung. */
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  --bg: #faf7f1;
+  --surface: #faf7f1;
+  --surface-container: #ffffff;
+  --surface-high: #efe8dc;
+  --surface-lowest: #f2ece1;
+  --surface-low: rgb(var(--panel-rgb) / 0.55);
+  --page-bg: #fdfaf4;
+  --input-bg: #ffffff;
+  --avatar-bg: #f4efe6;
+
+  --on-bg: #241f1a;
+  --on-surface: #241f1a;
+  --on-variant: #5d554b;
+  --on-muted: #6f665c;
+  --on-secondary: #fff6ec;       /* chữ nằm TRÊN nền vàng đậm */
+
+  --gold: #a05512;               /* đậm hơn bản tối để đủ 4.5:1 trên nền sáng */
+  --gold-deep: #8a4a10;
+  --gold-soft: #d98b45;
+  --outline: #ddd4c5;
+
+  --foil-hi: #e6c46a;
+  --foil-mid: #a97c22;
+  --foil-lo: #8a5f12;
+
+  --emerald: #0f7a56;
+  --emerald-light: #0d7150;
+  --sky: #0b6ea8;
+  --sky-light: #0b6499;
+  --amber: #a8620a;
+  --amber-light: #96580b;
+  --error: #b3261e;
+
+  --gold-rgb: 160 85 18;
+  --gold-deep-rgb: 138 74 16;
+  --gold-soft-rgb: 217 139 69;
+  --outline-rgb: 176 165 148;
+  --shadow-rgb: 74 60 44;        /* bóng ấm, không dùng đen thuần */
+  --panel-rgb: 255 255 255;
+  --ink-rgb: 255 253 249;
+  --grid-line: #6b6152;
+  /* Hero ở theme sáng đặt chữ thẳng lên ảnh, nên phải đậm hơn chữ cùng vai ở
+     các section khác. Ba giá trị này chỉnh theo số đo tương phản trên ảnh thật. */
+  --hero-ink: #3f3931;
+  --hero-accent: #59300a;
+  --hero-accent-soft: #7a400c;
+  --on-surface-rgb: 36 31 26;
+  --on-variant-rgb: 93 85 75;
+  --emerald-rgb: 15 122 86;
+  --sky-rgb: 11 110 168;
+  --amber-rgb: 168 98 10;
+  --error-rgb: 179 38 30;
+}
+
+
+@media (min-width: 768px) {
+  :root { --gutter: 64px; }
+}
+
+/* ---------- Reset / base ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: var(--bg);
+  color: var(--on-bg);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection { background-color: rgb(var(--gold-rgb) / 0.35); color: var(--gold-soft); }
+
+h1, h2, h3, h4, h5, h6, p, figure, blockquote { margin: 0; }
+/* headings inherit their weight/size, as in the source's normalize layer */
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
+ul, ol { margin: 0; padding: 0; list-style: none; }
+img, svg, video { display: block; }
+/* only raster media is fluid — an inline SVG keeps its intrinsic width so it
+   never shrinks a flex row (matches the source's normalize layer) */
+img, video { max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+input, textarea, select { font: inherit; color: inherit; }
+
+/* ---------- Layout helpers ---------- */
+.container {
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.section { position: relative; overflow: hidden; }
+.section--bronze { background: radial-gradient(circle at 50% 0%, rgb(var(--gold-rgb) / 0.04) 0%, transparent 70%), var(--bg); }
+.section--dark   { background: radial-gradient(circle at 50% 0%, rgb(var(--gold-rgb) / 0.02) 0%, transparent 75%), var(--surface-lowest); }
+.section--surface { background-color: var(--surface); }
+.section--lowest  { background-color: var(--surface-lowest); }
+.section--hairline { border-top: 1px solid rgb(var(--outline-rgb) / 0.1); }
+
+/* ---------- Typography primitives ---------- */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.section-lede {
+  max-width: 42rem;
+  margin: 16px auto 0;
+  font-size: 14px;
+  line-height: 1.625;
+  color: var(--on-variant);
+}
+
+.rule-fade {
+  width: 96px;
+  height: 1px;
+  margin: 24px auto 0;
+  background: linear-gradient(to right, transparent, rgb(var(--gold-rgb) / 0.4), transparent);
+}
+
+.eyebrow-rule {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.eyebrow-rule::before,
+.eyebrow-rule::after {
+  content: '';
+  width: 24px;
+  height: 1px;
+  background: rgb(var(--gold-rgb) / 0.3);
+}
+
+/* ---------- Icon font ---------- */
+.icon {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
+}
+
+/* ---------- Glass panel ---------- */
+.glass {
+  position: relative;
+  overflow: hidden;
+  background: rgb(var(--panel-rgb) / 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgb(var(--gold-rgb) / 0.15);
+  box-shadow: 0 25px 50px rgb(var(--shadow-rgb) / 0.8), 0 0 50px rgb(var(--gold-rgb) / 0.15);
+  transition: transform 0.4s var(--ease-out-expo), box-shadow 0.4s var(--ease-out-expo);
+}
+
+/* ---------- Ambient glow blobs ---------- */
+.glow-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  pointer-events: none;
+  z-index: 0;
+  mix-blend-mode: screen;
+  animation: float-glow 8s ease-in-out infinite;
+}
+@keyframes float-glow {
+  0%, 100% { transform: translate(0) scale(1); opacity: 0.35; }
+  50%      { transform: translate(25px, -20px) scale(1.08); opacity: 0.55; }
+}
+
+.grid-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.015;
+  background-image:
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* ---------- Scroll reveal ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: opacity 0.8s var(--ease-out-expo), transform 0.8s var(--ease-out-expo);
+}
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .glow-blob { animation: none; }
+}
+
+/* ==========================================================================
+   Scroll progress bar
+   ========================================================================== */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: var(--gold);
+  z-index: 150;
+  transition: width 0.1s ease-out;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+.site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: var(--header-h);
+  z-index: 90;
+  border-bottom: 1px solid rgb(var(--outline-rgb) / 0.2);
+  background: rgb(var(--ink-rgb) / 0.7);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+.site-header.is-scrolled {
+  background: rgb(var(--ink-rgb) / 0.95);
+  box-shadow: 0 25px 50px -12px rgb(var(--shadow-rgb) / 0.6);
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.brand { display: flex; align-items: center; height: 100%; padding-block: 8px; }
+.brand__logo {
+  height: 48px;
+  width: 180px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.brand:hover .brand__logo {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 8px rgb(var(--gold-rgb) / 0.3));
+}
+@media (min-width: 768px) {
+  .brand__logo { height: 56px; width: 210px; }
+}
+
+.nav-desktop { display: none; }
+@media (min-width: 768px) {
+  .nav-desktop { display: flex; align-items: center; gap: 40px; }
+}
+.nav-link {
+  font-family: var(--font-body);
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  color: var(--on-variant);
+  transition: color 0.3s ease;
+}
+.nav-link:hover { color: var(--gold); }
+.nav-link.is-active {
+  color: var(--gold);
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 4px;
+}
+
+.nav-toggle { display: flex; align-items: center; gap: 16px; color: var(--on-surface); }
+.nav-toggle .icon { font-size: 32px; display: block; }
+.nav-toggle:hover { color: var(--gold); }
+/* nút hamburger chỉ có ở màn hẹp, nhưng nút đổi giao diện thì luôn hiện */
+@media (min-width: 768px) { #nav-open { display: none; } }
+
+/* ---------- Mobile nav overlay ---------- */
+.nav-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  background: rgb(var(--ink-rgb) / 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+.nav-overlay.is-open { transform: translateX(0); }
+@media (min-width: 768px) { .nav-overlay { display: none; } }
+
+.nav-overlay__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--header-h);
+  padding-inline: 24px;
+  border-bottom: 1px solid rgb(var(--outline-rgb) / 0.1);
+}
+.nav-overlay__bar .brand__logo { height: 40px; width: 150px; }
+.nav-overlay__close { color: var(--on-surface); }
+.nav-overlay__close .icon { font-size: 32px; display: block; }
+
+.nav-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  height: calc(100vh - var(--header-h));
+}
+.nav-mobile a {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  color: var(--on-variant);
+  transition: color 0.3s ease;
+}
+.nav-mobile a:hover, .nav-mobile a.is-active { color: var(--gold); }
+
+/* ==========================================================================
+   Main
+   ========================================================================== */
+.site-main { padding-top: 128px; min-height: 100vh; }
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+.site-footer {
+  width: 100%;
+  padding-top: 96px;
+  padding-bottom: 32px;
+  background: var(--surface-lowest);
+  border-top: 1px solid rgb(var(--outline-rgb) / 0.1);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+@media (min-width: 768px) {
+  .footer-grid { grid-template-columns: repeat(12, minmax(0, 1fr)); }
+  .footer-about { grid-column: span 6; }
+  .footer-col   { grid-column: span 2; }
+}
+
+.footer-about { display: flex; flex-direction: column; gap: 24px; }
+.footer-brand {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 22px;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .footer-brand { font-size: 32px; line-height: 1.3; }
+}
+.footer-about > p {
+  max-width: 448px;
+  font-size: 16px;
+  line-height: 1.625;
+  color: var(--on-variant);
+}
+.footer-legal {
+  padding-top: 16px;
+  border-top: 1px solid rgb(var(--outline-rgb) / 0.1);
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  line-height: 1.625;
+  color: rgb(var(--on-variant-rgb) / 0.65);
+}
+.footer-legal p + p { margin-top: 6px; }
+
+.footer-col { display: flex; flex-direction: column; gap: 16px; }
+.footer-col__title {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--on-surface);
+  margin-bottom: 8px;
+}
+.footer-col a {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--on-variant);
+  text-decoration: underline;
+  text-decoration-color: rgb(var(--gold-rgb) / 0.1);
+  transition: color 0.3s ease, text-decoration-color 0.3s ease;
+}
+.footer-col a:hover { color: var(--gold); text-decoration-color: rgb(var(--gold-rgb) / 0.3); }
+
+.footer-social { display: flex; gap: 16px; }
+.footer-social .icon { color: var(--on-variant); cursor: pointer; transition: color 0.3s ease; }
+.footer-social .icon:hover { color: var(--gold); }
+.footer-node {
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--on-variant);
+  margin-top: 16px;
+}
+
+.footer-bottom {
+  max-width: var(--container);
+  margin: 64px auto 0;
+  padding-inline: var(--gutter);
+  padding-top: 32px;
+  border-top: 1px solid rgb(var(--outline-rgb) / 0.1);
+  text-align: center;
+}
+.footer-bottom p { font-size: 14px; line-height: 1.6; color: var(--on-variant); }
+
+/* ==========================================================================
+   Back-to-top FAB
+   ========================================================================== */
+.to-top {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 80;
+  padding: 16px;
+  background: var(--gold);
+  color: var(--on-secondary);
+  border-radius: 12px;
+  box-shadow: 0 25px 50px -12px rgb(var(--shadow-rgb) / 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.to-top.is-visible { opacity: 1; pointer-events: auto; }
+.to-top:hover { transform: scale(1.05); }
+.to-top:active { transform: scale(0.95); }
+.to-top .icon { font-size: 28px; }
+
+/* ==========================================================================
+   Cursor glow (desktop pointer only)
+   ========================================================================== */
+.cursor-glow {
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgb(var(--gold-rgb) / 0.07), rgb(var(--gold-rgb) / 0) 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.5s ease;
+  mix-blend-mode: screen;
+  filter: blur(35px);
+  opacity: 0;
+  will-change: transform;
+}
+
+/* ==========================================================================
+   NÚT ĐỔI GIAO DIỆN SÁNG / TỐI
+   ========================================================================== */
+.theme-toggle {
+  position: relative;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgb(var(--outline-rgb) / 0.35);
+  border-radius: 50%;
+  background: rgb(var(--panel-rgb) / 0.45);
+  color: var(--gold);
+  cursor: pointer;
+  transition:
+    border-color 0.45s var(--ease-out-expo),
+    background-color 0.45s var(--ease-out-expo),
+    color 0.45s var(--ease-out-expo);
+}
+.theme-toggle:hover { border-color: rgb(var(--gold-rgb) / 0.6); background: rgb(var(--gold-rgb) / 0.1); }
+.theme-toggle:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+
+/* vòng sáng nở ra một nhịp mỗi lần bấm */
+.theme-toggle__ring {
+  position: absolute;
+  inset: -1px;
+  border-radius: 50%;
+  border: 1px solid rgb(var(--gold-rgb) / 0.7);
+  opacity: 0;
+  pointer-events: none;
+}
+.theme-toggle.is-pinged .theme-toggle__ring { animation: toggle-ping 0.7s var(--ease-out-expo); }
+@keyframes toggle-ping {
+  from { opacity: 0.85; transform: scale(1); }
+  to   { opacity: 0;    transform: scale(1.9); }
+}
+
+/* hai biểu tượng chồng lên nhau, đổi chỗ bằng xoay + thu phóng */
+.theme-toggle__icon {
+  grid-area: 1 / 1;
+  width: 19px;
+  height: 19px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  transition:
+    opacity 0.4s var(--ease-out-expo),
+    transform 0.55s var(--ease-out-expo);
+}
+.theme-toggle__icon--moon { fill: currentColor; stroke: none; }
+
+/* đang ở theme TỐI -> mời sang sáng -> hiện mặt trời */
+.theme-toggle__icon--sun  { opacity: 1; transform: rotate(0) scale(1); }
+.theme-toggle__icon--moon { opacity: 0; transform: rotate(-70deg) scale(0.4); }
+/* đang ở theme SÁNG -> mời sang tối -> hiện mặt trăng */
+:root[data-theme="light"] .theme-toggle__icon--sun  { opacity: 0; transform: rotate(70deg) scale(0.4); }
+:root[data-theme="light"] .theme-toggle__icon--moon { opacity: 1; transform: rotate(0) scale(1); }
+
+/* tia nắng xoè ra chậm hơn thân mặt trời một nhịp */
+.theme-toggle__rays {
+  transform-origin: 12px 12px;
+  transition: transform 0.7s var(--ease-out-expo), opacity 0.4s ease;
+}
+:root[data-theme="light"] .theme-toggle__rays { transform: rotate(90deg) scale(0.5); opacity: 0; }
+
+/* ---------- Công tắc trong ngăn kéo mobile ---------- */
+.nav-mobile__theme {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 8px;
+  padding: 10px 18px;
+  border: 1px solid rgb(var(--outline-rgb) / 0.35);
+  border-radius: 999px;
+  background: none;
+  cursor: pointer;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--on-variant);
+  transition: color 0.35s ease, border-color 0.35s ease;
+}
+.nav-mobile__theme:hover { color: var(--gold); border-color: rgb(var(--gold-rgb) / 0.5); }
+.nav-mobile__switch {
+  position: relative;
+  width: 38px;
+  height: 20px;
+  border: 1px solid rgb(var(--outline-rgb) / 0.5);
+  border-radius: 999px;
+  background: rgb(var(--panel-rgb) / 0.4);
+  transition: background-color 0.4s ease, border-color 0.4s ease;
+}
+.nav-mobile__switch i {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--gold);
+  transition: transform 0.45s var(--ease-out-expo);
+}
+:root[data-theme="light"] .nav-mobile__switch { border-color: rgb(var(--gold-rgb) / 0.5); }
+:root[data-theme="light"] .nav-mobile__switch i { transform: translateX(18px); }
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-toggle__icon,
+  .theme-toggle__rays,
+  .nav-mobile__switch i { transition-duration: 0.01ms; }
+  .theme-toggle.is-pinged .theme-toggle__ring { animation: none; }
+}
+
+/* ==========================================================================
+   CHUYỂN GIAO DIỆN
+   ========================================================================== */
+
+/* Cách chính: View Transitions. Trình duyệt tự chụp trước/sau rồi cho JS
+   vẽ hình tròn loang ra. Ảnh cũ nằm yên bên dưới nên không bị nháy. */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+::view-transition-old(root) { z-index: 1; }
+::view-transition-new(root) { z-index: 2; }
+
+/* Cách dự phòng cho trình duyệt chưa có View Transitions: cho màu chạy dần.
+   Class này chỉ tồn tại ~0,6 giây lúc bấm, không phải gánh nặng thường trực. */
+.theme-anim,
+.theme-anim *,
+.theme-anim *::before,
+.theme-anim *::after {
+  transition:
+    background-color 0.45s var(--ease-out-expo),
+    border-color 0.45s var(--ease-out-expo),
+    color 0.45s var(--ease-out-expo),
+    fill 0.45s var(--ease-out-expo),
+    stroke 0.45s var(--ease-out-expo),
+    box-shadow 0.45s var(--ease-out-expo),
+    filter 0.45s var(--ease-out-expo) !important;
+}
+
+/* Nền trang đổi mượt kể cả khi View Transitions lo phần còn lại */
+html, body { transition: background-color 0.45s var(--ease-out-expo); }
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(root),
+  ::view-transition-new(root) { animation: none !important; }
+  .theme-anim, .theme-anim * { transition-duration: 0.01ms !important; }
+  html, body { transition: none; }
+}

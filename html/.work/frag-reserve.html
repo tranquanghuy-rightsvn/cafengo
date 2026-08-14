@@ -1,0 +1,219 @@
+  <!-- ==================== ĐẶT BÀN ==================== -->
+  <section class="section section--bronze reserve" id="reservations">
+    <div class="grid-overlay" aria-hidden="true"></div>
+    <div class="glow-blob" style="width:500px;height:500px;top:-160px;left:-160px;background:rgba(255,183,123,0.05);animation-delay:-4s;animation-duration:13s" aria-hidden="true"></div>
+    <div class="glow-blob" style="width:400px;height:400px;bottom:40px;right:-80px;background:rgba(245,158,11,0.03);animation-delay:-8s;animation-duration:17s" aria-hidden="true"></div>
+
+    <div class="container" style="position:relative;z-index:10">
+      <div class="reserve__head">
+        <span class="reserve__eyebrow">Trạm điều hành đặt chỗ // Executive Reservations</span>
+        <h2 class="reserve__title">Đặt bàn trực tuyến</h2>
+        <p class="reserve__lede">Giữ chỗ trực tuyến cho trạm máy tính cấu hình cao, vị trí bàn cafe ngắm cảnh hoặc hầm cách âm bảo mật VIP cho các buổi đàm phán tài chính.</p>
+        <div class="reserve__rule"></div>
+      </div>
+
+      <div class="reserve__wallet-row">
+        <button type="button" class="reserve__wallet">
+          <span class="icon">vpn_key</span>Kết nối ví Trader (Web3)
+        </button>
+      </div>
+
+      <div class="reserve__grid">
+        <!-- ---------- Left: table type + spec ---------- -->
+        <div class="reserve__aside">
+          <div class="panel glass">
+            <h3 class="panel__title"><span class="icon">domain</span>1. Chọn khu vực &amp; loại bàn</h3>
+            <div class="opt-list" id="opt-list">
+              <button type="button" class="opt is-selected" data-opt="0"
+                data-name="Bàn Cà Phê Tiêu Chuẩn (Standard Table)"
+                data-icon="local_cafe"
+                data-desc="Không gian chung thoáng đãng, yên tĩnh vừa đủ. Thích hợp cho làm việc cá nhân hoặc gặp gỡ đối tác thân thiết."
+                data-price="Miễn phí"
+                data-hw="Nguồn điện ổ cắm độc lập tại mỗi bàn|Đường truyền Wi-Fi 6 tốc độ cao (Băng tần 5GHz)|Nước uống tinh khiết tiếp đón miễn phí|Ghế ngồi bọc da êm ái, hỗ trợ cột sống nhẹ">
+                <span class="opt__corners" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+                <span class="icon">local_cafe</span>
+                <span class="opt__body">
+                  <span class="opt__name">Bàn Cà Phê Tiêu Chuẩn</span>
+                  <span class="opt__desc">Không gian chung thoáng đãng, yên tĩnh vừa đủ. Thích hợp cho làm việc cá nhân hoặc gặp gỡ đối tác thân thiết.</span>
+                  <span class="opt__price">Miễn phí đặt chỗ</span>
+                </span>
+              </button>
+
+              <button type="button" class="opt" data-opt="1"
+                data-name="Trạm Giao Dịch Chuyên Dụng (Trading Pod)"
+                data-icon="monitoring"
+                data-desc="Thiết kế tối ưu cho các phiên giao dịch căng thẳng. Đáp ứng tốc độ đường truyền và hiển thị thông tin tối đa."
+                data-price="50.000đ / giờ"
+                data-hw="Cụm màn hình cong Ultra-wide 4K chuyên dụng|Hạ tầng cáp quang DMA, độ trễ dưới mili-giây|Ghế công thái học Herman Miller Aeron|UPS dự phòng &amp; lọc nguồn Sine chuẩn">
+                <span class="opt__corners" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+                <span class="icon">monitoring</span>
+                <span class="opt__body">
+                  <span class="opt__name">Trạm Giao Dịch Chuyên Dụng</span>
+                  <span class="opt__desc">Thiết kế tối ưu cho các phiên giao dịch căng thẳng. Đáp ứng tốc độ đường truyền và hiển thị thông tin tối đa.</span>
+                  <span class="opt__price opt__price--emerald">50.000đ / giờ</span>
+                </span>
+              </button>
+
+              <button type="button" class="opt" data-opt="2"
+                data-name="Phòng Cách Âm Bảo Mật VIP (Vault Room)"
+                data-icon="lock"
+                data-desc="Không gian họp kín và đàm phán hoàn toàn cô lập về mặt âm thanh và tín hiệu mạng. Thích hợp cho thương thảo OTC lớn."
+                data-price="200.000đ / giờ"
+                data-hw="Cách âm hai lớp, tiêu âm chuẩn phòng thu|Tường lửa lớp doanh nghiệp &amp; VPN IP tĩnh riêng|Đường dây Ethernet vật lý tới nút phần cứng|Không gian Air-gapped cho ký kết đa chữ ký">
+                <span class="opt__corners" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+                <span class="icon">lock</span>
+                <span class="opt__body">
+                  <span class="opt__name">Phòng Cách Âm Bảo Mật VIP</span>
+                  <span class="opt__desc">Không gian họp kín và đàm phán hoàn toàn cô lập về mặt âm thanh và tín hiệu mạng. Thích hợp cho thương thảo OTC lớn.</span>
+                  <span class="opt__price opt__price--amber">200.000đ / giờ</span>
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <div class="panel glass" style="overflow:hidden">
+            <span class="panel__corners" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+            <h3 class="panel__title"><span class="icon" id="spec-icon">local_cafe</span>Cấu hình &amp; thông số vị trí</h3>
+            <div class="spec">
+              <div>
+                <h4 class="spec__name" id="spec-name">Bàn Cà Phê Tiêu Chuẩn (Standard Table)</h4>
+                <p class="spec__desc" id="spec-desc">Không gian chung thoáng đãng, yên tĩnh vừa đủ. Thích hợp cho làm việc cá nhân hoặc gặp gỡ đối tác thân thiết.</p>
+              </div>
+              <div class="spec__hw">
+                <span>Thông số kỹ thuật phần cứng:</span>
+                <ul id="spec-hw">
+                  <li><span>Nguồn điện ổ cắm độc lập tại mỗi bàn</span></li>
+                  <li><span>Đường truyền Wi-Fi 6 tốc độ cao (Băng tần 5GHz)</span></li>
+                  <li><span>Nước uống tinh khiết tiếp đón miễn phí</span></li>
+                  <li><span>Ghế ngồi bọc da êm ái, hỗ trợ cột sống nhẹ</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ---------- Right: booking form ---------- -->
+        <div class="reserve__main">
+          <div class="panel panel--form glass">
+            <form class="rform" novalidate>
+              <div class="rstep">
+                <h3 class="panel__title panel__title--tight"><span class="icon">calendar_today</span>2. Chọn ngày giao dịch</h3>
+                <div class="day-row" id="day-row">
+                  <button type="button" class="day-btn is-selected">Thứ Sáu, 14/08</button>
+                  <button type="button" class="day-btn">Thứ Bảy, 15/08</button>
+                  <button type="button" class="day-btn">Chủ Nhật, 16/08</button>
+                  <button type="button" class="day-btn">Thứ Hai, 17/08</button>
+                  <button type="button" class="day-btn">Thứ Ba, 18/08</button>
+                </div>
+              </div>
+
+              <div class="rstep">
+                <h3 class="panel__title panel__title--tight"><span class="icon">schedule</span>3. Chọn khung giờ bắt đầu</h3>
+                <div class="slot-grid" id="slot-grid">
+                  <button type="button" class="slot">08:00 AM<small>Còn trống</small></button>
+                  <button type="button" class="slot">10:00 AM<small>Còn trống</small></button>
+                  <button type="button" class="slot" disabled>12:00 PM<small>Hết chỗ</small></button>
+                  <button type="button" class="slot is-selected">02:00 PM<small>Còn trống</small></button>
+                  <button type="button" class="slot">04:00 PM<small>Còn trống</small></button>
+                  <button type="button" class="slot" disabled>06:00 PM<small>Hết chỗ</small></button>
+                  <button type="button" class="slot">08:00 PM<small>Còn trống</small></button>
+                </div>
+              </div>
+
+              <div class="rgrid">
+                <div class="rfield is-disabled" id="duration-field">
+                  <label class="rlabel" for="res-duration">Thời lượng sử dụng</label>
+                  <div class="rselect">
+                    <select class="rinput" id="res-duration" name="duration" disabled>
+                      <option value="1">1 Giờ</option>
+                      <option value="2" selected>2 Giờ</option>
+                      <option value="3">3 Giờ</option>
+                      <option value="4">4 Giờ</option>
+                      <option value="8">8 Giờ (Cả ngày)</option>
+                    </select>
+                    <span class="icon">keyboard_arrow_down</span>
+                  </div>
+                </div>
+                <div class="rfield">
+                  <label class="rlabel" for="res-people">Số lượng thành viên</label>
+                  <div class="rselect">
+                    <select class="rinput" id="res-people" name="people">
+                      <option>1 Người</option>
+                      <option>2 Người</option>
+                      <option>3 Người</option>
+                      <option>4 Người</option>
+                      <option>5 - 8 Người</option>
+                      <option>Hội thảo nhóm lớn (&gt;8)</option>
+                    </select>
+                    <span class="icon">keyboard_arrow_down</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="rsection">
+                <div class="rsection__head">
+                  <h3 class="panel__title panel__title--plain"><span class="icon">person</span>4. Thông tin khách hàng</h3>
+                  <label class="privacy">
+                    <input type="checkbox" name="anonymous">
+                    <span>Chế độ Ẩn danh (Privacy)</span>
+                  </label>
+                </div>
+
+                <div class="rgrid">
+                  <div class="rfield rfield--tight">
+                    <label class="rlabel" for="res-name">Họ và tên *</label>
+                    <input class="rinput" id="res-name" name="name" type="text" required placeholder="NGUYỄN VĂN A">
+                  </div>
+                  <div class="rfield rfield--tight">
+                    <label class="rlabel" for="res-phone">Số điện thoại *</label>
+                    <input class="rinput" id="res-phone" name="phone" type="tel" required placeholder="090 123 4567">
+                  </div>
+                </div>
+
+                <div class="rgrid">
+                  <div class="rfield rfield--tight">
+                    <label class="rlabel" for="res-email">Địa chỉ Email (Không bắt buộc)</label>
+                    <input class="rinput" id="res-email" name="email" type="email" placeholder="vip-trader@domain.com">
+                  </div>
+                  <div class="rfield rfield--tight">
+                    <label class="rlabel" for="res-pay">Phương thức thanh toán</label>
+                    <div class="rselect">
+                      <select class="rinput" id="res-pay" name="payment">
+                        <option value="counter">Thanh toán tại quầy</option>
+                        <option value="crypto">USDT / USDC (Ví Web3)</option>
+                      </select>
+                      <span class="icon">keyboard_arrow_down</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="rfield rfield--tight">
+                  <label class="rlabel" for="res-note">Yêu cầu bổ sung đặc biệt</label>
+                  <textarea class="rinput" id="res-note" name="note" rows="2" placeholder="Ví dụ: Vị trí bàn yên tĩnh, mượn cổng chuyển HDMI, chuẩn bị sẵn ví lạnh Ledger..."></textarea>
+                </div>
+              </div>
+
+              <div class="invoice">
+                <span class="invoice__title">Hóa đơn tạm tính hệ thống</span>
+                <div class="invoice__row"><span>Đơn giá loại bàn:</span><span id="inv-unit">Miễn phí</span></div>
+                <div class="invoice__row"><span>Thời lượng đặt chỗ:</span><span id="inv-hours">2 Giờ</span></div>
+                <div class="invoice__total">
+                  <span>Tổng phí:</span>
+                  <b id="inv-total">0đ</b>
+                </div>
+              </div>
+
+              <div>
+                <button type="submit" class="rsubmit">Thực thi lệnh đặt bàn</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="reserve__hotline reveal">
+            <p>Đặt chỗ khẩn cấp qua Hotline &amp; Zalo encrypted</p>
+            <a href="tel:0902345678"><span class="icon">call</span>Hotline / Zalo Secure: 090 234 5678</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

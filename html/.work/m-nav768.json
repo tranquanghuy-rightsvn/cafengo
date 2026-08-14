@@ -1,0 +1,198 @@
+{
+ "t": "nav",
+ "c": "hidden md:flex items-center space-x-10",
+ "box": {
+  "w": 430,
+  "h": 29,
+  "x": 274,
+  "y": 25
+ },
+ "st": {
+  "display": "flex",
+  "flexDirection": "row",
+  "flexWrap": "nowrap",
+  "alignItems": "center",
+  "width": "430px",
+  "height": "29px",
+  "boxSizing": "border-box",
+  "color": "rgb(226, 226, 226)",
+  "backgroundPosition": "0% 0%",
+  "opacity": "1",
+  "fontFamily": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+  "fontSize": "16px",
+  "fontWeight": "400",
+  "lineHeight": "24px",
+  "borderColor": "rgb(229, 231, 235)",
+  "borderStyle": "solid",
+  "objectFit": "fill",
+  "writingMode": "horizontal-tb"
+ },
+ "kids": [
+  {
+   "t": "a",
+   "c": "font-label-caps text-label-caps transition-colors duration-300 text-secondary border-b border-secondary pb-1",
+   "box": {
+    "w": 54.7,
+    "h": 29,
+    "x": 274,
+    "y": 25
+   },
+   "txt": "Trang chủ",
+   "st": {
+    "display": "block",
+    "flexDirection": "row",
+    "flexWrap": "nowrap",
+    "width": "54.7031px",
+    "height": "29px",
+    "padding": "0px 0px 4px",
+    "boxSizing": "border-box",
+    "color": "rgb(255, 183, 123)",
+    "backgroundPosition": "0% 0%",
+    "opacity": "1",
+    "fontFamily": "\"Plus Jakarta Sans\", sans-serif",
+    "fontSize": "12px",
+    "fontWeight": "600",
+    "lineHeight": "12px",
+    "letterSpacing": "1.8px",
+    "borderBottomWidth": "1px",
+    "borderColor": "rgb(255, 183, 123)",
+    "borderStyle": "solid",
+    "objectFit": "fill",
+    "writingMode": "horizontal-tb"
+   },
+   "kids": []
+  },
+  {
+   "t": "a",
+   "c": "font-label-caps text-label-caps transition-colors duration-300 text-on-surface-variant hover:text-secondary",
+   "box": {
+    "w": 51.9,
+    "h": 24,
+    "x": 369,
+    "y": 28
+   },
+   "txt": "Thực đơn",
+   "st": {
+    "display": "block",
+    "flexDirection": "row",
+    "flexWrap": "nowrap",
+    "width": "51.8594px",
+    "height": "24px",
+    "margin": "0px 0px 0px 40px",
+    "boxSizing": "border-box",
+    "color": "rgb(196, 199, 199)",
+    "backgroundPosition": "0% 0%",
+    "opacity": "1",
+    "fontFamily": "\"Plus Jakarta Sans\", sans-serif",
+    "fontSize": "12px",
+    "fontWeight": "600",
+    "lineHeight": "12px",
+    "letterSpacing": "1.8px",
+    "borderColor": "rgb(229, 231, 235)",
+    "borderStyle": "solid",
+    "objectFit": "fill",
+    "writingMode": "horizontal-tb"
+   },
+   "kids": []
+  },
+  {
+   "t": "a",
+   "c": "font-label-caps text-label-caps transition-colors duration-300 text-on-surface-variant hover:text-secondary",
+   "box": {
+    "w": 79,
+    "h": 24,
+    "x": 461,
+    "y": 28
+   },
+   "txt": "Khu Giao Dịch",
+   "st": {
+    "display": "block",
+    "flexDirection": "row",
+    "flexWrap": "nowrap",
+    "width": "79.0469px",
+    "height": "24px",
+    "margin": "0px 0px 0px 40px",
+    "boxSizing": "border-box",
+    "color": "rgb(196, 199, 199)",
+    "backgroundPosition": "0% 0%",
+    "opacity": "1",
+    "fontFamily": "\"Plus Jakarta Sans\", sans-serif",
+    "fontSize": "12px",
+    "fontWeight": "600",
+    "lineHeight": "12px",
+    "letterSpacing": "1.8px",
+    "borderColor": "rgb(229, 231, 235)",
+    "borderStyle": "solid",
+    "objectFit": "fill",
+    "writingMode": "horizontal-tb"
+   },
+   "kids": []
+  },
+  {
+   "t": "a",
+   "c": "font-label-caps text-label-caps transition-colors duration-300 text-on-surface-variant hover:text-secondary",
+   "box": {
+    "w": 43.9,
+    "h": 24,
+    "x": 580,
+    "y": 28
+   },
+   "txt": "Đặt bàn",
+   "st": {
+    "display": "block",
+    "flexDirection": "row",
+    "flexWrap": "nowrap",
+    "width": "43.9062px",
+    "height": "24px",
+    "margin": "0px 0px 0px 40px",
+    "boxSizing": "border-box",
+    "color": "rgb(196, 199, 199)",
+    "backgroundPosition": "0% 0%",
+    "opacity": "1",
+    "fontFamily": "\"Plus Jakarta Sans\", sans-serif",
+    "fontSize": "12px",
+    "fontWeight": "600",
+    "lineHeight": "12px",
+    "letterSpacing": "1.8px",
+    "borderColor": "rgb(229, 231, 235)",
+    "borderStyle": "solid",
+    "objectFit": "fill",
+    "writingMode": "horizontal-tb"
+   },
+   "kids": []
+  },
+  {
+   "t": "a",
+   "c": "font-label-caps text-label-caps transition-colors duration-300 text-on-surface-variant hover:text-secondary",
+   "box": {
+    "w": 40.5,
+    "h": 24,
+    "x": 664,
+    "y": 28
+   },
+   "txt": "Liên hệ",
+   "st": {
+    "display": "block",
+    "flexDirection": "row",
+    "flexWrap": "nowrap",
+    "width": "40.4844px",
+    "height": "24px",
+    "margin": "0px 0px 0px 40px",
+    "boxSizing": "border-box",
+    "color": "rgb(196, 199, 199)",
+    "backgroundPosition": "0% 0%",
+    "opacity": "1",
+    "fontFamily": "\"Plus Jakarta Sans\", sans-serif",
+    "fontSize": "12px",
+    "fontWeight": "600",
+    "lineHeight": "12px",
+    "letterSpacing": "1.8px",
+    "borderColor": "rgb(229, 231, 235)",
+    "borderStyle": "solid",
+    "objectFit": "fill",
+    "writingMode": "horizontal-tb"
+   },
+   "kids": []
+  }
+ ]
+}

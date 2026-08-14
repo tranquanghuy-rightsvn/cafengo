@@ -1,0 +1,11 @@
+import puppeteer from 'puppeteer-core';
+const W=Number(process.env.W||375), SEL=process.env.SEL, OUT=process.env.OUT;
+const b=await puppeteer.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true,args:['--no-sandbox','--hide-scrollbars'],defaultViewport:{width:W,height:812,deviceScaleFactor:3}});
+const p=await b.newPage();
+await p.goto('http://127.0.0.1:8899/',{waitUntil:'networkidle2'});
+await p.addStyleTag({content:'html{scroll-behavior:auto!important}'});
+await p.evaluate(s=>document.querySelector(s).scrollIntoView({block:'center'}),SEL);
+await new Promise(r=>setTimeout(r,900));
+await (await p.$(SEL)).screenshot({path:OUT});
+console.log('ok');
+await b.close();

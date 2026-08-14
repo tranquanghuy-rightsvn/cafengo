@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ngõ Coffee | Cà Phê Rang Xay Truyền Thống</title>
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scroll-progress"></div>
+<div class="cursor-glow" id="cursor-glow"></div>
+
+<!-- ==================== HEADER ==================== -->
+<header class="site-header" id="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="#home" aria-label="Ngõ Coffee Home">
+      <svg class="brand__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 64" role="img" aria-label="Ngõ Coffee — Cà phê rang xay truyền thống">
+        <defs>
+          <linearGradient id="logo-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#ffb77b"/>
+            <stop offset="100%" stop-color="#bf953f"/>
+          </linearGradient>
+          <filter id="logo-glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="1.2" result="blur"/>
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+        <g transform="translate(6, 4)" filter="url(#logo-glow)">
+          <polygon points="28,2 50,14 50,42 28,54 6,42 6,14" fill="none" stroke="url(#logo-gold)" stroke-width="2" stroke-linejoin="round"/>
+          <polygon points="28,8 44,17 44,39 28,48 12,39 12,17" fill="none" stroke="#ffb77b" stroke-width="0.6" opacity="0.3" stroke-linejoin="round"/>
+          <text x="28" y="38" font-family="'Space Grotesk','Helvetica Neue',sans-serif" font-size="27" font-weight="700" fill="url(#logo-gold)" text-anchor="middle" letter-spacing="-1">N</text>
+          <circle cx="46" cy="40" r="2.2" fill="#ffb77b" opacity="0.85"/>
+        </g>
+        <text x="72" y="30" font-family="'Space Grotesk','Helvetica Neue',sans-serif" font-size="22" font-weight="700" fill="#e8e8e8" letter-spacing="0.18em">NGÕ</text>
+        <circle cx="132" cy="23" r="2" fill="#ffb77b" opacity="0.7"/>
+        <text x="140" y="30" font-family="'Space Grotesk','Helvetica Neue',sans-serif" font-size="22" font-weight="300" fill="url(#logo-gold)" letter-spacing="0.18em">COFFEE</text>
+        <text x="72" y="47" font-family="'Plus Jakarta Sans','Helvetica Neue',sans-serif" font-size="7.5" font-weight="600" fill="#8a9090" letter-spacing="0.28em">CÀ PHÊ RANG XAY · TỪ 2016</text>
+      </svg>
+    </a>
+
+    <nav class="nav-desktop" id="nav-desktop">
+      <a class="nav-link is-active" href="#home">Trang chủ</a>
+      <a class="nav-link" href="#menu">Thực đơn</a>
+      <a class="nav-link" href="#gallery">Không gian</a>
+      <a class="nav-link" href="#story">Câu chuyện</a>
+      <a class="nav-link" href="#contact">Liên hệ</a>
+    </nav>
+
+    <div class="nav-toggle">
+      <button type="button" id="nav-open" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-overlay">
+        <span class="icon">menu</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="nav-overlay" id="nav-overlay" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Menu điều hướng">
+  <div class="nav-overlay__bar">
+    <span class="brand">
+      <svg class="brand__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 64" role="img" aria-label="Ngõ Coffee">
+        <g transform="translate(6, 4)">
+          <polygon points="28,2 50,14 50,42 28,54 6,42 6,14" fill="none" stroke="url(#logo-gold)" stroke-width="2" stroke-linejoin="round"/>
+          <polygon points="28,8 44,17 44,39 28,48 12,39 12,17" fill="none" stroke="#ffb77b" stroke-width="0.6" opacity="0.3" stroke-linejoin="round"/>
+          <text x="28" y="38" font-family="'Space Grotesk','Helvetica Neue',sans-serif" font-size="27" font-weight="700" fill="url(#logo-gold)" text-anchor="middle" letter-spacing="-1">N</text>
+          <circle cx="46" cy="40" r="2.2" fill="#ffb77b" opacity="0.85"/>
+        </g>
+        <text x="72" y="30" font-family="'Space Grotesk','Helvetica Neue',sans-serif" font-size="22" font-weight="700" fill="#e8e8e8" letter-spacing="0.18em">NGÕ</text>
+        <circle cx="132" cy="23" r="2" fill="#ffb77b" opacity="0.7"/>
+        <text x="140" y="30" font-family="'Space Grotesk','Helvetica Neue',sans-serif" font-size="22" font-weight="300" fill="url(#logo-gold)" letter-spacing="0.18em">COFFEE</text>
+        <text x="72" y="47" font-family="'Plus Jakarta Sans','Helvetica Neue',sans-serif" font-size="7.5" font-weight="600" fill="#8a9090" letter-spacing="0.28em">CÀ PHÊ RANG XAY · TỪ 2016</text>
+      </svg>
+    </span>
+    <button type="button" class="nav-overlay__close" id="nav-close" aria-label="Close navigation menu">
+      <span class="icon">close</span>
+    </button>
+  </div>
+  <nav class="nav-mobile">
+    <a class="is-active" href="#home">Trang chủ</a>
+    <a href="#menu">Thực đơn</a>
+    <a href="#gallery">Không gian</a>
+    <a href="#story">Câu chuyện</a>
+    <a href="#contact">Liên hệ</a>
+  </nav>
+</div>
+
+<main class="site-main">
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="home">
+    <div class="hero__bg">
+      <img class="hero__img" src="images/hero-bg.jpg" alt="Không gian ấm cúng của quán cà phê Ngõ Coffee" width="1920" height="972" fetchpriority="high">
+      <div class="hero__scrim"></div>
+      <div class="hero__particles" aria-hidden="true"></div>
+      <div class="glow-blob hero__glow hero__glow--a"></div>
+      <div class="glow-blob hero__glow hero__glow--b"></div>
+    </div>
+
+    <div class="container hero__content">
+      <p class="hero__badge">☕ Rang xay thủ công từ 2016</p>
+      <p class="hero__kicker">Hương vị truyền thống · Pha phin mỗi ngày</p>
+      <h1 class="hero__title">Đậm Đà Một Hương Vị Việt</h1>
+      <p class="hero__lede">Một góc phố quen với ly phin nhỏ giọt, mùi bơ nướng thơm lừng và tiếng trò chuyện rì rầm — nơi thời gian chịu chậm lại cùng bạn.</p>
+      <p class="hero__place">
+        <span class="icon">location_on</span>
+        <span>K54/8 Phạm Hồng Thái, Hải Châu, TP. Đà Nẵng</span>
+      </p>
+      <div class="hero__actions">
+        <a class="hero__cta hero__cta--solid" href="#menu">Xem thực đơn</a>
+        <a class="hero__cta hero__cta--outline" href="#menu">Khám phá Menu</a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ==================== MENU ==================== -->
+  <section class="section section--bronze menu" id="menu">
+    <div class="container menu__head">
+      <span class="menu__eyebrow">Rang xay thủ công mỗi sáng</span>
+      <h2 class="menu__title">Sách thực đơn</h2>
+      <div class="menu__rule"></div>
+      <p class="menu__lede">Lật từng trang để gặp lại những cái tên quen: phin đen đá, bạc sỉu, trà sen — và vài món mới quán vừa thử nghiệm mùa này.</p>
+      <div class="menu__tools">
+        <button type="button" class="menu__tool" id="menu-share">
+          <span class="icon">share</span> Chia sẻ thực đơn
+        </button>
+        <a class="menu__tool" href="#">
+          <span class="icon">download</span> Tải bản PDF
+        </a>
+      </div>
+    </div>
+
+    <!-- ---------- Desktop: flipbook ---------- -->
+    <div class="menu__desktop">
+      <p class="menu__tip">
+        <span class="icon">keyboard</span>
+        <span>Mẹo: Sử dụng phím mũi tên <b>←</b> và <b>→</b> để lật trang</span>
+      </p>
+
+      <div class="flip-outer">
+        <div class="flip-stage">
+          <div class="flip-frame">
+            <div class="flip-book">
+              <div class="flip-book__inner">
+                <div class="flip-spread" id="flip-spread">
+
+                  <!-- leaf 0 : front cover  /  page 1 -->
+                  <div class="leaf" data-leaf="0">
+                    <div class="leaf__face leaf__face--front">
+                      <div class="cover cover--front">
+                        <div class="cover__frame">
+                          <div class="cover__halo"></div>
+                          <span class="cover__eyebrow">Phiên bản độc quyền</span>
+                          <h2 class="cover__title gold-foil">Thực Đơn</h2>
+                          <div class="cover__divider"></div>
+                          <p class="cover__est">EST. 2016</p>
+                          <div class="cover__open">
+                            <span class="icon">auto_stories</span>
+                            <span>Nhấp mở sách</span>
+                          </div>
+                          <div class="cover__hint">
+                            <span>Góc lật</span>
+                            <span class="icon">gesture</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="leaf__face leaf__face--back">
+                      <div class="page-border"></div>
+                      <div class="page-intro">
+                        <div>
+                          <h3 class="page-intro__title">Cà Phê Phin &amp; Phindi</h3>
+                          <div class="page-intro__rule"></div>
+                          <p class="page-intro__text">Nền tảng của văn hóa cà phê Việt Nam, được tinh chế phù hợp với khẩu vị hiện đại. Từng giọt rơi chậm trên nền nhạc Trịnh, ngồi bao lâu cũng được.</p>
+                        </div>
+                        <div class="page-intro__figure">
+                          <img src="images/menu/phin.webp" alt="Cà Phê Phin &amp; Phindi" loading="lazy" decoding="async">
+                        </div>
+                      </div>
+                      <div class="page-fold page-fold--right"></div>
+                    </div>
+                  </div>
+
+                  <!-- leaf 1 : Phin items  /  Trà intro -->
+                  <div class="leaf" data-leaf="1">
+                    <div class="leaf__face leaf__face--front">
+                      <div class="page-border"></div>
+                      <div class="page-list">
+                        <div class="dish">
+                          <div class="dish__main">
+                            <h4 class="dish__name">Phin Đen Đá<span class="dish__tag">Caffeine Cao</span></h4>
+                            <p class="dish__desc">Cà phê truyền thống đậm đặc pha phin, hạt Single-origin hảo hạng.</p>
+                          </div>
+                          <div class="dish__side">
+                            <span class="dish__price">39.000 VNĐ</span>
+                          </div>
+                        </div>
+                        <div class="dish">
+                          <div class="dish__main">
+                            <h4 class="dish__name">Phin Sữa Đá<span class="dish__tag">Bán Chạy</span></h4>
+                            <p class="dish__desc">Sự kết hợp hoàn hảo giữa cốt phin đậm đà và sữa đặc béo ngậy.</p>
+                          </div>
+                          <div class="dish__side">
+                            <span class="dish__price">45.000 VNĐ</span>
+                          </div>
+                        </div>
+                        <div class="dish">
+                          <div class="dish__main">
+                            <h4 class="dish__name">Phin Sữa Nóng</h4>
+                            <p class="dish__desc">Ấm áp, nồng nàn với hương thơm nồng nàn lan tỏa.</p>
+                          </div>
+                          <div class="dish__side">
+                            <span class="dish__price">45.000 VNĐ</span>
+                          </div>
+                        </div>
+                        <div class="dish">
+                          <div class="dish__main">
+                            <h4 class="dish__name">Phindi Hạnh Nhân<span class="dish__tag">Độc Đáo</span></h4>
+                            <p class="dish__desc">Cà phê phin thế hệ mới kết hợp kem sữa hạnh nhân béo ngậy.</p>
+                          </div>
+                          <div class="dish__side">
+                            <span class="dish__price">55.000 VNĐ</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="page-fold page-fold--left"></div>
+                    </div>
+                    <div class="leaf__face leaf__face--back">
+                      <div class="page-border"></div>
+                      <div class="page-intro">
+                        <div>
+                          <h3 class="page-intro__title">Trà Signature Mộc Bản</h3>
+                          <div class="page-intro__rule"></div>
+                          <p class="page-intro__text">Sự kết hợp đầy chất thơ giữa những lá trà cổ thụ Tây Bắc và các loại thảo mộc quý hiếm. Uống vào thấy nhẹ người, hợp những buổi chiều nắng gắt.</p>
+                        </div>
+                        <div class="page-intro__figure">
+                          <img src="images/menu/tra.webp" alt="Trà Signature Mộc Bản" loading="lazy" decoding="async">
+                        </div>
+                      </div>
+                      <div class="page-fold page-fold--right"></div>
+                    </div>
+                  </div>
+
+                  <!-- leaf 2 : Trà items  /  Freeze intro -->
+                  <div class="leaf" data-leaf="2">
+                    <div class="leaf__face leaf__face--front">
+                      <div class="page-border"></div>
+                      <div class="page-list">
+                        <div class="dish">
+                          <div class="dish__main">
+                            <h4 class="dish__name">Trà Sen Vàng Độc Bản<span class="dish__tag">Signature</span></h4>
+                            <p class="dish__desc">Trà ô long thượng hạng kết hợp hạt sen thơm bùi và củ năng giòn ngọt.</p>
+                          </div>
+                          <div class="dish__side">
+                            <span class="dish__price">59.000 VNĐ</span>
+                          </div>
+                        </div>
+                        <div class="dish">
+                          <div class="dish__main">
+                            <h4 class="dish__name">Trà Thảo Mộc Cung Đình<span class="dish__tag">Thảo Mộc</span></h4>
+                            <p class="dish__desc">Trà thảo mộc cung đình Huế làm dịu tinh thần, phục hồi năng lượng.</p>
+                          </div>
+                          <div class="dish__side">
+                            <span class="dish__price">65.000 VNĐ</span>
+                          </div>
+                        </div>
+                        <div class="dish">
+                          <div class="dish__main">
+                            <h4 class="dish__name">Trà Đào Hồng Hạc</h4>
+                            <p class="dish__desc">Hương đào thơm ngọt kết hợp thạch đào giòn dai sảng khoái.</p>
+                          </div>
+                          <div class="dish__side">
+                            <span class="dish__price">55.000 VNĐ</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="page-fold page-fold--left"></div>
+                    </div>
+                    <div class="leaf__face leaf__face--back">
+                      <div class="page-border"></div>
+                      <div class="page-intro">
+                        <div>
+                          <h3 class="page-intro__title">Freeze &amp; Đá Xay Cực Hạn</h3>
+                          <div class="page-intro__rule"></div>
+                          <p class="page-intro__text">Đá xay mát lạnh, ngọt vừa phải. Món ruột của các bạn nhỏ và những ngày Đà Nẵng oi bức.</p>
+                        </div>
+                        <div class="page-intro__figure">
+                          <img src="images/menu/freeze.webp" alt="Freeze &amp; Đá Xay Cực Hạn" loading="lazy" decoding="async">
+                        </div>
+                      </div>
+                      <div class="page-fold page-fold--right"></div>
+                    </div>
+                  </div>
+
+                  <!-- leaf 3 : Freeze items  /  Specialty intro -->
+                  <div class="leaf" data-leaf="3">
+                    <div class="leaf__face leaf__face--front">
+                      <div class="page-border"></div>
+                      <div class="page-list">
+                        <div class="dish">
+                          <div class="dish__main">
+                            <h4 class="dish__name">Freeze Trà Xanh Cực Hạn<span class="dish__tag">Bán Chạy</span></h4>
+                            <p class="dish__desc">Matcha đá xay thượng hạng cùng thạch trà xanh oolong giòn mềm béo ngậy.</p>
+                          </div>
+                          <div class="dish__side">
+                            <span class="dish__price">65.000 VNĐ</span>
+                          </div>
+                        </div>
+                        <div class="dish">
+                          <div class="dish__main">
+                            <h4 class="dish__name">Bạc Sỉu Đá Xay</h4>
+                            <p class="dish__desc">Sự cách tân độc đáo của món bạc sỉu truyền thống mát lạnh.</p>
+                          </div>
+                          <div class="dish__side">
+                            <span class="dish__price">59.000 VNĐ</span>
+                          </div>
+                        </div>
+                        <div class="dish">
+                          <div class="dish__main">
+                            <h4 class="dish__name">Freeze Chanh Dây Nhiệt Đới</h4>
+                            <p class="dish__desc">Vị chanh dây chua ngọt tươi mát sảng khoái ngày hè.</p>
+                          </div>
+                          <div class="dish__side">
+                            <span class="dish__price">59.000 VNĐ</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="page-fold page-fold--left"></div>
+                    </div>
+                    <div class="leaf__face leaf__face--back">
+                      <div class="page-border"></div>
+                      <div class="page-intro">
+                        <div>
+                          <h3 class="page-intro__title">Specialty Cà Phê Ngoại Nhập</h3>
+                          <div class="page-intro__rule"></div>
+                          <p class="page-intro__text">Những hạt cà phê Single-origin đạt điểm đánh giá cao trên thế giới, được pha chế bằng các phương pháp thủ công tỉ mỉ để giữ trọn vẹn hương hoa cỏ thanh tao.</p>
+                        </div>
+                        <div class="page-intro__figure">
+                          <img src="images/menu/specialty_coffee.webp" alt="Specialty Cà Phê Ngoại Nhập" loading="lazy" decoding="async">
+                        </div>
+                      </div>
+                      <div class="page-fold page-fold--right"></div>
+                    </div>
+                  </div>
+
+                  <!-- leaf 4 : Specialty items  /  Bánh intro -->
+                  <div class="leaf" data-leaf="4">
+                    <div class="leaf__face leaf__face--front">
+                      <div class="page-border"></div>
+                      <div class="page-list">
+                        <div class="dish">
+                          <div class="dish__main">
+                            <h4 class="dish__name">V60 Ethiopia Yirgacheffe<span class="dish__tag">Espresso Manual</span></h4>
+                            <p class="dish__desc">Cà phê pha thủ công bằng phễu giấy lọc V60, hương hoa quả thanh tao.</p>
+                          </div>
+                          <div class="dish__side">
+                            <span class="dish__price">75.000 VNĐ</span>
+                          </div>
+                        </div>
+                        <div class="dish">
+                          <div class="dish__main">
+                            <h4 class="dish__name">Cold Brew Signature<span class="dish__tag">Bán Chạy</span></h4>
+                            <p class="dish__desc">Cà phê ủ lạnh chậm 16 tiếng, vị ngọt thanh mát, dễ chịu.</p>
+                          </div>
+                          <div class="dish__side">
+                            <span class="dish__price">69.000 VNĐ</span>
+                          </div>
+                        </div>
+                        <div class="dish">
+                          <div class="dish__main">
+                            <h4 class="dish__name">Siphon Robusta Honey<span class="dish__tag">Độc Đáo</span></h4>
+                            <p class="dish__desc">Pha chế bằng bình thủy tinh chân không Siphon, vị đậm đà sâu lắng.</p>
+                          </div>
+                          <div class="dish__side">
+                            <span class="dish__price">75.000 VNĐ</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="page-fold page-fold--left"></div>
+                    </div>
+                    <div class="leaf__face leaf__face--back">
+                      <div class="page-border"></div>
+                      <div class="page-intro">
+                        <div>
+                          <h3 class="page-intro__title">Bánh &amp; Tráng Miệng Chuẩn Pháp</h3>
+                          <div class="page-intro__rule"></div>
+                          <p class="page-intro__text">Những chiếc bánh nướng giòn rụm ngập tràn mùi bơ thơm lừng, được chuẩn bị tươi mới mỗi ngày để hoàn thiện bữa tiệc vị giác của bạn.</p>
+                        </div>
+                        <div class="page-intro__figure">
+                          <img src="images/menu/french_pastry.webp" alt="Bánh &amp; Tráng Miệng Chuẩn Pháp" loading="lazy" decoding="async">
+                        </div>
+                      </div>
+                      <div class="page-fold page-fold--right"></div>
+                    </div>
+                  </div>
+
+                  <!-- leaf 5 : Bánh items  /  Combo intro -->
+                  <div class="leaf" data-leaf="5">
+                    <div class="leaf__face leaf__face--front">
+                      <div class="page-border"></div>
+                      <div class="page-list">
+                        <div class="dish">
+                          <div class="dish__main">
+                            <h4 class="dish__name">Croissant Bơ Pháp<span class="dish__tag">Bán Chạy</span></h4>
+                            <p class="dish__desc">Bánh sừng bò bơ Pháp ngàn lớp thơm lừng nướng giòn.</p>
+                          </div>
+                          <div class="dish__side">
+                            <span class="dish__price">45.000 VNĐ</span>
+                          </div>
+                        </div>
+                        <div class="dish">
+                          <div class="dish__main">
+                            <h4 class="dish__name">Tiramisu Cold Brew<span class="dish__tag">Đặc Trưng</span></h4>
+                            <p class="dish__desc">Bánh Tiramisu mềm mịn, quyện lớp kem Mascarpone béo ngậy và hương vị Cold Brew đặc trưng.</p>
+                          </div>
+                          <div class="dish__side">
+                            <span class="dish__price">55.000 VNĐ</span>
+                          </div>
+                        </div>
+                        <div class="dish">
+                          <div class="dish__main">
+                            <h4 class="dish__name">Croissant Hạnh Nhân<span class="dish__tag">Chứa Hạt</span></h4>
+                            <p class="dish__desc">Nhân kem trứng bùi béo và hạt hạnh nhân nướng lát.</p>
+                          </div>
+                          <div class="dish__side">
+                            <span class="dish__price">49.000 VNĐ</span>
+                          </div>
+                        </div>
+                        <div class="dish">
+                          <div class="dish__main">
+                            <h4 class="dish__name">Avocado Toast Đa Hạt</h4>
+                            <p class="dish__desc">Bánh mì đen đa hạt nướng ăn kèm bơ sáp và trứng chần.</p>
+                          </div>
+                          <div class="dish__side">
+                            <span class="dish__price">69.000 VNĐ</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="page-fold page-fold--left"></div>
+                    </div>
+                    <div class="leaf__face leaf__face--back">
+                      <div class="page-border"></div>
+                      <div class="page-intro">
+                        <div>
+                          <h3 class="page-intro__title">Combo Đặc Biệt Của Quán</h3>
+                          <div class="page-intro__rule"></div>
+                          <p class="page-intro__text">Vài món quán tự nghĩ ra rồi khách gọi mãi thành quen. Hợp cho buổi sáng vội hoặc chiều muộn ngồi lâu.</p>
+                        </div>
+                        <div class="page-intro__figure">
+                          <img src="images/menu/signature_latte.webp" alt="Combo Đặc Biệt Của Quán" loading="lazy" decoding="async">
+                        </div>
+                      </div>
+                      <div class="page-fold page-fold--right"></div>
+                    </div>
+                  </div>
+
+                  <!-- leaf 6 : Combo items  /  back cover -->
+                  <div class="leaf" data-leaf="6">
+                    <div class="leaf__face leaf__face--front">
+                      <div class="page-border"></div>
+                      <div class="page-list">
+                        <div class="dish">
+                          <div class="dish__main">
+                            <h4 class="dish__name">Espresso Đúp<span class="dish__tag">Caffeine Cao</span></h4>
+                            <p class="dish__desc">Hai shot espresso đậm đặc, ăn kèm một viên kẹo cà phê.</p>
+                          </div>
+                          <div class="dish__side">
+                            <span class="dish__price">55.000 VNĐ</span>
+                          </div>
+                        </div>
+                        <div class="dish">
+                          <div class="dish__main">
+                            <h4 class="dish__name">Latte Vẽ Tay<span class="dish__tag">Vẽ Tay</span></h4>
+                            <p class="dish__desc">Latte sữa nóng, barista vẽ tay từng ly theo yêu cầu.</p>
+                          </div>
+                          <div class="dish__side">
+                            <span class="dish__price">65.000 VNĐ</span>
+                          </div>
+                        </div>
+                        <div class="dish">
+                          <div class="dish__main">
+                            <h4 class="dish__name">Matcha Kem Trứng<span class="dish__tag">Đặc Trưng</span></h4>
+                            <p class="dish__desc">Matcha đá xay phủ lớp kem trứng đánh bông kiểu Hà Nội.</p>
+                          </div>
+                          <div class="dish__side">
+                            <span class="dish__price">75.000 VNĐ</span>
+                          </div>
+                        </div>
+                        <div class="dish">
+                          <div class="dish__main">
+                            <h4 class="dish__name">Combo Buổi Sáng<span class="dish__tag">Bán Chạy</span></h4>
+                            <p class="dish__desc">Phin sữa đá cỡ lớn kèm một chiếc sừng bò bơ nướng nóng.</p>
+                          </div>
+                          <div class="dish__side">
+                            <span class="dish__price">89.000 VNĐ</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="page-fold page-fold--left"></div>
+                    </div>
+                    <div class="leaf__face leaf__face--back">
+                      <div class="cover cover--back">
+                        <div class="cover__frame">
+                          <div class="cover__halo"></div>
+                          <div class="cover__brand">
+                            <h3 class="gold-foil">NGÕ COFFEE</h3>
+                            <p>REFORMATORY LAB &amp; TRADING LOUNGE</p>
+                            <div class="cover__brand-rule"></div>
+                          </div>
+                          <div class="cover__quote">
+                            <p>&ldquo;Cà phê ngon không vội. Cứ để từng giọt rơi, chuyện gì rồi cũng xong.&rdquo;</p>
+                            <p>Cảm ơn bạn đã ghé quán. Mong ly cà phê hôm nay đủ đậm để bạn nhớ, và đủ êm để bạn quay lại.</p>
+                          </div>
+                          <div class="cover__qr">
+                            <img class="cover__qr-img" src="images/member-qr.svg" alt="WiFi &amp; Member QR" width="64" height="64" loading="lazy">
+                            <div class="cover__qr-txt">
+                              <strong>Đặc Quyền Hội Viên</strong>
+                              Quét mã QR để kết nối WiFi và nhận ưu đãi thành viên.
+                            </div>
+                          </div>
+                          <div class="cover__meta">
+                            <p>📍 K54/8 Phạm Hồng Thái, Hải Châu, TP. Đà Nẵng</p>
+                            <p>📞 Hotline: 1900 8888</p>
+                          </div>
+                          <button type="button" class="cover__restart" id="flip-restart">Lật về trang đầu</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="flip-arrow flip-arrow--prev" id="flip-prev" aria-label="Trang trước" disabled>
+              <span class="icon">chevron_left</span>
+            </button>
+            <button type="button" class="flip-arrow flip-arrow--next" id="flip-next" aria-label="Trang sau">
+              <span class="icon">chevron_right</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------- Mobile: category list ---------- -->
+    <div class="menu__mobile">
+      <div class="menu-chips" role="tablist" aria-label="Nhóm thực đơn">
+        <button type="button" class="menu-chip is-active" data-cat="0">Cà Phê Phin</button>
+        <button type="button" class="menu-chip" data-cat="1">Trà Signature</button>
+        <button type="button" class="menu-chip" data-cat="2">Freeze &amp; Đá Xay</button>
+        <button type="button" class="menu-chip" data-cat="3">Specialty Cà Phê</button>
+        <button type="button" class="menu-chip" data-cat="4">Bánh &amp; Tráng Miệng</button>
+        <button type="button" class="menu-chip" data-cat="5">Combo Đặc Biệt</button>
+      </div>
+
+      <div class="menu-panels" id="menu-panels">
+        <div class="menu-panel is-active" data-cat="0">
+          <div class="menu-panel__card">
+            <p class="menu-panel__text">Nền tảng của văn hóa cà phê Việt Nam, được tinh chế phù hợp với khẩu vị hiện đại. Từng giọt rơi chậm trên nền nhạc Trịnh, ngồi bao lâu cũng được.</p>
+            <div class="menu-panel__figure"><img src="images/menu/phin.webp" alt="Cà Phê Phin &amp; Phindi" loading="lazy"></div>
+            <div class="menu-panel__list">
+              <div class="dish">
+                <div class="dish__main">
+                  <h4 class="dish__name">Phin Đen Đá<span class="dish__tag">Caffeine Cao</span></h4>
+                  <p class="dish__desc">Cà phê truyền thống đậm đặc pha phin, hạt Single-origin hảo hạng.</p>
+                </div>
+                <div class="dish__side"><span class="dish__price">39.000 VNĐ</span></div>
+              </div>
+              <div class="dish">
+                <div class="dish__main">
+                  <h4 class="dish__name">Phin Sữa Đá<span class="dish__tag">Bán Chạy</span></h4>
+                  <p class="dish__desc">Sự kết hợp hoàn hảo giữa cốt phin đậm đà và sữa đặc béo ngậy.</p>
+                </div>
+                <div class="dish__side"><span class="dish__price">45.000 VNĐ</span></div>
+              </div>
+              <div class="dish">
+                <div class="dish__main">
+                  <h4 class="dish__name">Phin Sữa Nóng</h4>
+                  <p class="dish__desc">Ấm áp, nồng nàn với hương thơm nồng nàn lan tỏa.</p>
+                </div>
+                <div class="dish__side"><span class="dish__price">45.000 VNĐ</span></div>
+              </div>
+              <div class="dish">
+                <div class="dish__main">
+                  <h4 class="dish__name">Phindi Hạnh Nhân<span class="dish__tag">Độc Đáo</span></h4>
+                  <p class="dish__desc">Cà phê phin thế hệ mới kết hợp kem sữa hạnh nhân béo ngậy.</p>
+                </div>
+                <div class="dish__side"><span class="dish__price">55.000 VNĐ</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-panel" data-cat="1">
+          <div class="menu-panel__card">
+            <p class="menu-panel__text">Sự kết hợp đầy chất thơ giữa những lá trà cổ thụ Tây Bắc và các loại thảo mộc quý hiếm. Uống vào thấy nhẹ người, hợp những buổi chiều nắng gắt.</p>
+            <div class="menu-panel__figure"><img src="images/menu/tra.webp" alt="Trà Signature Mộc Bản" loading="lazy"></div>
+            <div class="menu-panel__list">
+              <div class="dish">
+                <div class="dish__main">
+                  <h4 class="dish__name">Trà Sen Vàng Độc Bản<span class="dish__tag">Signature</span></h4>
+                  <p class="dish__desc">Trà ô long thượng hạng kết hợp hạt sen thơm bùi và củ năng giòn ngọt.</p>
+                </div>
+                <div class="dish__side"><span class="dish__price">59.000 VNĐ</span></div>
+              </div>
+              <div class="dish">
+                <div class="dish__main">
+                  <h4 class="dish__name">Trà Thảo Mộc Cung Đình<span class="dish__tag">Thảo Mộc</span></h4>
+                  <p class="dish__desc">Trà thảo mộc cung đình Huế làm dịu tinh thần, phục hồi năng lượng.</p>
+                </div>
+                <div class="dish__side"><span class="dish__price">65.000 VNĐ</span></div>
+              </div>
+              <div class="dish">
+                <div class="dish__main">
+                  <h4 class="dish__name">Trà Đào Hồng Hạc</h4>
+                  <p class="dish__desc">Hương đào thơm ngọt kết hợp thạch đào giòn dai sảng khoái.</p>
+                </div>
+                <div class="dish__side"><span class="dish__price">55.000 VNĐ</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-panel" data-cat="2">
+          <div class="menu-panel__card">
+            <p class="menu-panel__text">Đá xay mát lạnh, ngọt vừa phải. Món ruột của các bạn nhỏ và những ngày Đà Nẵng oi bức.</p>
+            <div class="menu-panel__figure"><img src="images/menu/freeze.webp" alt="Freeze &amp; Đá Xay Cực Hạn" loading="lazy"></div>
+            <div class="menu-panel__list">
+              <div class="dish">
+                <div class="dish__main">
+                  <h4 class="dish__name">Freeze Trà Xanh Cực Hạn<span class="dish__tag">Bán Chạy</span></h4>
+                  <p class="dish__desc">Matcha đá xay thượng hạng cùng thạch trà xanh oolong giòn mềm béo ngậy.</p>
+                </div>
+                <div class="dish__side"><span class="dish__price">65.000 VNĐ</span></div>
+              </div>
+              <div class="dish">
+                <div class="dish__main">
+                  <h4 class="dish__name">Bạc Sỉu Đá Xay</h4>
+                  <p class="dish__desc">Sự cách tân độc đáo của món bạc sỉu truyền thống mát lạnh.</p>
+                </div>
+                <div class="dish__side"><span class="dish__price">59.000 VNĐ</span></div>
+              </div>
+              <div class="dish">
+                <div class="dish__main">
+                  <h4 class="dish__name">Freeze Chanh Dây Nhiệt Đới</h4>
+                  <p class="dish__desc">Vị chanh dây chua ngọt tươi mát sảng khoái ngày hè.</p>
+                </div>
+                <div class="dish__side"><span class="dish__price">59.000 VNĐ</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-panel" data-cat="3">
+          <div class="menu-panel__card">
+            <p class="menu-panel__text">Những hạt cà phê Single-origin đạt điểm đánh giá cao trên thế giới, được pha chế bằng các phương pháp thủ công tỉ mỉ để giữ trọn vẹn hương hoa cỏ thanh tao.</p>
+            <div class="menu-panel__figure"><img src="images/menu/specialty_coffee.webp" alt="Specialty Cà Phê Ngoại Nhập" loading="lazy"></div>
+            <div class="menu-panel__list">
+              <div class="dish">
+                <div class="dish__main">
+                  <h4 class="dish__name">V60 Ethiopia Yirgacheffe<span class="dish__tag">Espresso Manual</span></h4>
+                  <p class="dish__desc">Cà phê pha thủ công bằng phễu giấy lọc V60, hương hoa quả thanh tao.</p>
+                </div>
+                <div class="dish__side"><span class="dish__price">75.000 VNĐ</span></div>
+              </div>
+              <div class="dish">
+                <div class="dish__main">
+                  <h4 class="dish__name">Cold Brew Signature<span class="dish__tag">Bán Chạy</span></h4>
+                  <p class="dish__desc">Cà phê ủ lạnh chậm 16 tiếng, vị ngọt thanh mát, dễ chịu.</p>
+                </div>
+                <div class="dish__side"><span class="dish__price">69.000 VNĐ</span></div>
+              </div>
+              <div class="dish">
+                <div class="dish__main">
+                  <h4 class="dish__name">Siphon Robusta Honey<span class="dish__tag">Độc Đáo</span></h4>
+                  <p class="dish__desc">Pha chế bằng bình thủy tinh chân không Siphon, vị đậm đà sâu lắng.</p>
+                </div>
+                <div class="dish__side"><span class="dish__price">75.000 VNĐ</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-panel" data-cat="4">
+          <div class="menu-panel__card">
+            <p class="menu-panel__text">Những chiếc bánh nướng giòn rụm ngập tràn mùi bơ thơm lừng, được chuẩn bị tươi mới mỗi ngày để hoàn thiện bữa tiệc vị giác của bạn.</p>
+            <div class="menu-panel__figure"><img src="images/menu/french_pastry.webp" alt="Bánh &amp; Tráng Miệng Chuẩn Pháp" loading="lazy"></div>
+            <div class="menu-panel__list">
+              <div class="dish">
+                <div class="dish__main">
+                  <h4 class="dish__name">Croissant Bơ Pháp<span class="dish__tag">Bán Chạy</span></h4>
+                  <p class="dish__desc">Bánh sừng bò bơ Pháp ngàn lớp thơm lừng nướng giòn.</p>
+                </div>
+                <div class="dish__side"><span class="dish__price">45.000 VNĐ</span></div>
+              </div>
+              <div class="dish">
+                <div class="dish__main">
+                  <h4 class="dish__name">Tiramisu Cold Brew<span class="dish__tag">Đặc Trưng</span></h4>
+                  <p class="dish__desc">Bánh Tiramisu mềm mịn, quyện lớp kem Mascarpone béo ngậy và hương vị Cold Brew đặc trưng.</p>
+                </div>
+                <div class="dish__side"><span class="dish__price">55.000 VNĐ</span></div>
+              </div>
+              <div class="dish">
+                <div class="dish__main">
+                  <h4 class="dish__name">Croissant Hạnh Nhân<span class="dish__tag">Chứa Hạt</span></h4>
+                  <p class="dish__desc">Nhân kem trứng bùi béo và hạt hạnh nhân nướng lát.</p>
+                </div>
+                <div class="dish__side"><span class="dish__price">49.000 VNĐ</span></div>
+              </div>
+              <div class="dish">
+                <div class="dish__main">
+                  <h4 class="dish__name">Avocado Toast Đa Hạt</h4>
+                  <p class="dish__desc">Bánh mì đen đa hạt nướng ăn kèm bơ sáp và trứng chần.</p>
+                </div>
+                <div class="dish__side"><span class="dish__price">69.000 VNĐ</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-panel" data-cat="5">
+          <div class="menu-panel__card">
+            <p class="menu-panel__text">Nguồn năng lượng đặc biệt và thức uống sáng tạo lấy chủ đề tài chính độc bản, khơi gợi trí lực sắc bén cho mỗi quyết định giao dịch quan trọng.</p>
+            <div class="menu-panel__figure"><img src="images/menu/signature_latte.webp" alt="Combo Đặc Biệt Của Quán" loading="lazy"></div>
+            <div class="menu-panel__list">
+              <div class="dish">
+                <div class="dish__main">
+                  <h4 class="dish__name">Espresso Đúp<span class="dish__tag">Caffeine Cao</span></h4>
+                  <p class="dish__desc">Hai shot espresso đậm đặc, ăn kèm một viên kẹo cà phê.</p>
+                </div>
+                <div class="dish__side"><span class="dish__price">55.000 VNĐ</span></div>
+              </div>
+              <div class="dish">
+                <div class="dish__main">
+                  <h4 class="dish__name">Latte Vẽ Tay<span class="dish__tag">Vẽ Tay</span></h4>
+                  <p class="dish__desc">Latte sữa nóng, barista vẽ tay từng ly theo yêu cầu.</p>
+                </div>
+                <div class="dish__side"><span class="dish__price">65.000 VNĐ</span></div>
+              </div>
+              <div class="dish">
+                <div class="dish__main">
+                  <h4 class="dish__name">Matcha Kem Trứng<span class="dish__tag">Đặc Trưng</span></h4>
+                  <p class="dish__desc">Matcha đá xay phủ lớp kem trứng đánh bông kiểu Hà Nội.</p>
+                </div>
+                <div class="dish__side"><span class="dish__price">75.000 VNĐ</span></div>
+              </div>
+              <div class="dish">
+                <div class="dish__main">
+                  <h4 class="dish__name">Combo Buổi Sáng<span class="dish__tag">Bán Chạy</span></h4>
+                  <p class="dish__desc">Phin sữa đá cỡ lớn kèm một chiếc sừng bò bơ nướng nóng.</p>
+                </div>
+                <div class="dish__side"><span class="dish__price">89.000 VNĐ</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== KHÔNG GIAN QUÁN ==================== -->
+  <section class="section section--dark section--hairline gallery" id="gallery">
+    <div class="grid-overlay" aria-hidden="true"></div>
+    <div class="glow-blob" style="width:460px;height:460px;top:-140px;right:-120px;background:rgba(255,183,123,0.045);animation-delay:-5s;animation-duration:15s" aria-hidden="true"></div>
+
+    <div class="container" style="position:relative;z-index:10">
+      <div class="gallery__head">
+        <p class="eyebrow-rule"><span class="eyebrow">Không gian quán</span></p>
+        <h2 class="gallery__title">Một Buổi Sáng Ở Đây <br>Trông Như Thế Nào</h2>
+        <p class="section-lede">Quầy pha, gian bếp bánh, hiên trước và những ly cà phê ra lò trong ngày. Bấm vào từng tấm để xem lớn.</p>
+        <div class="rule-fade"></div>
+      </div>
+
+      <div class="gallery__mosaic" id="gallery-mosaic">
+        <figure class="gtile gtile--a" style="--i:0">
+          <button type="button" class="gtile__btn" data-index="0" aria-label="Xem ảnh lớn: Barista rót nước pha thủ công tại quầy">
+            <img src="images/philosophy_coffee.png" alt="Barista rót nước sôi qua phễu lọc giấy trên quầy pha của quán" width="1024" height="1024" loading="lazy" decoding="async">
+            <span class="gtile__veil" aria-hidden="true"></span>
+            <span class="gtile__frame" aria-hidden="true"></span>
+            <figcaption class="gtile__cap">
+              <span class="gtile__no">01</span>
+              <span class="gtile__name">Tay pha buổi sớm</span>
+              <span class="gtile__sub">Quầy pha, 6:45 sáng</span>
+            </figcaption>
+          </button>
+        </figure>
+
+        <figure class="gtile gtile--b" style="--i:1">
+          <button type="button" class="gtile__btn" data-index="1" aria-label="Xem ảnh lớn: Toàn cảnh quầy pha chế của quán">
+            <img src="images/hero-bg.jpg" alt="Toàn cảnh quầy pha chế dài với dãy đèn thả và máy pha espresso" width="1000" height="600" loading="lazy" decoding="async">
+            <span class="gtile__veil" aria-hidden="true"></span>
+            <span class="gtile__frame" aria-hidden="true"></span>
+            <figcaption class="gtile__cap">
+              <span class="gtile__no">02</span>
+              <span class="gtile__name">Dãy đèn trên quầy</span>
+              <span class="gtile__sub">Mặt tiền quán, nhìn từ cửa vào</span>
+            </figcaption>
+          </button>
+        </figure>
+
+        <figure class="gtile gtile--c" style="--i:2">
+          <button type="button" class="gtile__btn" data-index="2" aria-label="Xem ảnh lớn: Bàn rang xay và hạt cà phê">
+            <img src="images/menu/specialty_coffee.webp" alt="Bình pha nhỏ giọt bốc khói giữa bàn gỗ rải đầy hạt cà phê rang" width="1024" height="1024" loading="lazy" decoding="async">
+            <span class="gtile__veil" aria-hidden="true"></span>
+            <span class="gtile__frame" aria-hidden="true"></span>
+            <figcaption class="gtile__cap">
+              <span class="gtile__no">03</span>
+              <span class="gtile__name">Góc rang mộc</span>
+              <span class="gtile__sub">Mẻ hạt của sáng thứ Ba</span>
+            </figcaption>
+          </button>
+        </figure>
+
+        <figure class="gtile gtile--d" style="--i:3">
+          <button type="button" class="gtile__btn" data-index="3" aria-label="Xem ảnh lớn: Ly cà phê phin nhỏ giọt trên bàn gỗ">
+            <img src="images/menu/phin.webp" alt="Phin nhôm nhỏ từng giọt cà phê xuống ly sữa đá đặt trên bàn gỗ cũ" width="600" height="600" loading="lazy" decoding="async">
+            <span class="gtile__veil" aria-hidden="true"></span>
+            <span class="gtile__frame" aria-hidden="true"></span>
+            <figcaption class="gtile__cap">
+              <span class="gtile__no">04</span>
+              <span class="gtile__name">Đợi phin nhỏ hết</span>
+              <span class="gtile__sub">Bàn số 4, cạnh tường gạch</span>
+            </figcaption>
+          </button>
+        </figure>
+
+        <figure class="gtile gtile--e" style="--i:4">
+          <button type="button" class="gtile__btn" data-index="4" aria-label="Xem ảnh lớn: Bánh sừng bò và tiramisu trong không gian ấm">
+            <img src="images/menu/french_pastry.webp" alt="Bánh sừng bò và ly tiramisu đặt trên khay đá, phía sau là khách ngồi dưới đèn vàng" width="1024" height="1024" loading="lazy" decoding="async">
+            <span class="gtile__veil" aria-hidden="true"></span>
+            <span class="gtile__frame" aria-hidden="true"></span>
+            <figcaption class="gtile__cap">
+              <span class="gtile__no">05</span>
+              <span class="gtile__name">Bánh vừa ra lò</span>
+              <span class="gtile__sub">Gian bếp nhỏ phía trong</span>
+            </figcaption>
+          </button>
+        </figure>
+
+        <figure class="gtile gtile--f" style="--i:5">
+          <button type="button" class="gtile__btn" data-index="5" aria-label="Xem ảnh lớn: Ly matcha đá xay trên bàn gỗ">
+            <img src="images/menu/freeze.webp" alt="Ly matcha đá xay phủ kem tươi đặt trên đĩa gốm giữa bàn gỗ" width="600" height="600" loading="lazy" decoding="async">
+            <span class="gtile__veil" aria-hidden="true"></span>
+            <span class="gtile__frame" aria-hidden="true"></span>
+            <figcaption class="gtile__cap">
+              <span class="gtile__no">06</span>
+              <span class="gtile__name">Ly đá xay buổi trưa</span>
+              <span class="gtile__sub">Bàn dài giữa nhà</span>
+            </figcaption>
+          </button>
+        </figure>
+
+        <figure class="gtile gtile--g" style="--i:6">
+          <button type="button" class="gtile__btn" data-index="6" aria-label="Xem ảnh lớn: Ly trà đào hạt sen và khách ngồi phía sau">
+            <img src="images/menu/tra.webp" alt="Ly trà đào hạt sen cắm lá bạc hà, phía sau là khách ngồi trò chuyện" width="600" height="600" loading="lazy" decoding="async">
+            <span class="gtile__veil" aria-hidden="true"></span>
+            <span class="gtile__frame" aria-hidden="true"></span>
+            <figcaption class="gtile__cap">
+              <span class="gtile__no">07</span>
+              <span class="gtile__name">Trà chiều đợi mưa tạnh</span>
+              <span class="gtile__sub">Hiên trước, hướng ra kiệt</span>
+            </figcaption>
+          </button>
+        </figure>
+      </div>
+
+      <p class="gallery__note">Ảnh chụp tại quán, không chỉnh sửa bối cảnh. Ghé một lần rồi tự chụp tấm của bạn.</p>
+    </div>
+  </section>
+
+  <!-- ==================== TRIẾT LÝ ==================== -->
+  <section class="section section--lowest philosophy" id="story">
+    <div class="container">
+      <div class="philosophy__grid">
+        <div class="philosophy__media">
+          <div class="philosophy__figure">
+            <img src="images/philosophy_coffee.png" alt="Barista pha cà phê thủ công tại quầy của quán" loading="lazy">
+          </div>
+          <div class="philosophy__badge glass reveal">
+            <h5><span class="icon">verified</span>Hương Vị Đặc Trưng</h5>
+            <p>Hạt Robusta Đắk Lắk và Arabica Cầu Đất, rang mộc trên chảo gang theo mẻ nhỏ mỗi sáng.</p>
+          </div>
+        </div>
+
+        <div class="philosophy__body">
+          <p class="philosophy__eyebrow reveal"><span>Câu chuyện của quán</span></p>
+          <h2 class="philosophy__title reveal">Mười Năm <br>Trong Một Con Kiệt Nhỏ</h2>
+          <div class="philosophy__rule reveal"></div>
+
+          <ol class="timeline">
+            <li class="tl reveal">
+              <span class="tl__year">2016</span>
+              <div class="tl__body">
+                <h4>Quán khai trương</h4>
+                <p>Một căn nhà trong kiệt, sáu cái bàn gỗ và một chảo gang rang tay. Ngày đầu mở cửa bán được mười bảy ly.</p>
+              </div>
+            </li>
+            <li class="tl reveal">
+              <span class="tl__year">2018</span>
+              <div class="tl__body">
+                <h4>Sửa sang lại quán</h4>
+                <p>Dỡ trần cũ, mở thêm gác xép và cái hiên trước. Bàn ghế thay mới, riêng chảo rang thì giữ nguyên.</p>
+              </div>
+            </li>
+            <li class="tl reveal">
+              <span class="tl__year">2020</span>
+              <div class="tl__body">
+                <h4>Đóng cửa sáu tháng vì dịch</h4>
+                <p>Sáu tháng cửa đóng, quán rang lẻ bán cho khách quanh xóm để giữ nghề. Ngày mở lại, khách cũ về gần đủ mặt.</p>
+              </div>
+            </li>
+            <li class="tl reveal">
+              <span class="tl__year">2022</span>
+              <div class="tl__body">
+                <h4>Ly cà phê thứ một triệu</h4>
+                <p>Con số đếm theo cuốn sổ tay để ở quầy từ ngày đầu. Một triệu ly, quá nửa là phin đen đá và bạc sỉu.</p>
+              </div>
+            </li>
+            <li class="tl reveal">
+              <span class="tl__year">2025</span>
+              <div class="tl__body">
+                <h4>Lên báo Na Uy</h4>
+                <p>Một tờ báo Na Uy viết về quán cà phê nhỏ giữa lòng Đà Nẵng. Từ đó thỉnh thoảng có khách cầm bài báo in ra tới hỏi đường.</p>
+              </div>
+            </li>
+            <li class="tl tl--now reveal">
+              <span class="tl__year">Nay</span>
+              <div class="tl__body">
+                <h4>Viết tiếp câu chuyện của chúng tôi</h4>
+                <p>Vẫn rang mỗi sáng, vẫn mở cửa từ bảy giờ. Chương tiếp theo còn để trống, chờ bạn ghé qua điền vào.</p>
+              </div>
+            </li>
+          </ol>
+
+          <div class="philosophy__cta reveal">
+            <a href="#contact">Ghé quán viết tiếp cùng chúng tôi <span class="icon">arrow_forward</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TESTIMONIALS ==================== -->
+  <section class="section section--dark section--hairline testimonials" id="testimonials">
+    <div class="testimonials__mesh" aria-hidden="true"></div>
+    <div class="glow-blob" style="width:600px;height:600px;bottom:-160px;left:-160px;background:rgba(255,183,123,0.04);animation-delay:-3s;animation-duration:14s" aria-hidden="true"></div>
+    <div class="glow-blob" style="width:500px;height:500px;top:40px;right:-80px;background:rgba(16,185,129,0.02);animation-delay:-7s;animation-duration:19s" aria-hidden="true"></div>
+    <div class="glow-blob" style="width:450px;height:450px;bottom:80px;right:30%;background:rgba(14,165,233,0.02);animation-delay:-11s;animation-duration:16s" aria-hidden="true"></div>
+
+    <div class="container" style="position:relative;z-index:10">
+      <div class="testimonials__head">
+        <p class="eyebrow-rule"><span class="eyebrow">Khách quen nói gì</span></p>
+        <h2 class="testimonials__title">Lời của khách quen</h2>
+        <p class="testimonials__lede">Những dòng khách để lại trong cuốn sổ đặt ở quầy, chúng tôi chép lại nguyên văn.</p>
+        <div class="testimonials__diamond"></div>
+      </div>
+
+      <div class="testimonials__grid">
+        <!-- Card 1 — institutional -->
+        <article class="tcard tcard--emerald tcard--wide reveal">
+          <div class="tcard__scan" aria-hidden="true"></div>
+          <div class="tcard__corners" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <span class="tcard__mark" aria-hidden="true">&ldquo;</span>
+          <span class="tcard__sys">Sổ lưu bút · 2024</span>
+
+          <div class="tcard__head">
+            <span class="tcard__status">Khách quen 9 năm</span>
+            <span class="tcard__tag">Bàn số 4</span>
+          </div>
+
+          <div class="tcard__body">
+            <p>&quot;Tôi uống ở đây từ hồi quán còn cái quạt con cóc kê ở góc, bàn ghế thấp lè tè, buổi trưa nóng phải ngồi sát cửa mới có gió. Chín năm rồi, bao nhiêu hàng quán quanh đây mở ra rồi dẹp, riêng ly phin đen đá ở đây vẫn đúng cái vị đó — đắng gắt đầu lưỡi, rồi ngọt hậu rất lâu, uống xong nửa tiếng vẫn còn thấy trong miệng.</p>
+            <p>Cô chủ nhớ tôi không bỏ đường nên khỏi phải dặn, cứ ngồi xuống là có. Có bận tôi ốm nằm nhà cả tuần, hôm quay lại cô hỏi ngay sao lâu quá không thấy chú. Cái đó quán lớn không có được. Sáng nào bận việc không ghé được là cả ngày thấy thiếu thiếu, làm gì cũng không vào.</p>
+            <p>Mấy đứa nhỏ nhà tôi giờ cũng kéo bạn ra đây ngồi. Tụi nó uống bạc sỉu chứ không uống nổi phin đen như tôi, nhưng thấy tụi nó ngồi đúng cái bàn mình ngồi hồi trẻ thì cũng vui. Năm 2018 quán sửa sang lại, thay mấy bộ bàn ghế mới, mà cái mùi cà phê rang buổi sáng thì vẫn y như cũ.&quot;</p>
+          </div>
+
+          <div class="tcard__foot">
+            <p class="tcard__event">Ghé quán mỗi sáng, bàn cạnh cửa sổ</p>
+            <div class="tcard__author">
+              <svg viewBox="0 0 100 100" class="tcard__avatar" role="img" aria-label="Ảnh đại diện"><circle cx="50" cy="50" r="48" fill="#0d0f10"/><circle cx="50" cy="50" r="38" fill="none" stroke="rgba(16,185,129,0.30)" stroke-width="1"/><text x="50" y="50" text-anchor="middle" dominant-baseline="central" font-family="'Space Grotesk',sans-serif" font-size="34" font-weight="600" fill="#10b981">L</text></svg>
+              <div>
+                <h4>Cô Nguyễn Thị Lan</h4>
+                <p>Khách quen từ năm 2017</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 — whale -->
+        <article class="tcard tcard--amber reveal">
+          <div class="tcard__scan" aria-hidden="true"></div>
+          <div class="tcard__corners" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <span class="tcard__mark" aria-hidden="true">&ldquo;</span>
+          <span class="tcard__sys">Sổ lưu bút · 2025</span>
+
+          <div class="tcard__head">
+            <span class="tcard__status">Khách thân thiết</span>
+            <span class="tcard__tag">Cà phê phin</span>
+          </div>
+
+          <div class="tcard__body">
+            <p>&quot;Văn phòng tôi cách quán hai con kiệt nên trưa nào cũng trốn qua. Chỗ này được cái yên, quạt trần chạy rì rì, ngồi cả tiếng chẳng ai giục gọi thêm. Bạc sỉu ở đây pha vừa miệng, không ngọt gắt như ngoài kia.&quot;</p>
+          </div>
+
+          <div class="tcard__foot">
+            <p class="tcard__event">Trưa nào cũng ghé, hay ngồi bàn trong</p>
+            <div class="tcard__author">
+              <svg viewBox="0 0 100 100" class="tcard__avatar" role="img" aria-label="Ảnh đại diện"><circle cx="50" cy="50" r="48" fill="#0d0f10"/><circle cx="50" cy="50" r="38" fill="none" stroke="rgba(245,158,11,0.30)" stroke-width="1"/><text x="50" y="50" text-anchor="middle" dominant-baseline="central" font-family="'Space Grotesk',sans-serif" font-size="34" font-weight="600" fill="#f59e0b">M</text></svg>
+              <div>
+                <h4>Anh Trần Minh</h4>
+                <p>Nhân viên văn phòng gần quán</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 — quant -->
+        <article class="tcard tcard--sky reveal">
+          <div class="tcard__scan" aria-hidden="true"></div>
+          <div class="tcard__corners" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <span class="tcard__mark" aria-hidden="true">&ldquo;</span>
+          <span class="tcard__sys">Sổ lưu bút · 2025</span>
+
+          <div class="tcard__head">
+            <span class="tcard__status">Khách mới</span>
+            <span class="tcard__tag">Bánh sừng bò</span>
+          </div>
+
+          <div class="tcard__body">
+            <p>&quot;Bạn rủ đi thử, ai ngờ thành ghé đều. Bánh sừng bò nướng lại nóng giòn, ăn kèm ly latte là đủ một buổi sáng thứ Bảy. Tôi thích cái kiểu quán không bật nhạc to, để mình nghe được tiếng mưa ngoài hiên.&quot;</p>
+          </div>
+
+          <div class="tcard__foot">
+            <p class="tcard__event">Sáng thứ Bảy, ngồi ngoài hiên</p>
+            <div class="tcard__author">
+              <svg viewBox="0 0 100 100" class="tcard__avatar" role="img" aria-label="Ảnh đại diện"><circle cx="50" cy="50" r="48" fill="#0d0f10"/><circle cx="50" cy="50" r="38" fill="none" stroke="rgba(14,165,233,0.30)" stroke-width="1"/><text x="50" y="50" text-anchor="middle" dominant-baseline="central" font-family="'Space Grotesk',sans-serif" font-size="34" font-weight="600" fill="#0ea5e9">H</text></svg>
+              <div>
+                <h4>Chị Phạm Thu Hà</h4>
+                <p>Giáo viên, ghé quán từ 2025</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Feedback form -->
+      <div class="feedback">
+        <h3 class="feedback__title"><span class="icon">chat</span>Để lại cảm nhận của bạn</h3>
+        <form novalidate>
+          <div class="feedback__row">
+            <div>
+              <label class="field-label" for="fb-name">Tên của bạn *</label>
+              <input class="field-input" id="fb-name" name="name" type="text" required placeholder="Ví dụ: Minh Anh">
+            </div>
+            <div>
+              <label class="field-label" for="fb-role">Bạn hay ngồi ở đâu trong quán?</label>
+              <input class="field-input" id="fb-role" name="role" type="text" placeholder="Ví dụ: bàn ngoài hiên">
+            </div>
+          </div>
+          <div>
+            <label class="field-label" for="fb-msg">Cảm nhận của bạn *</label>
+            <textarea class="field-input" id="fb-msg" name="message" rows="3" required placeholder="Bạn thấy đồ uống, không gian và cách phục vụ của quán thế nào?"></textarea>
+          </div>
+          <button class="feedback__submit" type="submit">Gửi cảm nhận</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== LIÊN HỆ ==================== -->
+  <section class="section section--dark section--hairline contact" id="contact">
+    <div class="grid-overlay" aria-hidden="true"></div>
+    <div class="glow-blob" style="width:500px;height:500px;bottom:-160px;right:-160px;background:rgba(255,183,123,0.05);animation-delay:-3s;animation-duration:14s" aria-hidden="true"></div>
+    <div class="glow-blob" style="width:400px;height:400px;top:80px;left:-80px;background:rgba(14,165,233,0.02);animation-delay:-8s;animation-duration:18s" aria-hidden="true"></div>
+
+    <div class="container contact__head" style="position:relative;z-index:10">
+      <p class="eyebrow-rule"><span class="eyebrow">Ghé quán</span></p>
+      <h2 class="contact__title">Tìm đường tới quán</h2>
+      <p class="section-lede">Quán nằm trong một con kiệt nhỏ ở Hải Châu. Gọi trước nếu bạn đi đông, còn không thì cứ ghé — lúc nào cũng có chỗ.</p>
+      <div class="rule-fade"></div>
+    </div>
+
+    <div class="container contact__body" style="position:relative;z-index:10">
+      <div class="contact__cards">
+        <div class="info glass">
+          <span class="info__label">Địa chỉ</span>
+          <p class="info__strong">K54/8 Phạm Hồng Thái, Hải Châu</p>
+          <p class="info__sub">TP. Đà Nẵng, Việt Nam</p>
+          <div class="info__foot">
+            <span>16.0673° N, 108.2215° E</span>
+            <button type="button" class="info__copy" data-copy="16.0673, 108.2215">[ Sao chép ]</button>
+          </div>
+        </div>
+
+        <div class="info glass">
+          <span class="info__label">Giờ mở cửa</span>
+          <div class="info__hours">
+            <div><span>Thứ 2 — Thứ 6:</span><b>07:00 - 22:00</b></div>
+            <div><span>Thứ 7 — Chủ Nhật:</span><b>08:00 - 00:00</b></div>
+            <div class="info__hours-alt"><span>Ngày lễ, Tết:</span><b>Xem thông báo</b></div>
+          </div>
+        </div>
+
+        <div class="info glass">
+          <span class="info__label">Liên hệ</span>
+          <p class="info__strong">xinchao@ngocoffee.vn</p>
+          <p class="info__sub info__sub--tight">+84 (0) 90 234 5678</p>
+          <div class="info__foot info__foot--sm">
+            <span>Gọi hoặc nhắn Zalo</span>
+            <button type="button" class="info__copy" data-copy="xinchao@ngocoffee.vn">[ Sao chép ]</button>
+          </div>
+        </div>
+
+        <div class="info glass">
+          <span class="info__label">Theo dõi quán</span>
+          <div class="info__social">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact__split">
+        <div class="contact__form-col">
+          <div class="contact__panel glass">
+            <form novalidate>
+              <div class="rgrid rgrid--wide">
+                <div class="rfield">
+                  <label class="rlabel" for="ct-name">Họ và tên *</label>
+                  <input class="rinput" id="ct-name" name="name" type="text" required placeholder="NGUYỄN VĂN A">
+                </div>
+                <div class="rfield">
+                  <label class="rlabel" for="ct-phone">Số điện thoại *</label>
+                  <input class="rinput" id="ct-phone" name="phone" type="tel" required placeholder="090 123 4567">
+                </div>
+              </div>
+
+              <div class="rfield">
+                <label class="rlabel" for="ct-email">Địa chỉ Email *</label>
+                <input class="rinput" id="ct-email" name="email" type="email" required placeholder="ban@email.com">
+              </div>
+
+              <div class="rfield rfield--gap12">
+                <label class="rlabel">Bạn cần gì?</label>
+                <div class="chips" id="contact-chips">
+                  <button type="button" class="chip is-active">Hỏi thăm chung</button>
+                  <button type="button" class="chip">Giữ chỗ cho nhóm đông</button>
+                  <button type="button" class="chip">Mua cà phê hạt mang về</button>
+                  <button type="button" class="chip">Góp ý cho quán</button>
+                </div>
+              </div>
+
+              <div class="rfield">
+                <label class="rlabel" for="ct-msg">Lời nhắn</label>
+                <textarea class="rinput" id="ct-msg" name="message" rows="3" required placeholder="Bạn muốn hỏi gì, cứ để lại đây, quán sẽ trả lời sớm nhất..."></textarea>
+              </div>
+
+              <button type="submit" class="rsubmit">Gửi lời nhắn</button>
+            </form>
+          </div>
+        </div>
+
+        <aside class="contact__map-col">
+          <div class="mapbox">
+            <img class="mapbox__img" src="images/map-danang.jpg" alt="Bản đồ vị trí Ngõ Coffee tại K54/8 Phạm Hồng Thái, Hải Châu, TP. Đà Nẵng" width="918" height="1218" loading="lazy">
+
+            <div class="mapbox__pin" aria-hidden="true">
+              <div class="mapbox__dot"></div>
+              <div class="mapbox__ring"></div>
+              <div class="mapbox__ring"></div>
+              <div class="mapbox__ring"></div>
+            </div>
+
+            <span class="mapbox__tag mapbox__tag--left">Kiệt Phạm Hồng Thái, Hải Châu</span>
+            <span class="mapbox__tag mapbox__tag--right">Đà Nẵng</span>
+            <span class="mapbox__credit">Dữ liệu bản đồ © những người đóng góp OpenStreetMap</span>
+
+            <div class="mapbox__nav glass">
+              <div>
+                <p>Ghé thăm quán</p>
+                <p>Mở chỉ đường trên Google Maps</p>
+              </div>
+              <a class="mapbox__go" href="https://maps.google.com/?q=16.0673,108.2215" target="_blank" rel="noopener noreferrer" aria-label="Mở chỉ đường trên Google Maps">
+                <span class="icon">near_me</span>
+              </a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-about">
+      <span class="footer-brand">Ngõ Coffee · Cà Phê Truyền Thống</span>
+      <p>Quán nhỏ mở cửa từ năm 2016, rang xay tại chỗ theo mẻ nhỏ mỗi sáng. Chúng tôi tin một ly cà phê ngon bắt đầu từ hạt tươi và người pha kiên nhẫn.</p>
+      <div class="footer-legal">
+        <p>Mã số thuế: 0317890210 - CÔNG TY TNHH CÀ PHÊ NGÕ</p>
+        <p>Đăng ký lần đầu ngày 12/03/2016 tại Sở Kế hoạch &amp; Đầu tư TP. Đà Nẵng</p>
+        <p>Địa chỉ đăng ký: K54/8 Phạm Hồng Thái, Hải Châu, TP. Đà Nẵng, Việt Nam</p>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <span class="footer-col__title">Liên kết nhanh</span>
+      <a href="#home">Trang chủ</a>
+      <a href="#menu">Thực đơn</a>
+      <a href="#gallery">Không gian</a>
+      <a href="#story">Câu chuyện</a>
+      <a href="#contact">Liên hệ</a>
+    </div>
+
+    <div class="footer-col">
+      <span class="footer-col__title">Chính sách &amp; Quy chế</span>
+      <a href="#">Chính sách bảo mật</a>
+      <a href="#">Điều khoản sử dụng</a>
+      <a href="#">Quy chế hoạt động</a>
+      <a href="#">Chính sách thành viên</a>
+    </div>
+
+    <div class="footer-col">
+      <span class="footer-col__title">Kênh kết nối</span>
+      <div class="footer-social">
+        <span class="icon" title="Developer Docs">terminal</span>
+        <span class="icon" title="Secure Share">share</span>
+        <span class="icon" title="Global Node">public</span>
+      </div>
+      <p class="footer-node">Đà Nẵng · từ 2016</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>Copyright (c) 2026 Web100. All rights reserved.</p>
+  </div>
+</footer>
+
+<button type="button" class="to-top" id="to-top" aria-label="Cuộn lên đầu trang">
+  <span class="icon">arrow_upward</span>
+</button>
+
+  <!-- Lightbox dùng chung cho gallery -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Ảnh phóng lớn" hidden>
+    <div class="lightbox__backdrop" data-lb-close aria-hidden="true"></div>
+    <div class="lightbox__inner">
+      <figure class="lightbox__figure">
+        <img class="lightbox__img" id="lightbox-img" alt="">
+        <figcaption class="lightbox__cap">
+          <span class="lightbox__count" id="lightbox-count">01 / 07</span>
+          <span class="lightbox__name" id="lightbox-name"></span>
+          <span class="lightbox__sub" id="lightbox-sub"></span>
+        </figcaption>
+      </figure>
+    </div>
+    <button type="button" class="lightbox__btn lightbox__btn--prev" id="lightbox-prev" aria-label="Ảnh trước"><span class="icon">chevron_left</span></button>
+    <button type="button" class="lightbox__btn lightbox__btn--next" id="lightbox-next" aria-label="Ảnh sau"><span class="icon">chevron_right</span></button>
+    <button type="button" class="lightbox__btn lightbox__btn--close" id="lightbox-close" aria-label="Đóng"><span class="icon">close</span></button>
+  </div>
+
+<script src="js/main.js" defer></script>
+<script src="js/forms.js" defer></script>
+<script src="js/gallery.js" defer></script>
+<script src="js/flipbook.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+{
+  "docH": 12973,
+  "vw": 1920,
+  "header": {
+    "top": 0,
+    "h": 80,
+    "w": 1920
+  },
+  "main": {
+    "top": 0,
+    "h": 12476,
+    "w": 1920
+  },
+  "sections": [
+    {
+      "i": 0,
+      "id": "home",
+      "cls": "relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-slate-950",
+      "top": 128,
+      "h": 972,
+      "w": 1920
+    },
+    {
+      "i": 1,
+      "id": "menu",
+      "cls": "py-24 bg-glow-bronze relative overflow-hidden",
+      "top": 1100,
+      "h": 1442,
+      "w": 1920
+    },
+    {
+      "i": 2,
+      "id": null,
+      "cls": "py-24 bg-surface",
+      "top": 2542,
+      "h": 826,
+      "w": 1920
+    },
+    {
+      "i": 3,
+      "id": null,
+      "cls": "py-24 bg-surface-container-lowest overflow-hidden",
+      "top": 3368,
+      "h": 1031,
+      "w": 1920
+    },
+    {
+      "i": 4,
+      "id": "trading",
+      "cls": "pt-16 pb-24 bg-[#0c0f0f] relative overflow-hidden",
+      "top": 4399,
+      "h": 3055,
+      "w": 1920
+    },
+    {
+      "i": 5,
+      "id": "testimonials",
+      "cls": "py-32 bg-glow-dark border-t border-outline-variant/10 relative overflow-hidden",
+      "top": 7454,
+      "h": 1920,
+      "w": 1920
+    },
+    {
+      "i": 6,
+      "id": "reservations",
+      "cls": "py-28 bg-glow-bronze relative overflow-hidden",
+      "top": 9374,
+      "h": 1776,
+      "w": 1920
+    },
+    {
+      "i": 7,
+      "id": "contact",
+      "cls": "py-32 bg-glow-dark border-t border-outline-variant/10 relative overflow-hidden",
+      "top": 11150,
+      "h": 1327,
+      "w": 1920
+    }
+  ],
+  "footer": {
+    "top": 12476,
+    "h": 496,
+    "w": 1920
+  }
+}

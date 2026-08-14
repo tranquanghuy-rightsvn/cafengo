@@ -1,0 +1,11 @@
+import puppeteer from 'puppeteer-core';
+const b=await puppeteer.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true,args:['--no-sandbox','--hide-scrollbars'],defaultViewport:{width:1440,height:900}});
+const p=await b.newPage();
+await p.goto(process.env.URL,{waitUntil:'networkidle2'});
+await p.addStyleTag({content:'html{scroll-behavior:auto!important}'});
+await p.evaluate(()=>document.getElementById('gallery').scrollIntoView({block:'center'}));
+await new Promise(r=>setTimeout(r,700));
+await p.evaluate(()=>document.querySelector('.gtile--d .gtile__btn').click());
+await new Promise(r=>setTimeout(r,1200));
+await p.screenshot({path:process.env.OUT});
+console.log('ok'); await b.close();

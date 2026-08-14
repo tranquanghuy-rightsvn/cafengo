@@ -1,0 +1,599 @@
+{
+ "t": "div",
+ "c": "space-y-4",
+ "box": {
+  "w": 358,
+  "h": 201.5,
+  "x": 473,
+  "y": 10311
+ },
+ "st": {
+  "display": "block",
+  "flexDirection": "row",
+  "flexWrap": "nowrap",
+  "width": "358px",
+  "height": "201.5px",
+  "boxSizing": "border-box",
+  "color": "rgb(226, 226, 226)",
+  "backgroundPosition": "0% 0%",
+  "opacity": "1",
+  "fontFamily": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+  "fontSize": "16px",
+  "fontWeight": "400",
+  "lineHeight": "24px",
+  "borderColor": "rgb(229, 231, 235)",
+  "borderStyle": "solid",
+  "objectFit": "fill",
+  "writingMode": "horizontal-tb"
+ },
+ "kids": [
+  {
+   "t": "div",
+   "c": "",
+   "box": {
+    "w": 358,
+    "h": 61,
+    "x": 473,
+    "y": 10311
+   },
+   "st": {
+    "display": "block",
+    "flexDirection": "row",
+    "flexWrap": "nowrap",
+    "width": "358px",
+    "height": "61px",
+    "boxSizing": "border-box",
+    "color": "rgb(226, 226, 226)",
+    "backgroundPosition": "0% 0%",
+    "opacity": "1",
+    "fontFamily": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "lineHeight": "24px",
+    "borderColor": "rgb(229, 231, 235)",
+    "borderStyle": "solid",
+    "objectFit": "fill",
+    "writingMode": "horizontal-tb"
+   },
+   "kids": [
+    {
+     "t": "h4",
+     "c": "font-mono text-xs font-bold text-on-surface",
+     "box": {
+      "w": 358,
+      "h": 16,
+      "x": 473,
+      "y": 10311
+     },
+     "txt": "Bàn Cà Phê Tiêu Chuẩn (Standard Table)",
+     "st": {
+      "display": "block",
+      "flexDirection": "row",
+      "flexWrap": "nowrap",
+      "width": "358px",
+      "height": "16px",
+      "boxSizing": "border-box",
+      "color": "rgb(226, 226, 226)",
+      "backgroundPosition": "0% 0%",
+      "opacity": "1",
+      "fontFamily": "\"JetBrains Mono\", monospace",
+      "fontSize": "12px",
+      "fontWeight": "700",
+      "lineHeight": "16px",
+      "borderColor": "rgb(229, 231, 235)",
+      "borderStyle": "solid",
+      "objectFit": "fill",
+      "writingMode": "horizontal-tb"
+     },
+     "kids": []
+    },
+    {
+     "t": "p",
+     "c": "text-[12px] text-on-surface-variant mt-1.5 leading-relaxed",
+     "box": {
+      "w": 358,
+      "h": 39,
+      "x": 473,
+      "y": 10333
+     },
+     "txt": "Không gian chung thoáng đãng, yên tĩnh vừa đủ. Thích hợp cho làm việc cá nhân hoặc gặp gỡ đối tác thân thiết.",
+     "st": {
+      "display": "block",
+      "flexDirection": "row",
+      "flexWrap": "nowrap",
+      "width": "358px",
+      "height": "39px",
+      "margin": "6px 0px 0px",
+      "boxSizing": "border-box",
+      "color": "rgb(196, 199, 199)",
+      "backgroundPosition": "0% 0%",
+      "opacity": "1",
+      "fontFamily": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "lineHeight": "19.5px",
+      "borderColor": "rgb(229, 231, 235)",
+      "borderStyle": "solid",
+      "objectFit": "fill",
+      "writingMode": "horizontal-tb"
+     },
+     "kids": []
+    }
+   ]
+  },
+  {
+   "t": "div",
+   "c": "pt-3 border-t border-outline-variant/10",
+   "box": {
+    "w": 358,
+    "h": 124.5,
+    "x": 473,
+    "y": 10388
+   },
+   "st": {
+    "display": "block",
+    "flexDirection": "row",
+    "flexWrap": "nowrap",
+    "width": "358px",
+    "height": "124.5px",
+    "padding": "12px 0px 0px",
+    "margin": "16px 0px 0px",
+    "boxSizing": "border-box",
+    "color": "rgb(226, 226, 226)",
+    "backgroundPosition": "0% 0%",
+    "opacity": "1",
+    "fontFamily": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "lineHeight": "24px",
+    "borderTopWidth": "1px",
+    "borderColor": "rgba(68, 71, 72, 0.1)",
+    "borderStyle": "solid",
+    "objectFit": "fill",
+    "writingMode": "horizontal-tb"
+   },
+   "kids": [
+    {
+     "t": "span",
+     "c": "font-mono text-[9px] text-secondary tracking-widest uppercase block mb-2",
+     "box": {
+      "w": 358,
+      "h": 13.5,
+      "x": 473,
+      "y": 10401
+     },
+     "txt": "Thông số kỹ thuật phần cứng:",
+     "st": {
+      "display": "block",
+      "flexDirection": "row",
+      "flexWrap": "nowrap",
+      "width": "358px",
+      "height": "13.5px",
+      "margin": "0px 0px 8px",
+      "boxSizing": "border-box",
+      "color": "rgb(255, 183, 123)",
+      "backgroundPosition": "0% 0%",
+      "opacity": "1",
+      "fontFamily": "\"JetBrains Mono\", monospace",
+      "fontSize": "9px",
+      "fontWeight": "400",
+      "lineHeight": "13.5px",
+      "letterSpacing": "0.9px",
+      "textTransform": "uppercase",
+      "borderColor": "rgb(229, 231, 235)",
+      "borderStyle": "solid",
+      "objectFit": "fill",
+      "writingMode": "horizontal-tb"
+     },
+     "kids": []
+    },
+    {
+     "t": "ul",
+     "c": "space-y-2 font-mono text-[11px] text-on-surface-variant",
+     "box": {
+      "w": 358,
+      "h": 90,
+      "x": 473,
+      "y": 10423
+     },
+     "st": {
+      "display": "block",
+      "flexDirection": "row",
+      "flexWrap": "nowrap",
+      "width": "358px",
+      "height": "90px",
+      "boxSizing": "border-box",
+      "color": "rgb(196, 199, 199)",
+      "backgroundPosition": "0% 0%",
+      "opacity": "1",
+      "fontFamily": "\"JetBrains Mono\", monospace",
+      "fontSize": "11px",
+      "fontWeight": "400",
+      "lineHeight": "16.5px",
+      "borderColor": "rgb(229, 231, 235)",
+      "borderStyle": "solid",
+      "objectFit": "fill",
+      "writingMode": "horizontal-tb"
+     },
+     "kids": [
+      {
+       "t": "li",
+       "c": "flex items-start gap-2",
+       "box": {
+        "w": 358,
+        "h": 16.5,
+        "x": 473,
+        "y": 10423
+       },
+       "st": {
+        "display": "flex",
+        "flexDirection": "row",
+        "flexWrap": "nowrap",
+        "alignItems": "flex-start",
+        "gap": "8px",
+        "width": "358px",
+        "height": "16.5px",
+        "boxSizing": "border-box",
+        "color": "rgb(196, 199, 199)",
+        "backgroundPosition": "0% 0%",
+        "opacity": "1",
+        "fontFamily": "\"JetBrains Mono\", monospace",
+        "fontSize": "11px",
+        "fontWeight": "400",
+        "lineHeight": "16.5px",
+        "borderColor": "rgb(229, 231, 235)",
+        "borderStyle": "solid",
+        "objectFit": "fill",
+        "writingMode": "horizontal-tb"
+       },
+       "kids": [
+        {
+         "t": "span",
+         "c": "text-secondary select-none",
+         "box": {
+          "w": 13.2,
+          "h": 16.5,
+          "x": 473,
+          "y": 10423
+         },
+         "txt": "::",
+         "st": {
+          "display": "block",
+          "flexDirection": "row",
+          "flexWrap": "nowrap",
+          "width": "13.2031px",
+          "height": "16.5px",
+          "boxSizing": "border-box",
+          "color": "rgb(255, 183, 123)",
+          "backgroundPosition": "0% 0%",
+          "opacity": "1",
+          "fontFamily": "\"JetBrains Mono\", monospace",
+          "fontSize": "11px",
+          "fontWeight": "400",
+          "lineHeight": "16.5px",
+          "borderColor": "rgb(229, 231, 235)",
+          "borderStyle": "solid",
+          "objectFit": "fill",
+          "writingMode": "horizontal-tb"
+         }
+        },
+        {
+         "t": "span",
+         "c": "",
+         "box": {
+          "w": 237.6,
+          "h": 16.5,
+          "x": 494,
+          "y": 10423
+         },
+         "txt": "Nguồn điện ổ cắm độc lập tại mỗi bàn",
+         "st": {
+          "display": "block",
+          "flexDirection": "row",
+          "flexWrap": "nowrap",
+          "width": "237.609px",
+          "height": "16.5px",
+          "boxSizing": "border-box",
+          "color": "rgb(196, 199, 199)",
+          "backgroundPosition": "0% 0%",
+          "opacity": "1",
+          "fontFamily": "\"JetBrains Mono\", monospace",
+          "fontSize": "11px",
+          "fontWeight": "400",
+          "lineHeight": "16.5px",
+          "borderColor": "rgb(229, 231, 235)",
+          "borderStyle": "solid",
+          "objectFit": "fill",
+          "writingMode": "horizontal-tb"
+         }
+        }
+       ]
+      },
+      {
+       "t": "li",
+       "c": "flex items-start gap-2",
+       "box": {
+        "w": 358,
+        "h": 16.5,
+        "x": 473,
+        "y": 10447
+       },
+       "st": {
+        "display": "flex",
+        "flexDirection": "row",
+        "flexWrap": "nowrap",
+        "alignItems": "flex-start",
+        "gap": "8px",
+        "width": "358px",
+        "height": "16.5px",
+        "margin": "8px 0px 0px",
+        "boxSizing": "border-box",
+        "color": "rgb(196, 199, 199)",
+        "backgroundPosition": "0% 0%",
+        "opacity": "1",
+        "fontFamily": "\"JetBrains Mono\", monospace",
+        "fontSize": "11px",
+        "fontWeight": "400",
+        "lineHeight": "16.5px",
+        "borderColor": "rgb(229, 231, 235)",
+        "borderStyle": "solid",
+        "objectFit": "fill",
+        "writingMode": "horizontal-tb"
+       },
+       "kids": [
+        {
+         "t": "span",
+         "c": "text-secondary select-none",
+         "box": {
+          "w": 13.2,
+          "h": 16.5,
+          "x": 473,
+          "y": 10447
+         },
+         "txt": "::",
+         "st": {
+          "display": "block",
+          "flexDirection": "row",
+          "flexWrap": "nowrap",
+          "width": "13.2031px",
+          "height": "16.5px",
+          "boxSizing": "border-box",
+          "color": "rgb(255, 183, 123)",
+          "backgroundPosition": "0% 0%",
+          "opacity": "1",
+          "fontFamily": "\"JetBrains Mono\", monospace",
+          "fontSize": "11px",
+          "fontWeight": "400",
+          "lineHeight": "16.5px",
+          "borderColor": "rgb(229, 231, 235)",
+          "borderStyle": "solid",
+          "objectFit": "fill",
+          "writingMode": "horizontal-tb"
+         }
+        },
+        {
+         "t": "span",
+         "c": "",
+         "box": {
+          "w": 310.2,
+          "h": 16.5,
+          "x": 494,
+          "y": 10447
+         },
+         "txt": "Đường truyền Wi-Fi 6 tốc độ cao (Băng tần 5GHz)",
+         "st": {
+          "display": "block",
+          "flexDirection": "row",
+          "flexWrap": "nowrap",
+          "width": "310.203px",
+          "height": "16.5px",
+          "boxSizing": "border-box",
+          "color": "rgb(196, 199, 199)",
+          "backgroundPosition": "0% 0%",
+          "opacity": "1",
+          "fontFamily": "\"JetBrains Mono\", monospace",
+          "fontSize": "11px",
+          "fontWeight": "400",
+          "lineHeight": "16.5px",
+          "borderColor": "rgb(229, 231, 235)",
+          "borderStyle": "solid",
+          "objectFit": "fill",
+          "writingMode": "horizontal-tb"
+         }
+        }
+       ]
+      },
+      {
+       "t": "li",
+       "c": "flex items-start gap-2",
+       "box": {
+        "w": 358,
+        "h": 16.5,
+        "x": 473,
+        "y": 10472
+       },
+       "st": {
+        "display": "flex",
+        "flexDirection": "row",
+        "flexWrap": "nowrap",
+        "alignItems": "flex-start",
+        "gap": "8px",
+        "width": "358px",
+        "height": "16.5px",
+        "margin": "8px 0px 0px",
+        "boxSizing": "border-box",
+        "color": "rgb(196, 199, 199)",
+        "backgroundPosition": "0% 0%",
+        "opacity": "1",
+        "fontFamily": "\"JetBrains Mono\", monospace",
+        "fontSize": "11px",
+        "fontWeight": "400",
+        "lineHeight": "16.5px",
+        "borderColor": "rgb(229, 231, 235)",
+        "borderStyle": "solid",
+        "objectFit": "fill",
+        "writingMode": "horizontal-tb"
+       },
+       "kids": [
+        {
+         "t": "span",
+         "c": "text-secondary select-none",
+         "box": {
+          "w": 13.2,
+          "h": 16.5,
+          "x": 473,
+          "y": 10472
+         },
+         "txt": "::",
+         "st": {
+          "display": "block",
+          "flexDirection": "row",
+          "flexWrap": "nowrap",
+          "width": "13.2031px",
+          "height": "16.5px",
+          "boxSizing": "border-box",
+          "color": "rgb(255, 183, 123)",
+          "backgroundPosition": "0% 0%",
+          "opacity": "1",
+          "fontFamily": "\"JetBrains Mono\", monospace",
+          "fontSize": "11px",
+          "fontWeight": "400",
+          "lineHeight": "16.5px",
+          "borderColor": "rgb(229, 231, 235)",
+          "borderStyle": "solid",
+          "objectFit": "fill",
+          "writingMode": "horizontal-tb"
+         }
+        },
+        {
+         "t": "span",
+         "c": "",
+         "box": {
+          "w": 250.8,
+          "h": 16.5,
+          "x": 494,
+          "y": 10472
+         },
+         "txt": "Nước uống tinh khiết tiếp đón miễn phí",
+         "st": {
+          "display": "block",
+          "flexDirection": "row",
+          "flexWrap": "nowrap",
+          "width": "250.812px",
+          "height": "16.5px",
+          "boxSizing": "border-box",
+          "color": "rgb(196, 199, 199)",
+          "backgroundPosition": "0% 0%",
+          "opacity": "1",
+          "fontFamily": "\"JetBrains Mono\", monospace",
+          "fontSize": "11px",
+          "fontWeight": "400",
+          "lineHeight": "16.5px",
+          "borderColor": "rgb(229, 231, 235)",
+          "borderStyle": "solid",
+          "objectFit": "fill",
+          "writingMode": "horizontal-tb"
+         }
+        }
+       ]
+      },
+      {
+       "t": "li",
+       "c": "flex items-start gap-2",
+       "box": {
+        "w": 358,
+        "h": 16.5,
+        "x": 473,
+        "y": 10496
+       },
+       "st": {
+        "display": "flex",
+        "flexDirection": "row",
+        "flexWrap": "nowrap",
+        "alignItems": "flex-start",
+        "gap": "8px",
+        "width": "358px",
+        "height": "16.5px",
+        "margin": "8px 0px 0px",
+        "boxSizing": "border-box",
+        "color": "rgb(196, 199, 199)",
+        "backgroundPosition": "0% 0%",
+        "opacity": "1",
+        "fontFamily": "\"JetBrains Mono\", monospace",
+        "fontSize": "11px",
+        "fontWeight": "400",
+        "lineHeight": "16.5px",
+        "borderColor": "rgb(229, 231, 235)",
+        "borderStyle": "solid",
+        "objectFit": "fill",
+        "writingMode": "horizontal-tb"
+       },
+       "kids": [
+        {
+         "t": "span",
+         "c": "text-secondary select-none",
+         "box": {
+          "w": 13.2,
+          "h": 16.5,
+          "x": 473,
+          "y": 10496
+         },
+         "txt": "::",
+         "st": {
+          "display": "block",
+          "flexDirection": "row",
+          "flexWrap": "nowrap",
+          "width": "13.2031px",
+          "height": "16.5px",
+          "boxSizing": "border-box",
+          "color": "rgb(255, 183, 123)",
+          "backgroundPosition": "0% 0%",
+          "opacity": "1",
+          "fontFamily": "\"JetBrains Mono\", monospace",
+          "fontSize": "11px",
+          "fontWeight": "400",
+          "lineHeight": "16.5px",
+          "borderColor": "rgb(229, 231, 235)",
+          "borderStyle": "solid",
+          "objectFit": "fill",
+          "writingMode": "horizontal-tb"
+         }
+        },
+        {
+         "t": "span",
+         "c": "",
+         "box": {
+          "w": 277.2,
+          "h": 16.5,
+          "x": 494,
+          "y": 10496
+         },
+         "txt": "Ghế ngồi bọc da êm ái, hỗ trợ cột sống nhẹ",
+         "st": {
+          "display": "block",
+          "flexDirection": "row",
+          "flexWrap": "nowrap",
+          "width": "277.203px",
+          "height": "16.5px",
+          "boxSizing": "border-box",
+          "color": "rgb(196, 199, 199)",
+          "backgroundPosition": "0% 0%",
+          "opacity": "1",
+          "fontFamily": "\"JetBrains Mono\", monospace",
+          "fontSize": "11px",
+          "fontWeight": "400",
+          "lineHeight": "16.5px",
+          "borderColor": "rgb(229, 231, 235)",
+          "borderStyle": "solid",
+          "objectFit": "fill",
+          "writingMode": "horizontal-tb"
+         }
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

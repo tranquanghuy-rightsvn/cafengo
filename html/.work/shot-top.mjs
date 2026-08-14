@@ -1,0 +1,11 @@
+import puppeteer from 'puppeteer-core';
+import fs from 'node:fs';
+fs.mkdirSync('shots',{recursive:true});
+const W=Number(process.env.W||1440);
+const b=await puppeteer.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true,args:['--no-sandbox','--hide-scrollbars','--force-device-scale-factor=2'],defaultViewport:{width:W,height:200,deviceScaleFactor:2}});
+const p=await b.newPage();
+await p.goto('http://127.0.0.1:8899/',{waitUntil:'networkidle2'});
+await new Promise(r=>setTimeout(r,800));
+await p.screenshot({path:process.env.OUT||'shots/top.png',clip:{x:0,y:0,width:W,height:100}});
+console.log('ok');
+await b.close();
