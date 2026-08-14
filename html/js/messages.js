@@ -46,6 +46,15 @@
   /* so sánh thời gian bằng chuỗi ISO đã chuẩn hoá — tránh new Date() lệch múi */
   function sortKey(iso) { return String(iso).slice(0, 19); }
 
+  /* Thứ tự hiển thị: lời nhắn khách vừa gửi từ máy này luôn nằm trên cùng, rồi
+     mới tới phần còn lại xếp theo thời gian mới nhất. Chốt cứng như vậy để bản
+     xem thử không phụ thuộc đồng hồ máy khách — lệch giờ vẫn thấy ngay bài mình. */
+  function order(a, b) {
+    if (!!a.mine !== !!b.mine) return a.mine ? -1 : 1;
+    var ka = sortKey(a.at), kb = sortKey(b.at);
+    return ka < kb ? 1 : ka > kb ? -1 : 0;
+  }
+
   function escapeHtml(t) {
     return String(t).replace(/[&<>"']/g, function (c) {
       return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
@@ -252,10 +261,13 @@
     slice.forEach(function (m, i) { grid.appendChild(cardOf(m, i, p.q)); });
     grid.setAttribute('aria-busy', 'false');
 
-    elEmpty.hidden = list.length !== 0;
+    var filtering = !!(p.q || p.from || p.to);
+
+    /* Câu "không khớp bộ lọc" chỉ đúng khi người dùng ĐÃ lọc. Lúc mới vào trang
+       mà chưa gõ gì thì để trống, dòng thống kê phía trên đã nói đủ. */
+    elEmpty.hidden = list.length !== 0 || !filtering;
 
     /* thống kê + nhắc bộ lọc đang bật */
-    var filtering = !!(p.q || p.from || p.to);
     elStat.innerHTML = filtering
       ? 'Khớp <b>' + list.length + '</b> / ' + all.length + ' lời nhắn · trang ' + p.page + '/' + pages
       : 'Tất cả <b>' + all.length + '</b> lời nhắn · trang ' + p.page + '/' + pages;
@@ -297,9 +309,7 @@
   }
 
   function boot(seed) {
-    all = seed.concat(localMessages()).sort(function (a, b) {
-      return sortKey(a.at) < sortKey(b.at) ? 1 : sortKey(a.at) > sortKey(b.at) ? -1 : 0;
-    });
+    all = seed.concat(localMessages()).sort(order);
 
     var p = readParams();
     elName.value = p.q;
@@ -339,6 +349,14 @@
       var np = readParams();
       elName.value = np.q; elFrom.value = np.from; elTo.value = np.to;
       render(np, false);
+    });
+
+    /* Khách gửi lời nhắn ở tab trang chủ đang mở song song: trộn lại rồi vẽ
+       ngay, không bắt họ tải lại trang mới thấy bài của mình. */
+    window.addEventListener('storage', function (e) {
+      if (e.key && e.key !== LOCAL_KEY) return;
+      all = seed.concat(localMessages()).sort(order);
+      render(readParams(), false);
     });
 
     var rt = null;

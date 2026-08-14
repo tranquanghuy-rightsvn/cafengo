@@ -80,13 +80,14 @@
         flash(form, 'Bạn điền giúp quán những ô có dấu * nhé.', false);
         return;
       }
-      if (onSent) onSent(form);        /* đọc dữ liệu TRƯỚC khi reset */
-      flash(form, message, true);
+      var saved = onSent ? onSent(form) : null;   /* đọc dữ liệu TRƯỚC khi reset */
+      /* Lưu được thì chỉ luôn cho khách chỗ xem lại bài mình vừa gửi. */
+      flash(form, message, true, saved ? 'Xem lời nhắn của bạn' : '');
       form.reset();
     });
   }
 
-  function flash(form, text, ok) {
+  function flash(form, text, ok, linkLabel) {
     var note = form.querySelector('.form-note');
     if (!note) {
       note = d.createElement('p');
@@ -96,10 +97,19 @@
       form.appendChild(note);
     }
     note.textContent = text;
+    if (linkLabel) {
+      var a = d.createElement('a');
+      a.className = 'form-note__link';
+      a.href = 'loi-nhan/';
+      a.textContent = linkLabel;
+      note.appendChild(d.createTextNode(' '));
+      note.appendChild(a);
+    }
     note.classList.toggle('form-note--warn', !ok);
     note.classList.add('is-shown');
     clearTimeout(note._t);
-    note._t = setTimeout(function () { note.classList.remove('is-shown'); }, 5000);
+    /* có link thì để lâu hơn một chút, đủ thời gian đọc rồi bấm */
+    note._t = setTimeout(function () { note.classList.remove('is-shown'); }, linkLabel ? 9000 : 5000);
   }
 
   /* ---------- Lưu lời nhắn để trang Lời nhắn đọc lại ----------
@@ -116,7 +126,7 @@
   }
 
   function keep(entry) {
-    if (!entry.name || !entry.message) return;
+    if (!entry.name || !entry.message) return null;
     try {
       var list = JSON.parse(localStorage.getItem(STORE) || '[]');
       entry.id = 'local-' + Date.now();
@@ -125,7 +135,9 @@
       /* giữ 200 cái gần nhất là quá đủ cho bản xem thử */
       if (list.length > 200) list = list.slice(-200);
       localStorage.setItem(STORE, JSON.stringify(list));
-    } catch (e) { /* hết dung lượng hoặc bị chặn thì bỏ qua */ }
+      paintCount();                  /* con số trên nút phải khớp ngay lập tức */
+      return entry;
+    } catch (e) { return null; }     /* hết dung lượng hoặc bị chặn thì bỏ qua */
   }
 
   function val(form, sel) {
@@ -138,24 +150,34 @@
 
   wireForm(contactForm, 'Cảm ơn bạn, quán đã nhận lời nhắn và sẽ trả lời sớm.', function (f) {
     var chip = d.querySelector('#contact-chips .chip.is-active');
-    keep({ name: val(f, '#ct-name'), spot: '', topic: chip ? chip.textContent.trim() : '',
-           message: val(f, '#ct-msg') });
+    return keep({ name: val(f, '#ct-name'), spot: '', topic: chip ? chip.textContent.trim() : '',
+                  message: val(f, '#ct-msg') });
   });
   wireForm(feedbackForm, 'Cảm ơn bạn đã dành thời gian, quán đọc hết từng dòng.', function (f) {
-    keep({ name: val(f, '#fb-name'), spot: val(f, '#fb-role'), topic: '',
-           message: val(f, '#fb-msg') });
+    return keep({ name: val(f, '#fb-name'), spot: val(f, '#fb-role'), topic: '',
+                  message: val(f, '#fb-msg') });
   });
 
-  /* Số lời nhắn hiện trên nút "Xem tất cả lời nhắn" ở trang chủ. */
+  /* ---------- Số lời nhắn trên nút "Xem tất cả lời nhắn" ----------
+     Bằng số bài trong messages.json cộng số bài khách vừa gửi ở máy này. Tách
+     riêng seedCount để lúc gửi xong còn cộng lại được mà không phải fetch lần nữa. */
   var allBtn = d.getElementById('fb-all-count');
+  var seedCount = null;
+
+  function paintCount() {
+    if (!allBtn || seedCount === null) return;
+    var mine = 0;
+    try { mine = JSON.parse(localStorage.getItem(STORE) || '[]').length; } catch (e) {}
+    allBtn.textContent = '(' + (seedCount + mine) + ')';
+  }
+
   if (allBtn) {
     fetch('loi-nhan/messages.json', { cache: 'no-cache' })
       .then(function (r) { return r.ok ? r.json() : null; })
       .then(function (data) {
         if (!data) return;
-        var extra = 0;
-        try { extra = JSON.parse(localStorage.getItem(STORE) || '[]').length; } catch (e) {}
-        allBtn.textContent = '(' + ((data.count || (data.messages || []).length) + extra) + ')';
+        seedCount = data.count || (data.messages || []).length;
+        paintCount();
       })
       .catch(function () { /* mở bằng file:// thì thôi, không hiện số */ });
   }

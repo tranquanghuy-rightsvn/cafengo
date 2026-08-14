@@ -62,7 +62,11 @@
 
   /* ---------- Active section tracking in nav ---------- */
   var sections = [].slice.call(d.querySelectorAll('main section[id]'));
-  var navLinks = [].slice.call(d.querySelectorAll('.nav-desktop .nav-link, .nav-mobile a'));
+  /* Chỉ theo dõi link trỏ tới mục trong chính trang này. Link sang trang khác
+     ("loi-nhan/", "../index.html#menu") không được đụng vào, nếu không cuộn một
+     cái là nút Lời nhắn trên trang lời nhắn bị gỡ mất trạng thái đang mở. */
+  var navLinks = [].slice.call(d.querySelectorAll('.nav-desktop .nav-link, .nav-mobile a'))
+    .filter(function (a) { return (a.getAttribute('href') || '').charAt(0) === '#'; });
 
   if (sections.length && 'IntersectionObserver' in window) {
     var spy = new IntersectionObserver(function (entries) {

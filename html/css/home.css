@@ -117,7 +117,7 @@
   line-height: 1.5;
   color: var(--on-variant);
   font-family: var(--font-system);
-  animation: soft-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  /* nhịp nhấp nháy được gộp chung với hiệu ứng vào trang ở khối bên dưới */
 }
 .hero__place .icon { font-size: 16px; color: var(--gold); font-family: 'Material Symbols Outlined'; }
 @keyframes soft-pulse { 50% { opacity: 0.5; } }
@@ -130,6 +130,46 @@
   gap: 24px;
 }
 @media (min-width: 768px) { .hero__actions { flex-direction: row; } }
+
+/* ---------- Chữ hero nổi lên ở lần vẽ đầu ----------
+   Chỉ chạy đúng một lần lúc tải trang: mờ nhẹ rồi trôi lên, từng dòng lệch nhau
+   một nhịp ngắn để mắt đọc theo thứ tự. Dùng `both` để dòng nào chưa tới lượt
+   thì vẫn nằm ở khung đầu (trong suốt), khỏi loé lên trước rồi mới chạy.
+
+   Hiệu ứng đặt ở .hero__actions chứ không đặt lên từng nút: fill-mode giữ lại
+   transform cuối cùng, gắn thẳng vào nút sẽ chặn mất cú nhấc lên khi hover. */
+@keyframes hero-rise {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.hero__badge,
+.hero__kicker,
+.hero__title,
+.hero__actions {
+  animation: hero-rise 0.9s var(--ease-out-expo) both;
+}
+.hero__badge   { animation-delay: 0.15s; }
+.hero__kicker  { animation-delay: 0.28s; }
+.hero__title   { animation-delay: 0.41s; }
+.hero__actions { animation-delay: 0.67s; }
+
+/* Dòng địa chỉ vừa vào trang vừa nhấp nháy: hai animation nối tiếp nhau.
+   soft-pulse không có fill-mode nên trong lúc chờ nó chưa đụng gì tới opacity,
+   để hero-rise chạy trọn; hết delay mới tiếp quản. */
+.hero__place {
+  animation:
+    hero-rise 0.9s var(--ease-out-expo) 0.54s both,
+    soft-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) 1.5s infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__badge,
+  .hero__kicker,
+  .hero__title,
+  .hero__actions,
+  .hero__place { animation: none; }
+}
 
 .hero__cta {
   display: inline-block;
@@ -2152,6 +2192,15 @@ textarea.rinput { resize: none; }
   border-left-color: var(--error);
   background: rgb(var(--error-rgb) / 0.07);
 }
+/* link "Xem lời nhắn của bạn" đi kèm câu cảm ơn */
+.form-note__link {
+  color: var(--gold);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  white-space: nowrap;
+}
+.form-note__link:hover { color: var(--gold-deep); }
 
 /* lời trong sổ lưu bút có thể dài vài đoạn */
 .tcard__body p + p { margin-top: 18px; }
@@ -2212,8 +2261,9 @@ textarea.rinput { resize: none; }
   border-color: rgb(var(--gold-rgb) / 0.35);
   background: rgb(var(--panel-rgb) / 0.62);
   color: var(--hero-ink);
-  /* nhịp nhấp nháy gốc tụt xuống 0.5, trên nền kem là mất chữ */
-  animation-name: soft-pulse-light;
+  /* nhịp nhấp nháy gốc tụt xuống 0.5, trên nền kem là mất chữ.
+     Phải kể lại cả hero-rise, vì animation-name ghi đè trọn danh sách. */
+  animation-name: hero-rise, soft-pulse-light;
 }
 :root[data-theme="light"] .hero__place .icon { color: var(--hero-accent-soft); }
 :root[data-theme="light"] .hero__badge {

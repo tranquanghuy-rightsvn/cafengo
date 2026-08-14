@@ -475,6 +475,38 @@ input, textarea, select { font: inherit; color: inherit; }
   padding-bottom: 4px;
 }
 
+/* ---------- "Lời nhắn": nút riêng, nằm ngoài cùng ----------
+   Đây là trang riêng chứ không phải một mục cuộn tới như mấy cái kia, nên cho
+   nó dáng viên thuốc có viền vàng để tách hẳn khỏi hàng link phẳng bên cạnh. */
+.nav-desktop .nav-link--msg {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: -16px;              /* gap 40px giữa các link là quá rộng cho một cái nút */
+  padding: 10px 18px;
+  border: 1px solid rgb(var(--gold-rgb) / 0.45);
+  border-radius: 999px;
+  background: rgb(var(--gold-rgb) / 0.1);
+  color: var(--gold);
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease,
+              box-shadow 0.3s ease, transform 0.3s ease;
+}
+.nav-desktop .nav-link--msg .icon { font-size: 16px; line-height: 1; }
+.nav-desktop .nav-link--msg:hover {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--on-secondary);
+  box-shadow: 0 0 18px rgb(var(--gold-rgb) / 0.35);
+  transform: translateY(-1px);
+}
+/* đang ở chính trang này: tô đặc, bỏ gạch chân của .is-active */
+.nav-desktop .nav-link--msg.is-active {
+  background: var(--gold);
+  border: 1px solid var(--gold);
+  color: var(--on-secondary);
+  padding-bottom: 10px;
+}
+
 .nav-toggle { display: flex; align-items: center; gap: 16px; color: var(--on-surface); }
 .nav-toggle .icon { font-size: 32px; display: block; }
 .nav-toggle:hover { color: var(--gold); }
@@ -526,6 +558,24 @@ input, textarea, select { font: inherit; color: inherit; }
   transition: color 0.3s ease;
 }
 .nav-mobile a:hover, .nav-mobile a.is-active { color: var(--gold); }
+
+/* bản mobile của nút "Lời nhắn" — cùng dáng viên thuốc, cỡ chữ theo hàng link */
+.nav-mobile .nav-mobile__msg {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 26px;
+  border: 1px solid rgb(var(--gold-rgb) / 0.45);
+  border-radius: 999px;
+  background: rgb(var(--gold-rgb) / 0.1);
+  color: var(--gold);
+}
+.nav-mobile .nav-mobile__msg .icon { font-size: 20px; line-height: 1; }
+.nav-mobile .nav-mobile__msg.is-active {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--on-secondary);
+}
 
 /* ==========================================================================
    Main
