@@ -67,7 +67,7 @@
 
   /* ---------- Gửi form ----------
      Trang tĩnh nên không gửi đi đâu cả: chặn submit, báo đã nhận rồi dọn form. */
-  function wireForm(form, message) {
+  function wireForm(form, message, onSent) {
     if (!form) return;
     form.addEventListener('submit', function (e) {
       e.preventDefault();
@@ -80,6 +80,7 @@
         flash(form, 'Bạn điền giúp quán những ô có dấu * nhé.', false);
         return;
       }
+      if (onSent) onSent(form);        /* đọc dữ liệu TRƯỚC khi reset */
       flash(form, message, true);
       form.reset();
     });
@@ -101,6 +102,61 @@
     note._t = setTimeout(function () { note.classList.remove('is-shown'); }, 5000);
   }
 
-  wireForm(d.querySelector('.contact__panel form'), 'Cảm ơn bạn, quán đã nhận lời nhắn và sẽ trả lời sớm.');
-  wireForm(d.querySelector('.feedback form'), 'Cảm ơn bạn đã dành thời gian, quán đọc hết từng dòng.');
+  /* ---------- Lưu lời nhắn để trang Lời nhắn đọc lại ----------
+     Trang tĩnh không ghi ngược được vào loi-nhan/messages.json, nên lời nhắn
+     vừa gửi được giữ trong localStorage rồi trộn vào danh sách bên đó. Nhờ vậy
+     luồng "gửi xong thấy ngay" vẫn đúng khi xem thử. Muốn lưu thật thì cần một
+     endpoint nhỏ ghi thêm vào messages.json. */
+  var STORE = 'ngo-messages';
+
+  function stamp() {
+    var t = new Date(), p = function (n) { return (n < 10 ? '0' : '') + n; };
+    return t.getFullYear() + '-' + p(t.getMonth() + 1) + '-' + p(t.getDate()) + 'T' +
+           p(t.getHours()) + ':' + p(t.getMinutes()) + ':' + p(t.getSeconds()) + '+07:00';
+  }
+
+  function keep(entry) {
+    if (!entry.name || !entry.message) return;
+    try {
+      var list = JSON.parse(localStorage.getItem(STORE) || '[]');
+      entry.id = 'local-' + Date.now();
+      entry.at = stamp();
+      list.push(entry);
+      /* giữ 200 cái gần nhất là quá đủ cho bản xem thử */
+      if (list.length > 200) list = list.slice(-200);
+      localStorage.setItem(STORE, JSON.stringify(list));
+    } catch (e) { /* hết dung lượng hoặc bị chặn thì bỏ qua */ }
+  }
+
+  function val(form, sel) {
+    var el = form.querySelector(sel);
+    return el ? el.value.trim() : '';
+  }
+
+  var contactForm = d.querySelector('.contact__panel form');
+  var feedbackForm = d.querySelector('.feedback form');
+
+  wireForm(contactForm, 'Cảm ơn bạn, quán đã nhận lời nhắn và sẽ trả lời sớm.', function (f) {
+    var chip = d.querySelector('#contact-chips .chip.is-active');
+    keep({ name: val(f, '#ct-name'), spot: '', topic: chip ? chip.textContent.trim() : '',
+           message: val(f, '#ct-msg') });
+  });
+  wireForm(feedbackForm, 'Cảm ơn bạn đã dành thời gian, quán đọc hết từng dòng.', function (f) {
+    keep({ name: val(f, '#fb-name'), spot: val(f, '#fb-role'), topic: '',
+           message: val(f, '#fb-msg') });
+  });
+
+  /* Số lời nhắn hiện trên nút "Xem tất cả lời nhắn" ở trang chủ. */
+  var allBtn = d.getElementById('fb-all-count');
+  if (allBtn) {
+    fetch('loi-nhan/messages.json', { cache: 'no-cache' })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (data) {
+        if (!data) return;
+        var extra = 0;
+        try { extra = JSON.parse(localStorage.getItem(STORE) || '[]').length; } catch (e) {}
+        allBtn.textContent = '(' + ((data.count || (data.messages || []).length) + extra) + ')';
+      })
+      .catch(function () { /* mở bằng file:// thì thôi, không hiện số */ });
+  }
 })();

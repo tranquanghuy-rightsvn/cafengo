@@ -1,0 +1,342 @@
+{
+ "updated": "2026-08-14T10:30:00+07:00",
+ "count": 42,
+ "messages": [
+  {
+   "id": "m-042",
+   "name": "Nguyễn Thị Lan",
+   "spot": "bàn số 4",
+   "topic": "Hỏi thăm chung",
+   "message": "Cà phê ngon, quán yên. Cảm ơn quán nhiều.",
+   "at": "2026-07-10T14:52:06+07:00"
+  },
+  {
+   "id": "m-041",
+   "name": "Trần Minh",
+   "spot": "bàn trong nhà",
+   "topic": "",
+   "message": "Quán dọn dẹp sạch, nhà vệ sinh thơm. Điểm cộng lớn.",
+   "at": "2026-06-02T20:04:09+07:00"
+  },
+  {
+   "id": "m-040",
+   "name": "Phạm Thu Hà",
+   "spot": "hiên trước",
+   "topic": "",
+   "message": "Quán có bán hạt rang mộc gói 250g không? Mình muốn mua mang về.",
+   "at": "2026-05-12T20:43:37+07:00"
+  },
+  {
+   "id": "m-039",
+   "name": "Lê Quốc Bảo",
+   "spot": "gác xép",
+   "topic": "Góp ý cho quán",
+   "message": "Phin đen đá vẫn đúng cái vị cũ. Cảm ơn cô chủ.",
+   "at": "2026-04-03T14:06:53+07:00"
+  },
+  {
+   "id": "m-038",
+   "name": "Hoàng Anh Thư",
+   "spot": "bàn cạnh cửa sổ",
+   "topic": "",
+   "message": "Wifi trên gác xép hơi chậm, quán xem giúp nhé.",
+   "at": "2026-02-19T11:17:15+07:00"
+  },
+  {
+   "id": "m-037",
+   "name": "Đỗ Văn Hùng",
+   "spot": "bàn ngoài hiên",
+   "topic": "",
+   "message": "Cho mình hỏi quán có nhận đặt cà phê cho sự kiện công ty khoảng ba mươi người không? Nếu có thì báo giúp mình cách đặt và cần báo trước bao lâu.",
+   "at": "2025-12-27T16:57:59+07:00"
+  },
+  {
+   "id": "m-036",
+   "name": "Vũ Ngọc Mai",
+   "spot": "",
+   "topic": "Mua cà phê hạt mang về",
+   "message": "Trời mưa, ngồi trong nhà nghe tiếng mưa trên mái hiên, uống ly bạc sỉu nóng. Không có gì hơn. Chỉ mong quán đừng thay đổi nhiều quá.",
+   "at": "2025-11-23T09:20:06+07:00"
+  },
+  {
+   "id": "m-035",
+   "name": "Bùi Thanh Tùng",
+   "spot": "bàn dài giữa nhà",
+   "topic": "",
+   "message": "Ngồi từ hai giờ chiều tới sáu giờ tối mà không ai hỏi han gì, cứ để mình yên. Với người hay ngồi lâu như mình thì đó là điều quý nhất.",
+   "at": "2025-10-17T10:14:20+07:00"
+  },
+  {
+   "id": "m-034",
+   "name": "Đặng Kim Chi",
+   "spot": "bàn ngoài hiên",
+   "topic": "",
+   "message": "Đặt gác xép cho buổi họp lớp tối thứ Bảy, mười hai người ngồi vừa đủ. Nhân viên kê bàn giúp rất nhanh, loa để tụi mình tự chọn nhạc. Cảm ơn quán nhiều.",
+   "at": "2025-08-22T09:03:32+07:00"
+  },
+  {
+   "id": "m-033",
+   "name": "Ngô Hải Đăng",
+   "spot": "góc quầy pha",
+   "topic": "Giữ chỗ cho nhóm đông",
+   "message": "Trời mưa, ngồi trong nhà nghe tiếng mưa trên mái hiên, uống ly bạc sỉu nóng. Không có gì hơn. Chỉ mong quán đừng thay đổi nhiều quá.",
+   "at": "2025-08-01T09:55:01+07:00"
+  },
+  {
+   "id": "m-032",
+   "name": "Phan Thuỳ Dương",
+   "spot": "bàn gần kệ sách",
+   "topic": "",
+   "message": "Đợt dịch quán đóng cửa, mình nhớ ly cà phê ở đây kinh khủng. Có hôm đi ngang thấy cửa đóng mà thấy trống trải thật. Ngày quán mở lại mình ghé ngay buổi sáng đầu tiên, thấy mọi thứ vẫn y như cũ, cô chủ vẫn đứng ở quầy. Mừng muốn rơi nước mắt. Mong quán trụ được thật lâu.",
+   "at": "2025-06-16T11:07:34+07:00"
+  },
+  {
+   "id": "m-031",
+   "name": "Trịnh Văn Sơn",
+   "spot": "bàn trong nhà",
+   "topic": "",
+   "message": "Đợt dịch quán đóng cửa, mình nhớ ly cà phê ở đây kinh khủng. Có hôm đi ngang thấy cửa đóng mà thấy trống trải thật. Ngày quán mở lại mình ghé ngay buổi sáng đầu tiên, thấy mọi thứ vẫn y như cũ, cô chủ vẫn đứng ở quầy. Mừng muốn rơi nước mắt. Mong quán trụ được thật lâu.",
+   "at": "2025-05-11T19:14:29+07:00"
+  },
+  {
+   "id": "m-030",
+   "name": "Lý Bảo Ngọc",
+   "spot": "gác xép",
+   "topic": "Hỏi thăm chung",
+   "message": "Quán có bán hạt rang mộc gói 250g không? Mình muốn mua mang về.",
+   "at": "2025-04-17T20:07:55+07:00"
+  },
+  {
+   "id": "m-029",
+   "name": "Cao Minh Nhật",
+   "spot": "",
+   "topic": "",
+   "message": "Cho hỏi Chủ Nhật quán mở tới mấy giờ ạ?",
+   "at": "2025-03-04T17:00:32+07:00"
+  },
+  {
+   "id": "m-028",
+   "name": "Dương Thị Hồng",
+   "spot": "bàn số 4",
+   "topic": "",
+   "message": "Phin đen đá vẫn đúng cái vị cũ. Cảm ơn cô chủ.",
+   "at": "2025-01-06T09:51:52+07:00"
+  },
+  {
+   "id": "m-027",
+   "name": "Tạ Quang Huy",
+   "spot": "bàn cạnh cửa sổ",
+   "topic": "Góp ý cho quán",
+   "message": "Quán có bán hạt rang mộc gói 250g không? Mình muốn mua mang về.",
+   "at": "2024-11-30T10:59:27+07:00"
+  },
+  {
+   "id": "m-026",
+   "name": "Mai Phương Thảo",
+   "spot": "hiên trước",
+   "topic": "",
+   "message": "Bánh sừng bò sáng nay giòn lắm, nướng lại vừa tới.",
+   "at": "2024-11-03T11:44:52+07:00"
+  },
+  {
+   "id": "m-025",
+   "name": "Đinh Tiến Đạt",
+   "spot": "bàn ngoài hiên",
+   "topic": "",
+   "message": "Mình dẫn mấy người bạn từ Hà Nội vào chơi, tụi nó khen phin đen đá đậm hơn ngoài kia nhiều. Có bạn còn mua hai gói hạt mang về làm quà. Quán giữ nguyên cách rang này nhé.",
+   "at": "2024-09-11T20:36:13+07:00"
+  },
+  {
+   "id": "m-024",
+   "name": "Hồ Ngọc Trâm",
+   "spot": "bàn trong nhà",
+   "topic": "Mua cà phê hạt mang về",
+   "message": "Trời mưa, ngồi trong nhà nghe tiếng mưa trên mái hiên, uống ly bạc sỉu nóng. Không có gì hơn. Chỉ mong quán đừng thay đổi nhiều quá.",
+   "at": "2024-07-18T07:47:35+07:00"
+  },
+  {
+   "id": "m-023",
+   "name": "Lâm Chí Kiên",
+   "spot": "gác xép",
+   "topic": "",
+   "message": "Mình hay ngồi làm việc ở bàn cạnh cửa sổ, ổ cắm ngay bên, ánh sáng vừa đủ. Góp ý nhỏ là buổi chiều nắng hắt hơi gắt, quán cân nhắc thêm cái rèm mỏng.",
+   "at": "2024-06-10T10:06:27+07:00"
+  },
+  {
+   "id": "m-022",
+   "name": "Chu Bích Ngọc",
+   "spot": "",
+   "topic": "",
+   "message": "Ngồi từ hai giờ chiều tới sáu giờ tối mà không ai hỏi han gì, cứ để mình yên. Với người hay ngồi lâu như mình thì đó là điều quý nhất.",
+   "at": "2024-05-13T11:57:50+07:00"
+  },
+  {
+   "id": "m-021",
+   "name": "Võ Thành Long",
+   "spot": "bàn dài giữa nhà",
+   "topic": "Giữ chỗ cho nhóm đông",
+   "message": "Cho mình hỏi quán có nhận đặt cà phê cho sự kiện công ty khoảng ba mươi người không? Nếu có thì báo giúp mình cách đặt và cần báo trước bao lâu.",
+   "at": "2024-03-29T21:13:33+07:00"
+  },
+  {
+   "id": "m-020",
+   "name": "Nguyễn Khánh Vy",
+   "spot": "bàn gần kệ sách",
+   "topic": "",
+   "message": "Mình là dân thiết kế, hay để ý mấy chi tiết nhỏ. Cái hay của quán là không chỗ nào cố tỏ ra đẹp cả — bàn gỗ xước thì cứ để xước, tường loang thì cứ để loang, mà nhìn tổng thể lại rất có gu. Ánh sáng buổi sáng qua cửa kính đổ xuống mặt bàn đẹp lắm. Mình chụp mấy tấm mà không tấm nào tả hết được.",
+   "at": "2024-02-24T15:14:55+07:00"
+  },
+  {
+   "id": "m-019",
+   "name": "Trương Gia Bảo",
+   "spot": "bàn số 4",
+   "topic": "",
+   "message": "Mình biết quán từ hồi còn đi học, lúc đó hay ngồi bàn ngoài hiên ôn thi cả buổi chiều mà chẳng ai giục. Giờ đi làm rồi, mỗi lần về Đà Nẵng vẫn ghé. Có lần đi cả năm mới quay lại, cô chủ vẫn nhớ mình uống phin đen không đường. Cái đó thật sự quý, quán lớn không có được. Chúc quán giữ được nếp cũ này lâu thật lâu, và mong cái chảo rang gang ngoài kia đừng bao giờ bị thay.",
+   "at": "2024-01-18T08:39:28+07:00"
+  },
+  {
+   "id": "m-018",
+   "name": "Phùng Thu Trang",
+   "spot": "hiên trước",
+   "topic": "Hỏi thăm chung",
+   "message": "Wifi trên gác xép hơi chậm, quán xem giúp nhé.",
+   "at": "2023-12-07T16:30:14+07:00"
+  },
+  {
+   "id": "m-017",
+   "name": "Đoàn Minh Khôi",
+   "spot": "bàn ngoài hiên",
+   "topic": "",
+   "message": "Cho hỏi Chủ Nhật quán mở tới mấy giờ ạ?",
+   "at": "2023-11-13T21:24:52+07:00"
+  },
+  {
+   "id": "m-016",
+   "name": "Hà Thị Bình",
+   "spot": "bàn trong nhà",
+   "topic": "",
+   "message": "Trà đào hạt sen thơm, lần sau mình xin ít đá hơn.",
+   "at": "2023-09-12T11:58:05+07:00"
+  },
+  {
+   "id": "m-015",
+   "name": "Lưu Đức Anh",
+   "spot": "góc quầy pha",
+   "topic": "Góp ý cho quán",
+   "message": "Cho hỏi Chủ Nhật quán mở tới mấy giờ ạ?",
+   "at": "2023-08-02T19:10:58+07:00"
+  },
+  {
+   "id": "m-014",
+   "name": "Tô Ngọc Linh",
+   "spot": "",
+   "topic": "",
+   "message": "Phin đen đá vẫn đúng cái vị cũ. Cảm ơn cô chủ.",
+   "at": "2023-06-30T21:54:30+07:00"
+  },
+  {
+   "id": "m-013",
+   "name": "Kiều Anh Tuấn",
+   "spot": "gác xép",
+   "topic": "",
+   "message": "Mình hay ngồi làm việc ở bàn cạnh cửa sổ, ổ cắm ngay bên, ánh sáng vừa đủ. Góp ý nhỏ là buổi chiều nắng hắt hơi gắt, quán cân nhắc thêm cái rèm mỏng.",
+   "at": "2023-05-18T17:31:17+07:00"
+  },
+  {
+   "id": "m-012",
+   "name": "Bạch Thu Hằng",
+   "spot": "bàn cạnh cửa sổ",
+   "topic": "Mua cà phê hạt mang về",
+   "message": "Đặt gác xép cho buổi họp lớp tối thứ Bảy, mười hai người ngồi vừa đủ. Nhân viên kê bàn giúp rất nhanh, loa để tụi mình tự chọn nhạc. Cảm ơn quán nhiều.",
+   "at": "2023-04-07T11:50:10+07:00"
+  },
+  {
+   "id": "m-011",
+   "name": "Nguyễn Hữu Phước",
+   "spot": "bàn dài giữa nhà",
+   "topic": "",
+   "message": "Sáng nay ghé lúc bảy giờ, quán vừa mở, mùi cà phê rang thơm khắp con kiệt. Ngồi ngoài hiên nghe tiếng xe máy chạy qua, tự nhiên thấy nhẹ người. Cảm ơn quán vì một buổi sáng dễ chịu.",
+   "at": "2023-03-11T19:25:25+07:00"
+  },
+  {
+   "id": "m-010",
+   "name": "Lê Diệu Linh",
+   "spot": "hiên trước",
+   "topic": "",
+   "message": "Bánh tiramisu hôm nay hơi ngọt so với mọi lần, chắc mẻ mới. Còn lại vẫn tốt. Mình vẫn thích cái kiểu quán không bật nhạc to.",
+   "at": "2023-01-17T09:33:21+07:00"
+  },
+  {
+   "id": "m-009",
+   "name": "Trần Bảo Trân",
+   "spot": "bàn số 4",
+   "topic": "Giữ chỗ cho nhóm đông",
+   "message": "Sáng nay ghé lúc bảy giờ, quán vừa mở, mùi cà phê rang thơm khắp con kiệt. Ngồi ngoài hiên nghe tiếng xe máy chạy qua, tự nhiên thấy nhẹ người. Cảm ơn quán vì một buổi sáng dễ chịu.",
+   "at": "2022-12-12T11:21:00+07:00"
+  },
+  {
+   "id": "m-008",
+   "name": "Phạm Quốc Việt",
+   "spot": "bàn trong nhà",
+   "topic": "",
+   "message": "Mình muốn kể chuyện này. Tuần trước mình để quên cái ví ở bàn số 4, tối về mới phát hiện, gọi lại thì bạn nhân viên nói đã cất giúp rồi, sáng mai qua lấy. Hôm sau qua, còn nguyên tiền và giấy tờ. Mình cảm ơn mà bạn ấy chỉ cười bảo chuyện bình thường. Với mình thì không bình thường chút nào. Cảm ơn quán và cảm ơn bạn nhân viên hôm đó.",
+   "at": "2022-11-07T20:14:58+07:00"
+  },
+  {
+   "id": "m-007",
+   "name": "Hoàng Mỹ Duyên",
+   "spot": "bàn gần kệ sách",
+   "topic": "",
+   "message": "Góp ý thật lòng nhé: đồ uống và không gian thì mình không chê được gì, nhưng cuối tuần quán đông quá, tầm chín giờ sáng là hết chỗ ngoài hiên. Mình hiểu khách đông là tốt cho quán, chỉ mong quán cân nhắc mở thêm chỗ hoặc cho đặt bàn trước vào cuối tuần. Còn lại mình vẫn ghé đều, và vẫn giới thiệu bạn bè tới.",
+   "at": "2022-09-14T10:55:44+07:00"
+  },
+  {
+   "id": "m-006",
+   "name": "Đỗ Nhật Nam",
+   "spot": "bàn ngoài hiên",
+   "topic": "Hỏi thăm chung",
+   "message": "Chỗ ngoài hiên mát, ngồi cả buổi chẳng thấy chán.",
+   "at": "2022-08-17T09:21:07+07:00"
+  },
+  {
+   "id": "m-005",
+   "name": "Vũ Hoài Thương",
+   "spot": "",
+   "topic": "",
+   "message": "Cho hỏi Chủ Nhật quán mở tới mấy giờ ạ?",
+   "at": "2022-07-14T08:01:08+07:00"
+  },
+  {
+   "id": "m-004",
+   "name": "Bùi Gia Hân",
+   "spot": "gác xép",
+   "topic": "",
+   "message": "Phin đen đá vẫn đúng cái vị cũ. Cảm ơn cô chủ.",
+   "at": "2022-05-28T09:36:48+07:00"
+  },
+  {
+   "id": "m-003",
+   "name": "Ngô Tuấn Kiệt",
+   "spot": "góc quầy pha",
+   "topic": "Góp ý cho quán",
+   "message": "Phin đen đá vẫn đúng cái vị cũ. Cảm ơn cô chủ.",
+   "at": "2022-04-07T16:01:52+07:00"
+  },
+  {
+   "id": "m-002",
+   "name": "Đặng Hoài Nam",
+   "spot": "bàn cạnh cửa sổ",
+   "topic": "",
+   "message": "Phin đen đá vẫn đúng cái vị cũ. Cảm ơn cô chủ.",
+   "at": "2022-03-14T15:20:17+07:00"
+  },
+  {
+   "id": "m-001",
+   "name": "Trịnh Thu Uyên",
+   "spot": "hiên trước",
+   "topic": "",
+   "message": "Lần đầu ghé theo lời rủ của đồng nghiệp. Không gian không cố làm màu, bàn ghế gỗ cũ mà sạch. Cà phê ra chậm nhưng đáng chờ. Chắc thành khách quen mất thôi.",
+   "at": "2022-02-11T15:08:01+07:00"
+  }
+ ]
+}

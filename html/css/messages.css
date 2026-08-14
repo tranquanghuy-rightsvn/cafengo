@@ -1,0 +1,314 @@
+/* ==========================================================================
+   Ngõ Coffee — messages.css
+   Trang Lời nhắn: đầu trang, bộ lọc, lưới mosaic và phân trang.
+   Màu lấy hết từ hai bảng token trong main.css nên tự theo Dark/Light.
+   ========================================================================== */
+
+.msg-main { padding-top: var(--header-h); }
+
+/* ---------- Đầu trang ---------- */
+.msg-head { padding-block: 72px 56px; }
+.msg-head__inner { text-align: center; }
+.msg-head__title {
+  margin-top: 16px;
+  font-family: var(--font-display);
+  font-size: clamp(30px, 4.4vw, 46px);
+  font-weight: 300;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--on-surface);
+}
+.msg-head__stat {
+  margin-top: 28px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  line-height: 1.6;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--on-muted);
+}
+.msg-head__stat b { color: var(--gold); font-weight: 600; }
+
+/* ---------- Bộ lọc ---------- */
+.msg-filter {
+  max-width: 940px;
+  margin: 40px auto 0;
+  padding: 24px;
+  border: 1px solid rgb(var(--gold-rgb) / 0.15);
+  border-radius: 2px;
+  background: rgb(var(--panel-rgb) / 0.5);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+.msg-filter__row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+@media (min-width: 768px) {
+  /* ô tên rộng gấp rưỡi hai ô ngày vì người ta gõ ở đây nhiều nhất */
+  .msg-filter__row { grid-template-columns: 1.5fr 1fr 1fr; }
+}
+.msg-filter__field > * + * { margin-top: 10px; }
+
+.msg-filter__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+.msg-filter__go,
+.msg-filter__clear {
+  padding: 12px 24px;
+  border-radius: 2px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.msg-filter__go {
+  border: 1px solid var(--gold);
+  background: var(--gold);
+  color: var(--on-secondary);
+}
+.msg-filter__go:hover { filter: brightness(1.1); }
+.msg-filter__clear {
+  border: 1px solid rgb(var(--outline-rgb) / 0.4);
+  background: none;
+  color: var(--on-variant);
+}
+.msg-filter__clear:hover { border-color: var(--gold); color: var(--gold); }
+.msg-filter__hint {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: var(--on-muted);
+}
+
+/* ---------- Lưới mosaic ----------
+   JS đo chiều cao thật của từng thẻ rồi gán grid-row: span N (một hàng = 1px),
+   nên thẻ dài ngắn khác nhau vẫn xếp khít, không để lại khoảng trống như grid
+   thường — mà vẫn đọc theo thứ tự trái sang phải. */
+.msg-body { padding-block: 8px 96px; }
+.msg-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* JS đặt grid-auto-rows và row-gap; ở đây chỉ khai mặc định cho lúc chưa
+     chạy JS hoặc khi chỉ có một cột */
+  row-gap: 20px;
+  column-gap: 20px;
+  align-items: start;
+}
+@media (min-width: 640px)  { .msg-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .msg-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 1440px) { .msg-grid { grid-template-columns: repeat(4, 1fr); } }
+
+/* ---------- Một lời nhắn ---------- */
+.mcard {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 22px;
+  border: 1px solid rgb(var(--outline-rgb) / 0.25);
+  border-radius: 2px;
+  background: rgb(var(--panel-rgb) / 0.55);
+  /* vào khung theo nhịp, độ trễ do JS đặt qua --i */
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 0.7s var(--ease-out-expo),
+    transform 0.8s var(--ease-out-expo),
+    border-color 0.4s ease,
+    box-shadow 0.4s ease;
+  transition-delay: calc(var(--i, 0) * 45ms);
+}
+.mcard.is-in { opacity: 1; transform: none; }
+.mcard:hover {
+  border-color: rgb(var(--gold-rgb) / 0.45);
+  box-shadow: 0 18px 36px rgb(var(--shadow-rgb) / 0.28);
+}
+
+/* vệt màu mảnh ở mép trái, xoay vòng 4 tông cho lưới đỡ đơn điệu */
+.mcard::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 22px;
+  bottom: 22px;
+  width: 2px;
+  background: var(--accent, var(--gold));
+  opacity: 0.55;
+}
+.mcard--a { --accent: var(--gold); }
+.mcard--b { --accent: var(--emerald); }
+.mcard--c { --accent: var(--amber); }
+.mcard--d { --accent: var(--sky); }
+
+.mcard__top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+.mcard__avatar {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgb(var(--outline-rgb) / 0.35);
+  border-radius: 50%;
+  background: var(--avatar-bg);
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--accent, var(--gold));
+}
+.mcard__who { min-width: 0; }
+.mcard__name {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  line-height: 1.4;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--on-surface);
+  /* tên dài thì cắt bằng dấu ba chấm, không cho đẩy vỡ hàng */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.mcard__when {
+  display: block;
+  margin-top: 3px;
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+  color: var(--on-muted);
+}
+
+.mcard__text {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--on-variant);
+  white-space: pre-line;
+}
+/* lời nhắn dài bị cắt còn 7 dòng, bấm mới mở hết */
+.mcard__text.is-clamped {
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.mcard__more {
+  align-self: flex-start;
+  margin-top: 10px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  border-bottom: 1px solid rgb(var(--gold-rgb) / 0.35);
+  transition: border-color 0.3s ease;
+}
+.mcard__more:hover { border-color: var(--gold); }
+
+.mcard__foot {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid rgb(var(--outline-rgb) / 0.2);
+}
+.mcard__chip {
+  padding: 3px 9px;
+  border: 1px solid rgb(var(--outline-rgb) / 0.3);
+  border-radius: 2px;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--on-muted);
+}
+.mcard__chip--topic { border-color: rgb(var(--gold-rgb) / 0.3); color: var(--gold); }
+/* lời nhắn vừa gửi từ máy này */
+.mcard--mine { border-color: rgb(var(--gold-rgb) / 0.5); }
+.mcard__chip--mine { border-color: rgb(var(--emerald-rgb) / 0.45); color: var(--emerald-light); }
+
+/* phần khớp từ khoá tìm kiếm */
+.mcard mark {
+  padding: 0 2px;
+  border-radius: 2px;
+  background: rgb(var(--gold-rgb) / 0.25);
+  color: var(--on-surface);
+}
+
+/* ---------- Không có kết quả ---------- */
+.msg-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  max-width: 620px;
+  margin: 64px auto;
+  padding: 28px;
+  border: 1px dashed rgb(var(--outline-rgb) / 0.4);
+  border-radius: 2px;
+  font-size: 14px;
+  line-height: 1.7;
+  text-align: center;
+  color: var(--on-variant);
+}
+.msg-empty .icon { font-size: 22px; color: var(--gold); }
+
+/* ---------- Phân trang ---------- */
+.msg-pager {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 56px;
+}
+.msg-pager a,
+.msg-pager span {
+  display: grid;
+  place-items: center;
+  min-width: 40px;
+  height: 40px;
+  padding: 0 12px;
+  border: 1px solid rgb(var(--outline-rgb) / 0.35);
+  border-radius: 2px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--on-variant);
+  transition: all 0.3s ease;
+}
+.msg-pager a:hover { border-color: var(--gold); color: var(--gold); }
+.msg-pager .is-current {
+  border-color: var(--gold);
+  background: var(--gold);
+  color: var(--on-secondary);
+  font-weight: 700;
+}
+.msg-pager .is-off { opacity: 0.3; cursor: not-allowed; }
+.msg-pager .msg-pager__gap { border: 0; min-width: 20px; opacity: 0.5; }
+.msg-pager .icon { font-size: 18px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .mcard { transition-duration: 0.01ms; transition-delay: 0ms; }
+}

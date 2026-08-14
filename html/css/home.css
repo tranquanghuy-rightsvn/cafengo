@@ -104,14 +104,6 @@
   .hero__title { font-size: 64px; line-height: 1.1; letter-spacing: -0.02em; }
 }
 
-.hero__lede {
-  max-width: 672px;
-  margin: 0 auto 24px;
-  font-size: 18px;
-  line-height: 1.6;
-  color: var(--on-variant);
-}
-
 .hero__place {
   display: inline-flex;
   align-items: center;
@@ -2215,7 +2207,6 @@ textarea.rinput { resize: none; }
    chữ cùng vai ở các section khác. Số đo trên ảnh chụp thật, lấy điểm nền tối
    nhất: tiêu đề 6.79:1 · dòng dẫn 4.74:1 · dòng nhấn 4.6:1 · badge 5.93:1. */
 :root[data-theme="light"] .hero__title  { color: var(--on-surface); }
-:root[data-theme="light"] .hero__lede   { color: var(--hero-ink); }
 :root[data-theme="light"] .hero__kicker { color: var(--hero-accent); }
 :root[data-theme="light"] .hero__place {
   border-color: rgb(var(--gold-rgb) / 0.35);
@@ -2287,3 +2278,35 @@ textarea.rinput { resize: none; }
   border-color: rgb(var(--outline-rgb) / 0.35);
   background: var(--surface-high);
 }
+
+/* ---------- Lối sang trang Lời nhắn ---------- */
+.feedback__all {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 14px 18px;
+  border: 1px solid rgb(var(--gold-rgb) / 0.25);
+  border-radius: 2px;
+  background: rgb(var(--gold-rgb) / 0.05);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  transition: all 0.35s var(--ease-out-expo);
+}
+.feedback__all:hover {
+  border-color: rgb(var(--gold-rgb) / 0.6);
+  background: rgb(var(--gold-rgb) / 0.12);
+  transform: translateY(-2px);
+}
+.feedback__all .icon { font-size: 17px; }
+/* số lượng do JS điền, chừa chỗ sẵn để không giật khi hiện ra */
+.feedback__all-count {
+  min-width: 1ch;
+  font-size: 10px;
+  opacity: 0.75;
+}
+.feedback__all-go { margin-left: auto; transition: transform 0.35s var(--ease-out-expo); }
+.feedback__all:hover .feedback__all-go { transform: translateX(4px); }
