@@ -241,6 +241,12 @@
 /* ---------- Reset / base ---------- */
 *, *::before, *::after { box-sizing: border-box; }
 
+/* Bất kỳ khai báo display nào (flex, grid, block…) cũng đè được cái
+   `[hidden] { display: none }` mặc định của trình duyệt, vì nó chỉ là quy tắc
+   của user-agent. Chốt lại một lần ở đây: đặt hidden lên thẻ là phải mất hẳn,
+   khỏi phải nhớ viết `.abc[hidden]` cho từng chỗ. */
+[hidden] { display: none !important; }
+
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
@@ -325,6 +331,21 @@ input, textarea, select { font: inherit; color: inherit; }
   width: 24px;
   height: 1px;
   background: rgb(var(--gold-rgb) / 0.3);
+}
+
+/* ---------- Mũi tên < > ----------
+   Vẽ bằng SVG thay cho glyph chevron của font icon: nét mảnh đều nhau, đầu nét
+   bo tròn, và ăn theo currentColor nên hover đổi màu là tự khớp. Cỡ mặc định
+   24px, chỗ nào cần khác thì chỉnh width/height ngay tại chỗ đó. */
+.chev {
+  display: block;
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 /* ---------- Icon font ---------- */

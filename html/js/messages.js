@@ -214,12 +214,16 @@
            (cls ? ' class="' + cls + '"' : '') + '>' + label + '</a>';
   }
 
+  /* mũi tên < > vẽ bằng SVG, xem .chev trong main.css */
+  var CHEV_PREV = '<svg class="chev" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14.5 5.5 8 12l6.5 6.5"/></svg>';
+  var CHEV_NEXT = '<svg class="chev" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9.5 5.5 16 12l-6.5 6.5"/></svg>';
+
   function renderPager(p, pages) {
     if (pages <= 1) { elPager.hidden = true; elPager.innerHTML = ''; return; }
     var out = [];
     out.push(p.page > 1
-      ? pagerLink(p, p.page - 1, '<span class="icon">chevron_left</span>')
-      : '<span class="is-off"><span class="icon">chevron_left</span></span>');
+      ? pagerLink(p, p.page - 1, CHEV_PREV)
+      : '<span class="is-off">' + CHEV_PREV + '</span>');
 
     /* luôn hiện trang đầu, trang cuối, và cửa sổ quanh trang hiện tại */
     var show = [];
@@ -236,8 +240,8 @@
     });
 
     out.push(p.page < pages
-      ? pagerLink(p, p.page + 1, '<span class="icon">chevron_right</span>')
-      : '<span class="is-off"><span class="icon">chevron_right</span></span>');
+      ? pagerLink(p, p.page + 1, CHEV_NEXT)
+      : '<span class="is-off">' + CHEV_NEXT + '</span>');
 
     elPager.innerHTML = out.join('');
     elPager.hidden = false;

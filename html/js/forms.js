@@ -25,9 +25,6 @@
     });
   }
 
-  /* ---------- Liên hệ: chip chủ đề ---------- */
-  pickOne(d.getElementById('contact-chips'), '.chip', 'is-active');
-
   /* ---------- Thực đơn phiên bản mobile: chip danh mục ---------- */
   var menuChips = d.querySelector('.menu-chips');
   if (menuChips) {
@@ -145,14 +142,10 @@
     return el ? el.value.trim() : '';
   }
 
-  var contactForm = d.querySelector('.contact__panel form');
+  /* Chỉ còn đúng một chỗ gửi lời nhắn — khối cảm nhận ở mục "Lời của khách
+     quen". Khối liên hệ phía cuối trang giờ chỉ để thông tin và bản đồ. */
   var feedbackForm = d.querySelector('.feedback form');
 
-  wireForm(contactForm, 'Cảm ơn bạn, quán đã nhận lời nhắn và sẽ trả lời sớm.', function (f) {
-    var chip = d.querySelector('#contact-chips .chip.is-active');
-    return keep({ name: val(f, '#ct-name'), spot: '', topic: chip ? chip.textContent.trim() : '',
-                  message: val(f, '#ct-msg') });
-  });
   wireForm(feedbackForm, 'Cảm ơn bạn đã dành thời gian, quán đọc hết từng dòng.', function (f) {
     return keep({ name: val(f, '#fb-name'), spot: val(f, '#fb-role'), topic: '',
                   message: val(f, '#fb-msg') });

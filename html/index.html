@@ -570,10 +570,10 @@
             </div>
 
             <button type="button" class="flip-arrow flip-arrow--prev" id="flip-prev" aria-label="Trang trước" disabled>
-              <span class="icon">chevron_left</span>
+              <svg class="chev" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14.5 5.5 8 12l6.5 6.5"/></svg>
             </button>
             <button type="button" class="flip-arrow flip-arrow--next" id="flip-next" aria-label="Trang sau">
-              <span class="icon">chevron_right</span>
+              <svg class="chev" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9.5 5.5 16 12l-6.5 6.5"/></svg>
             </button>
           </div>
 
@@ -1126,84 +1126,45 @@
     </div>
 
     <div class="container contact__body" style="position:relative;z-index:10">
-      <div class="contact__cards">
-        <div class="info glass">
-          <span class="info__label">Địa chỉ</span>
-          <p class="info__strong">K54/8 Phạm Hồng Thái, Hải Châu</p>
-          <p class="info__sub">TP. Đà Nẵng, Việt Nam</p>
-          <div class="info__foot">
-            <span>16.0673° N, 108.2215° E</span>
-            <button type="button" class="info__copy" data-copy="16.0673, 108.2215">[ Sao chép ]</button>
-          </div>
-        </div>
-
-        <div class="info glass">
-          <span class="info__label">Giờ mở cửa</span>
-          <div class="info__hours">
-            <div><span>Thứ 2 — Thứ 6:</span><b>07:00 - 22:00</b></div>
-            <div><span>Thứ 7 — Chủ Nhật:</span><b>08:00 - 00:00</b></div>
-            <div class="info__hours-alt"><span>Ngày lễ, Tết:</span><b>Xem thông báo</b></div>
-          </div>
-        </div>
-
-        <div class="info glass">
-          <span class="info__label">Liên hệ</span>
-          <p class="info__strong">xinchao@ngocoffee.vn</p>
-          <p class="info__sub info__sub--tight">+84 (0) 90 234 5678</p>
-          <div class="info__foot info__foot--sm">
-            <span>Gọi hoặc nhắn Zalo</span>
-            <button type="button" class="info__copy" data-copy="xinchao@ngocoffee.vn">[ Sao chép ]</button>
-          </div>
-        </div>
-
-        <div class="info glass">
-          <span class="info__label">Theo dõi quán</span>
-          <div class="info__social">
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://x.com" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-          </div>
-        </div>
-      </div>
-
       <div class="contact__split">
-        <div class="contact__form-col">
-          <div class="contact__panel glass">
-            <form novalidate>
-              <div class="rgrid rgrid--wide">
-                <div class="rfield">
-                  <label class="rlabel" for="ct-name">Họ và tên *</label>
-                  <input class="rinput" id="ct-name" name="name" type="text" required placeholder="NGUYỄN VĂN A">
-                </div>
-                <div class="rfield">
-                  <label class="rlabel" for="ct-phone">Số điện thoại *</label>
-                  <input class="rinput" id="ct-phone" name="phone" type="tel" required placeholder="090 123 4567">
-                </div>
-              </div>
+        <div class="contact__cards">
+          <div class="info glass">
+            <span class="info__label">Địa chỉ</span>
+            <p class="info__strong">K54/8 Phạm Hồng Thái, Hải Châu</p>
+            <p class="info__sub">TP. Đà Nẵng, Việt Nam</p>
+            <div class="info__foot">
+              <span>16.0673° N, 108.2215° E</span>
+              <button type="button" class="info__copy" data-copy="16.0673, 108.2215">[ Sao chép ]</button>
+            </div>
+          </div>
 
-              <div class="rfield">
-                <label class="rlabel" for="ct-email">Địa chỉ Email *</label>
-                <input class="rinput" id="ct-email" name="email" type="email" required placeholder="ban@email.com">
-              </div>
+          <div class="info glass">
+            <span class="info__label">Giờ mở cửa</span>
+            <div class="info__hours">
+              <div><span>Thứ 2 — Thứ 6:</span><b>07:00 - 22:00</b></div>
+              <div><span>Thứ 7 — Chủ Nhật:</span><b>08:00 - 00:00</b></div>
+              <div class="info__hours-alt"><span>Ngày lễ, Tết:</span><b>Xem thông báo</b></div>
+            </div>
+          </div>
 
-              <div class="rfield rfield--gap12">
-                <label class="rlabel">Bạn cần gì?</label>
-                <div class="chips" id="contact-chips">
-                  <button type="button" class="chip is-active">Hỏi thăm chung</button>
-                  <button type="button" class="chip">Giữ chỗ cho nhóm đông</button>
-                  <button type="button" class="chip">Mua cà phê hạt mang về</button>
-                  <button type="button" class="chip">Góp ý cho quán</button>
-                </div>
-              </div>
+          <div class="info glass">
+            <span class="info__label">Liên hệ</span>
+            <p class="info__strong">xinchao@ngocoffee.vn</p>
+            <p class="info__sub info__sub--tight">+84 (0) 90 234 5678</p>
+            <div class="info__foot info__foot--sm">
+              <span>Gọi hoặc nhắn Zalo</span>
+              <button type="button" class="info__copy" data-copy="xinchao@ngocoffee.vn">[ Sao chép ]</button>
+            </div>
+          </div>
 
-              <div class="rfield">
-                <label class="rlabel" for="ct-msg">Lời nhắn</label>
-                <textarea class="rinput" id="ct-msg" name="message" rows="3" required placeholder="Bạn muốn hỏi gì, cứ để lại đây, quán sẽ trả lời sớm nhất..."></textarea>
-              </div>
-
-              <button type="submit" class="rsubmit">Gửi lời nhắn</button>
-            </form>
+          <div class="info glass">
+            <span class="info__label">Theo dõi quán</span>
+            <div class="info__social">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://x.com" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </div>
           </div>
         </div>
 
@@ -1303,8 +1264,8 @@
         </figcaption>
       </figure>
     </div>
-    <button type="button" class="lightbox__btn lightbox__btn--prev" id="lightbox-prev" aria-label="Ảnh trước"><span class="icon">chevron_left</span></button>
-    <button type="button" class="lightbox__btn lightbox__btn--next" id="lightbox-next" aria-label="Ảnh sau"><span class="icon">chevron_right</span></button>
+    <button type="button" class="lightbox__btn lightbox__btn--prev" id="lightbox-prev" aria-label="Ảnh trước"><svg class="chev" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14.5 5.5 8 12l6.5 6.5"/></svg></button>
+    <button type="button" class="lightbox__btn lightbox__btn--next" id="lightbox-next" aria-label="Ảnh sau"><svg class="chev" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9.5 5.5 16 12l-6.5 6.5"/></svg></button>
     <button type="button" class="lightbox__btn lightbox__btn--close" id="lightbox-close" aria-label="Đóng"><span class="icon">close</span></button>
   </div>
 

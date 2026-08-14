@@ -307,7 +307,7 @@
 }
 .msg-pager .is-off { opacity: 0.3; cursor: not-allowed; }
 .msg-pager .msg-pager__gap { border: 0; min-width: 20px; opacity: 0.5; }
-.msg-pager .icon { font-size: 18px; }
+.msg-pager .chev { width: 18px; height: 18px; }
 
 @media (prefers-reduced-motion: reduce) {
   .mcard { transition-duration: 0.01ms; transition-delay: 0ms; }

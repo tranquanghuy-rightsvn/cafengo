@@ -1607,20 +1607,32 @@ textarea.rinput { resize: none; }
 
 .contact__body > * + * { margin-top: 48px; }
 
+/* Bốn thẻ thông tin nằm ở cột trái, đối diện bản đồ. Màn hẹp thì xếp dọc, từ
+   640px trở lên gấp thành lưới 2×2 — chiều cao khối vừa khớp bản đồ bên cạnh. */
 .contact__cards {
   display: grid;
   grid-template-columns: 1fr;
   gap: 24px;
 }
 @media (min-width: 640px) { .contact__cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (min-width: 1024px) { .contact__cards { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (min-width: 1024px) {
+  .contact__cards {
+    height: 100%;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+}
 
 .info {
   position: relative;
+  display: flex;
+  flex-direction: column;
   padding: 24px;
   border-radius: 2px;
   border: 1px solid rgb(var(--gold-rgb) / 0.15);
 }
+/* Ở bố cục 2×2 thẻ bị lưới kéo cao hơn phần chữ, nên dồn chữ ra giữa thẻ cho
+   khỏi dính lên đỉnh và chừa một khoảng trống to ở đáy. */
+@media (min-width: 1024px) { .info { justify-content: center; } }
 .info__label {
   display: block;
   margin-bottom: 12px;
@@ -1712,19 +1724,10 @@ textarea.rinput { resize: none; }
   align-items: start;
 }
 @media (min-width: 1024px) {
-  .contact__split { grid-template-columns: repeat(12, minmax(0, 1fr)); }
-  .contact__form-col { grid-column: span 7; }
-  .contact__map-col  { grid-column: span 5; align-self: stretch; }
+  .contact__split { grid-template-columns: repeat(12, minmax(0, 1fr)); align-items: stretch; }
+  .contact__cards   { grid-column: span 7; }
+  .contact__map-col { grid-column: span 5; align-self: stretch; }
 }
-
-.contact__panel {
-  position: relative;
-  padding: 32px;
-  border: 1px solid rgb(var(--gold-rgb) / 0.15);
-  border-radius: 2px;
-}
-@media (min-width: 768px) { .contact__panel { padding: 40px; } }
-.contact__panel form > * + * { margin-top: 32px; }
 
 .rgrid--wide { gap: 32px; }
 /* the contact form splits at md (768), not sm — unlike the booking form */
@@ -1754,7 +1757,9 @@ textarea.rinput { resize: none; }
 }
 
 .contact__map-col { min-height: 400px; }
-@media (min-width: 1024px) { .contact__map-col { min-height: 550px; } }
+/* 460 chứ không phải 550 như hồi còn form: chiều cao này vừa đủ cho khối 2×2
+   bên trái, cao hơn nữa là bốn thẻ bị kéo giãn ra trông rỗng ruột. */
+@media (min-width: 1024px) { .contact__map-col { min-height: 460px; } }
 
 .mapbox {
   position: relative;
@@ -1767,7 +1772,7 @@ textarea.rinput { resize: none; }
   background: var(--surface-lowest);
   box-shadow: 0 25px 50px -12px rgb(var(--shadow-rgb) / 0.6);
 }
-@media (min-width: 1024px) { .mapbox { min-height: 550px; } }
+@media (min-width: 1024px) { .mapbox { min-height: 460px; } }
 .mapbox__img {
   position: absolute;
   inset: 0;
