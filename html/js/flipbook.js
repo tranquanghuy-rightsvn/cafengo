@@ -157,6 +157,20 @@
      the side away from the corner being turned. Returns a clip-path polygon, or
      an empty one once the crease has run off the far edge. */
   function flatSidePolygon(W, H, crease, sx, sy) {
+    var out = cutPage(W, H, crease, sx, sy, true);
+    if (out.length < 3) return 'polygon(0 0, 0 0, 0 0)';
+    return 'polygon(' + out.map(function (v) {
+      return v[0].toFixed(2) + 'px ' + v[1].toFixed(2) + 'px';
+    }).join(',') + ')';
+  }
+
+  /* The page rectangle cut by the crease: the side still lying flat
+     (keepFlat) or the side lifted off with the held corner. Working from the
+     rectangle rather than the crease's end points keeps the flap inside the
+     page's height even when the crease runs off the top or bottom edge — as it
+     does when a sheet rolls from the middle of its edge, where the triangle
+     through those end points would reach thousands of px above the book. */
+  function cutPage(W, H, crease, sx, sy, keepFlat) {
     var ax = crease.hx, ay = crease.hy;
     var nx = crease.vy - ay;              /* normal of the crease line */
     var ny = -(crease.vx - ax);
@@ -164,6 +178,7 @@
     var refX = sx > 0 ? 0 : W;
     var refY = sy > 0 ? 0 : H;
     var sign = (nx * (refX - ax) + ny * (refY - ay)) >= 0 ? 1 : -1;
+    if (!keepFlat) sign = -sign;
 
     var rect = [[0, 0], [W, 0], [W, H], [0, H]];
     var out = [];
@@ -177,10 +192,23 @@
         out.push([p[0] + k * (q[0] - p[0]), p[1] + k * (q[1] - p[1])]);
       }
     }
-    if (out.length < 3) return 'polygon(0 0, 0 0, 0 0)';
-    return 'polygon(' + out.map(function (v) {
-      return v[0].toFixed(2) + 'px ' + v[1].toFixed(2) + 'px';
-    }).join(',') + ')';
+    return out;
+  }
+
+  /* The segment x1,y1 → x2,y2 trimmed to the page rectangle (Liang–Barsky),
+     or null when none of it lies on the page. */
+  function clipSegment(x1, y1, x2, y2, W, H) {
+    var dx = x2 - x1, dy = y2 - y1;
+    var t0 = 0, t1 = 1;
+    var p = [-dx, dx, -dy, dy];
+    var q = [x1, W - x1, y1, H - y1];
+    for (var i = 0; i < 4; i++) {
+      if (p[i] === 0) { if (q[i] < 0) return null; continue; }
+      var t = q[i] / p[i];
+      if (p[i] < 0) { if (t > t1) return null; if (t > t0) t0 = t; }
+      else { if (t < t0) return null; if (t < t1) t1 = t; }
+    }
+    return [x1 + t0 * dx, y1 + t0 * dy, x1 + t1 * dx, y1 + t1 * dy];
   }
 
   function initCornerPeel(spread, getCurrent) {
@@ -353,11 +381,42 @@
         var hx = cornerX - sx * (d2 / (2 * a)), hy = cornerY;
         var vx = cornerX, vy = cornerY - sy * (d2 / (2 * b));
 
-        p.paper.setAttribute('points', hx + ',' + hy + ' ' + vx + ',' + vy + ' ' + tipX + ',' + tipY);
+        var crease = { hx: hx, hy: hy, vx: vx, vy: vy };
+
+        /* Reflection across the crease. For a crease with unit direction
+           (dx, dy) it is [dx²-dy²  2dxdy; 2dxdy  dy²-dx²], translated to pin
+           the crease. */
+        var cl = Math.hypot(vx - hx, vy - hy) || 1;
+        var cdx = (vx - hx) / cl;
+        var cdy = (vy - hy) / cl;
+        var m11 = cdx * cdx - cdy * cdy;
+        var m12 = 2 * cdx * cdy;
+        var tx = hx - (m11 * hx + m12 * hy);
+        var ty = hy - (m12 * hx - m11 * hy);
+
+        /* the part of the page lifted off, and where it lands once folded over */
+        var lifted = cutPage(W, H, crease, sx, sy, false);
+        var flap = lifted.map(function (v) {
+          return [m11 * v[0] + m12 * v[1] + tx, m12 * v[0] - m11 * v[1] + ty];
+        });
+        function svgPoints(pts) {
+          return pts.map(function (v) { return v[0].toFixed(2) + ',' + v[1].toFixed(2); }).join(' ');
+        }
+
+        p.paper.setAttribute('points', svgPoints(flap));
         /* the corner the paper vacated, showing the sheet underneath */
-        p.voidTri.setAttribute('points', hx + ',' + hy + ' ' + vx + ',' + vy + ' ' + cornerX + ',' + cornerY);
-        p.crease.setAttribute('x1', hx); p.crease.setAttribute('y1', hy);
-        p.crease.setAttribute('x2', vx); p.crease.setAttribute('y2', vy);
+        p.voidTri.setAttribute('points', svgPoints(lifted));
+        /* Draw the crease only where it crosses the page. Its far end can sit
+           thousands of px off the page (a sheet rolling from mid-edge folds
+           almost straight), and left whole it streaks a dark line above the book. */
+        var seg = clipSegment(hx, hy, vx, vy, W, H);
+        if (seg) {
+          p.crease.setAttribute('x1', seg[0]); p.crease.setAttribute('y1', seg[1]);
+          p.crease.setAttribute('x2', seg[2]); p.crease.setAttribute('y2', seg[3]);
+        } else {
+          p.crease.setAttribute('x1', 0); p.crease.setAttribute('y1', 0);
+          p.crease.setAttribute('x2', 0); p.crease.setAttribute('y2', 0);
+        }
 
         /* Shade straight across the fold: the midpoint of corner→tip sits on the
            crease and that segment is perpendicular to it, so offset 0 lands on
@@ -380,17 +439,10 @@
           (-13 * sy * b / len).toFixed(1) + 'px 22px rgba(0,0,0,0.95))';
 
         /* Show the sheet's reverse inside the flap: clip the wrapper to the
-           triangle, then reflect the copy across the crease. For a crease with
-           unit direction (dx, dy) the reflection is
-           [dx²-dy²  2dxdy; 2dxdy  dy²-dx²], translated to pin the crease. */
-        var cl = Math.hypot(vx - hx, vy - hy) || 1;
-        var cdx = (vx - hx) / cl;
-        var cdy = (vy - hy) / cl;
-        var m11 = cdx * cdx - cdy * cdy;
-        var m12 = 2 * cdx * cdy;
-        var tx = hx - (m11 * hx + m12 * hy);
-        var ty = hy - (m12 * hx - m11 * hy);
-        p.back.style.clipPath = 'polygon(' + hx + 'px ' + hy + 'px,' + vx + 'px ' + vy + 'px,' + tipX + 'px ' + tipY + 'px)';
+           flap, then reflect the copy across the crease. */
+        p.back.style.clipPath = flap.length < 3 ? 'polygon(0 0, 0 0, 0 0)' : 'polygon(' + flap.map(function (v) {
+          return v[0].toFixed(2) + 'px ' + v[1].toFixed(2) + 'px';
+        }).join(',') + ')';
         /* The copy is laid over the front of the sheet but depicts its back, so
            mirror it across the page's centre line first: the sheet's outer edge
            has to end up away from the spine, not against it. Composing that
@@ -400,6 +452,11 @@
         p.backInner.style.transform = 'matrix(' + (-m11) + ',' + (-m12) + ',' + m12 + ',' + (-m11) + ',' +
           (m11 * W + tx) + ',' + (m12 * W + ty) + ')';
 
+        /* The flap's shadow is blurred, so on a turning sheet (unclipped by its
+           page) it would haze past the top, bottom and outer edge of the book.
+           Keep it to the page's height and the open spread: the page itself plus
+           one page width across the spine, where the sheet lands. */
+        p.svg.style.clipPath = side > 0 ? 'inset(0 0 0 -100%)' : 'inset(0 -100% 0 0)';
         p.svg.classList.add('is-lifted');
         p.back.classList.add('is-lifted');
 
@@ -408,7 +465,6 @@
            this the vacated corner keeps drawing the current page, so the sheet
            appears to curl up off a copy of itself. Applies to a held corner just
            as much as to a page mid-turn. */
-        var crease = { hx: hx, hy: hy, vx: vx, vy: vy };
         hoist();
         face.style.clipPath = flatSidePolygon(W, H, crease, sx, sy);
         return crease;
@@ -466,6 +522,13 @@
           leafEl.classList.add('is-turning');
           leafEl.style.zIndex = String(TURN_Z);
         }
+        /* Start the lighting ease from the lift the current theme gives a raised
+           flap (the light theme dims instead of brightening), not from the dark
+           theme's value — otherwise a cream page flashes white as it turns. */
+        var inner = build().backInner;
+        inner.style.removeProperty('--peel-lift');
+        var lift0 = parseFloat(getComputedStyle(inner).getPropertyValue('--peel-lift'));
+        if (!isFinite(lift0)) lift0 = LIFT;
         var a0 = from.a;
         var b0 = from.b;
         var sx = from.sx, sy = from.sy;
@@ -489,7 +552,7 @@
              the final frame is lit exactly like the flat page it becomes. */
           var p = build();
           p.svg.style.opacity = String(1 - e);
-          p.backInner.style.setProperty('--peel-lift', String(LIFT + (1 - LIFT) * e));
+          p.backInner.style.setProperty('--peel-lift', String(lift0 + (1 - lift0) * e));
 
           if (t < 1) { requestAnimationFrame(step); return; }
           /* Let this last frame paint before swapping in the real page: the two
